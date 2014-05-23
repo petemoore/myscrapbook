@@ -1,0 +1,7 @@
+https://hg.mozilla.org/build/buildbot/file/438e1defbdca/master/buildbot/master.py#l621
+https://hg.mozilla.org/build/buildbot/file/438e1defbdca/master/buildbot/master.py#l1064
+https://hg.mozilla.org/build/buildbot/file/438e1defbdca/master/buildbot/master.py#l1107
+import pickle; obj = pickle.load(open("foo"))
+
+https://wiki.mozilla.org/ReleaseEngineering:TestingTechniques
+http://hg.mozilla.org/build/tools/raw-file/tip/buildfarm/maintenance/production-masters.json

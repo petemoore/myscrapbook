@@ -1,0 +1,8 @@
+From nthomas!
+=============
+
+12:30:28 [Feb/12 11:02:11] on mac ? There's a trick you can do with scutil to avoid a reboot
+12:30:28 [Feb/12 11:02:46] if your vpn has dropped, you can still have mozilla DNS left configured. To confirm this go 'scutil --dns' and look for mozilla search domains and DNS servers on 10.x.x.x IPs
+12:30:28 [Feb/12 11:02:56] this prevents you from resolving the VPN host
+12:30:28 [Feb/12 11:03:47] to fix you go 'sudo scutil', then 'list', and 'remove State:/Network/Service/com.viscosityvpn.vpn-tun0/DNS', 'remove State:/Network/Service/com.viscosityvpn.vpn-tun0/IPv4' (or the keys that are clearly viscosity)
+12:30:28 [Feb/12 11:04:02] then you can reconenct

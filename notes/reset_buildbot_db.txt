@@ -1,0 +1,7 @@
+<kmoir> just cd to /builds/buildbot/kmoir/test2
+<kmoir> make stop
+<kmoir> make reset-db
+<kmoir> make start
+
+<<< sendchange command >>>
+grep sendchange /builds/buildbot/kmoir/test2/master/twistd.log

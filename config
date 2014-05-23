@@ -1,0 +1,75 @@
+Host git
+    Hostname  78.47.176.59
+    Port      443
+    User      gitosis
+
+Host itwf
+    Hostname  78.47.176.59
+    Port      443
+    User      petermoore
+
+Host gh
+    Hostname     github.com
+    User         git
+    IdentityFile ~/.ssh/github_mozilla_rsa
+
+Host imac
+    Hostname  pete-moores-imac-g5.local
+    User      petermoore
+
+Host bld-*
+    User cltbld
+#   IdentityFile ~/build.ssh/ffxbld_dsa
+
+Host slavealloc
+    Hostname relengwebadm.private.scl3.mozilla.com
+    LocalForward 3306 devtools-rw-vip.db.scl3.mozilla.com:3306
+    LocalForward 13306 stage-rw-vip.db.scl3.mozilla.com:3306
+
+Host hg.mozilla.org git.mozilla.org
+    User pmoore@mozilla.com
+    Compression yes
+    ServerAliveInterval 300
+
+Host *.mozilla.com
+    User pmoore
+    Compression yes
+    ServerAliveInterval 300
+
+Host *.build.mozilla.org
+    Compression yes
+    User cltbld
+    ServerAliveInterval 300
+
+Host svn.mozilla.org
+    User pmoore@mozilla.com
+
+Host *.build.scl1.mozilla.com
+    User cltbld
+
+Host relengwebadm
+    Hostname relengwebadm.private.scl3.mozilla.com
+
+Host gd0
+    Hostname github-sync1-dev.dmz.scl3.mozilla.com
+
+Host gd1
+    Hostname github-sync1.dmz.scl3.mozilla.com
+
+Host gd2
+    Hostname github-sync2.dmz.scl3.mozilla.com
+
+Host gd3
+    Hostname github-sync3.dmz.scl3.mozilla.com
+
+Host gd4
+    Hostname github-sync4.dmz.scl3.mozilla.com
+
+Host vcs1
+    Hostname vcssync1.srv.releng.usw2.mozilla.com
+
+Host vcs2
+    Hostname vcssync2.srv.releng.usw2.mozilla.com
+
+Host vcsstage
+    Hostname vcssync-dev

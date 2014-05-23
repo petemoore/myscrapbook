@@ -1,0 +1,25 @@
+dmidecode -s system-product-name
+sudo rm /efi/
+sudo rm -fr /efi/
+sudo mkdir -p /efi
+sudo mount -t msdos /dev/disk0s1 /efi
+ls /efi
+df -h
+cp -r /Volumes/rEFIt/efi/* /efi/EFI
+cp -r /Volumes/rEFIt/efi/* /efi/EFI
+sudo bless --mount /efi --setBoot --file /efi/efi/refit/refit.efi --labelfile /efi/efi/refit/refit.vollabel
+vi dualboot_instructions.txt
+sudo reboot
+cd /efi/
+ls
+ls -ltr
+df -h
+cd
+sudo mount -t msdos /dev/disk0s1 /efi
+ls -ltr /efi
+ls -ltr /efi/EFI/
+sudo reboot
+man bless
+sudo bless --mount /efi --setBoot --file /efi/efi/refit/refit.efi --labelfile /efi/efi/refit/refit.vollabel
+sudo mount -t msdos /dev/disk0s1 /efi
+sudo bless --mount /efi --setBoot --file /efi/efi/refit/refit.efi --labelfile /efi/efi/refit/refit.vollabel

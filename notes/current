@@ -1,0 +1,98 @@
+Mapper deployment
+=================
+https://bugzilla.mozilla.org/show_bug.cgi?id=847640
+
+Example commits:
+    Git commit id:   69d64a8a18e6e001eb015646a82bcdaba0e78a24
+    HG changeset id: 68f1b2b9996c4e33aa57771b3478932c9fb7e161
+    Github: https://github.com/petermoore/build-puppet/commit/69d64a8a18e6e001eb015646a82bcdaba0e78a24
+    HG web: https://hg.mozilla.org/build/puppet/rev/68f1b2b9996c4e33aa57771b3478932c9fb7e161
+
+
+Routes
+======
+Help: Returns a mapping pair
+GET:  /<project>/rev/<vcs_type>/<commit>
+https://api-pub-build.allizom.org/mapper/build-puppet/rev/hg/69d64a8a18e6e001eb015646a82bcdaba0e78a24
+https://api-pub-build.allizom.org/mappeYr/build-puppet/rev/git/68f1b2b9996c4e33aa57771b3478932c9fb7e161
+
+Help: Returns full mapfile for a given project
+GET:  /<project>/mapfile/full
+https://api-pub-build.allizom.org/mapper/build-puppet/mapfile/full
+
+Help: Returns a subset of a mapfile, since a given date
+GET:  /<project>/mapfile/since/<since>
+https://api-pub-build.allizom.org/mapper/build-puppet/mapfile/since/16.05.2014%2017:02:09%20CEST
+
+Help: Inserts a mappings file strictly (no duplicates allowed)
+POST: /<project>/insert
+https://api-pub-build.allizom.org/mapper/insert
+
+Help: Inserts a mappings file, allowing duplicates
+POST: /<project>/insert/ignoredups
+https://api-pub-build.allizom.org/mapper/insert/ignoredups
+
+Help: Inserts an individual mapping
+GET:  /<project>/insert/<hg_changeset>/<git_commit> (switch to POST !!!!!)
+https://api-pub-build.allizom.org/mapper/insert/69d64a8a18e6e001eb015646a82bcdaba0e78a24/68f1b2b9996c4e33aa57771b3478932c9fb7e161
+
+Help: Inserts a new project
+GET:  /<project> (switch to POST !!!!!)
+https://api-pub-build.allizom.org/mapper/build-puppet
+
+
+
+Notes for installation steps
+============================
+Give own user permission to issue tokens / redeploy relengapi
+Issue token for inserting projects
+Issue token for inserting mappings
+Create ~/.passwords file
+Manually insert projects using script one time
+Configure git user, email
+Do a github ls-remote using ssh to get known-hosts added
+Make sure ssh key for github is on the machine with correct permissions and name
+Install bin/lockfile
+Create script to be called from crontab
+Clone Mozharness one time, and check out correct tag/branch/revision
+Make sure Mozharness has an "origin" remote (to handle "pip freeze" issue)
+
+
+Improvements (aka ToDos)
+========================
+Chunk up mapper inserts from vcs_sync (smaller mapfiles, one at a time)
+Get startup scripts in source control
+Remove automatic git up for mozharness (raise Bug for Aki/Hal to know about it)
+Move PATH into startup script from cron (raise Bug)
+Puppetize vcs hosts
+Add .rst files to mapper to describe API
+Fix broken functionality above (e.g. broken "since" method)
+Update wiki / readthedocs about e.g. API
+Finish blog post (and maybe convert to wiki/readthedocs) about development setup
+Do more destructive testing
+Show return code in log if not 200
+Find out why some POST requests are not reaching staging mapper (and increase timeout if necessary?)
+Fix email subjects not to say "successful" if they aren't
+Move publish of mapper file into separate action(?)
+Change GETS to POSTS where necessary
+Introduce DELETEs, PUTs (?)
+POST in chunks from vcs_sync(?)
+Rename directory from vcs-sync to vcs_sync in Mozharness(?)
+New API method to read the full list of projects
+Relengapi to have links to mapper RST docs
+MD5 check of full mapfile, and if wrong, drop and push all, and send warning email
+Improve git pushing to have all branches/tags locally with correct name, and push --mirror (?)
+Update Bug statuses (both bugs)
+Promote to others (jmaher, aki, hwine, edmorley, ...)
+Check with Dustin about security of header
+Ask Dustin if correct security schema has been chosen
+Differentiate between project with no hashes, and project missing
+Remove sql in mapper and test_mapper (e.g. using 'git_commit like :cspatttern' clause)
+Clean out staging database tables and redeploy new version of mapper
+Investigate problems with build-buildbot-configs and build-puppet - why the previous-git-mapfile does not exist
+
+
+Other fixes
+===========
+Fix Adium alerts not to switch windows!
+Get Travis sending messages to irc #releng for mozilla failures and checkins (same as hudson)
