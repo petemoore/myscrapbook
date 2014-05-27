@@ -102,6 +102,7 @@ Push mappings to a branch called git_hg_mappings in each repo
 Create a repo will all mapfiles, and push to that
 Send failure email if mappings don't get published
 Retry if mappings don't get published (although will retry one min later anyway)
+Truncate email content if too many error messages in log so that email is still sent
 
 
 Other fixes
