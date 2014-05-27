@@ -1,3 +1,5 @@
 *.log
 requirements_prod.txt
 requirements_staging.txt
+*.source.mapfile
+*.mapper.mapfile
