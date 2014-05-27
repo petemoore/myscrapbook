@@ -1,3 +1,12 @@
+Pulse troubleshooting
+=====================
+
+Old bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1010120
+Mozmill config: https://github.com/mozilla/mozmill-ci/blob/master/config/production/release.json
+Instantiate monitor: https://github.com/mozilla/mozmill-ci/blob/master/pulse.py#L81
+
+
+
 Mapper deployment
 =================
 https://bugzilla.mozilla.org/show_bug.cgi?id=847640
@@ -60,13 +69,12 @@ Make sure Mozharness has an "origin" remote (to handle "pip freeze" issue)
 
 Improvements (aka ToDos)
 ========================
-Chunk up mapper inserts from vcs_sync (smaller mapfiles, one at a time)
 Get startup scripts in source control
 Remove automatic git up for mozharness (raise Bug for Aki/Hal to know about it)
 Move PATH into startup script from cron (raise Bug)
 Puppetize vcs hosts
 Add .rst files to mapper to describe API
-Fix broken functionality above (e.g. broken "since" method)
+Test "since" functionality
 Update wiki / readthedocs about e.g. API
 Finish blog post (and maybe convert to wiki/readthedocs) about development setup
 Do more destructive testing
@@ -76,7 +84,6 @@ Fix email subjects not to say "successful" if they aren't
 Move publish of mapper file into separate action(?)
 Change GETS to POSTS where necessary
 Introduce DELETEs, PUTs (?)
-POST in chunks from vcs_sync(?)
 Rename directory from vcs-sync to vcs_sync in Mozharness(?)
 New API method to read the full list of projects
 Relengapi to have links to mapper RST docs
@@ -90,6 +97,11 @@ Differentiate between project with no hashes, and project missing
 Remove sql in mapper and test_mapper (e.g. using 'git_commit like :cspatttern' clause)
 Clean out staging database tables and redeploy new version of mapper
 Investigate problems with build-buildbot-configs and build-puppet - why the previous-git-mapfile does not exist
+Only push changed refs in vcs_sync rather than all (i.e. filter out non-changed ones)
+Push mappings to a branch called git_hg_mappings in each repo
+Create a repo will all mapfiles, and push to that
+Send failure email if mappings don't get published
+Retry if mappings don't get published (although will retry one min later anyway)
 
 
 Other fixes
