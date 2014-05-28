@@ -76,34 +76,25 @@ Remove automatic git up for mozharness (raise Bug for Aki/Hal to know about it)
 Move PATH into startup script from cron (raise Bug)
 Puppetize vcs hosts
 Add .rst files to mapper to describe API
+Relengapi to have links to mapper RST docs
 Test "since" functionality
 Update wiki / readthedocs about e.g. API
 Finish blog post (and maybe convert to wiki/readthedocs) about development setup
-Do more destructive testing
-Show return code in log if not 200
-Find out why some POST requests are not reaching staging mapper (and increase timeout if necessary?)
 Fix email subjects not to say "successful" if they aren't
-Move publish of mapper file into separate action(?)
 Introduce DELETEs, PUTs (?)
 Rename directory from vcs-sync to vcs_sync in Mozharness(?)
 New API method to read the full list of projects
-Relengapi to have links to mapper RST docs
 MD5 check of full mapfile, and if wrong, drop and push all, and send warning email
 Improve git pushing to have all branches/tags locally with correct name, and push --mirror (?)
 Update Bug statuses (both bugs)
 Promote to others (jmaher, aki, hwine, edmorley, ...)
-Check with Dustin about security of header
 Ask Dustin if correct security schema has been chosen
 Differentiate between project with no hashes, and project missing
 Remove sql in mapper and test_mapper (e.g. using 'git_commit like :cspatttern' clause)
-Clean out staging database tables and redeploy new version of mapper
-Investigate problems with build-buildbot-configs and build-puppet - why the previous-git-mapfile does not exist
 Only push changed refs in vcs_sync rather than all (i.e. filter out non-changed ones)
 Push mappings to a branch called git_hg_mappings in each repo
 Create a repo will all mapfiles, and push to that
-Send failure email if mappings don't get published
 Retry if mappings don't get published (although will retry one min later anyway)
-Truncate email content if too many error messages in log so that email is still sent
 Email isn't sent if previous was successful but failed to either push mappings or add git notes
 
 
