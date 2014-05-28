@@ -18,12 +18,12 @@ Example commits:
     HG web: https://hg.mozilla.org/build/puppet/rev/68f1b2b9996c4e33aa57771b3478932c9fb7e161
 
 
-Routes
-======
+GET Routes
+==========
 Help: Returns a mapping pair
 GET:  /<project>/rev/<vcs_type>/<commit>
-https://api-pub-build.allizom.org/mapper/build-puppet/rev/hg/69d64a8a18e6e001eb015646a82bcdaba0e78a24
-https://api-pub-build.allizom.org/mapper/build-puppet/rev/git/68f1b2b9996c4e33aa57771b3478932c9fb7e161
+https://api-pub-build.allizom.org/mapper/build-puppet/rev/git/69d64a8a18e6e001eb015646a82bcdaba0e78a24
+https://api-pub-build.allizom.org/mapper/build-puppet/rev/hg/68f1b2b9996c4e33aa57771b3478932c9fb7e161
 
 Help: Returns full mapfile for a given project
 GET:  /<project>/mapfile/full
@@ -33,6 +33,8 @@ Help: Returns a subset of a mapfile, since a given date
 GET:  /<project>/mapfile/since/<since>
 https://api-pub-build.allizom.org/mapper/build-puppet/mapfile/since/16.05.2014%2017:02:09%20CEST
 
+POST Routes
+===========
 Help: Inserts a mappings file strictly (no duplicates allowed)
 POST: /<project>/insert
 https://api-pub-build.allizom.org/mapper/insert
@@ -42,11 +44,11 @@ POST: /<project>/insert/ignoredups
 https://api-pub-build.allizom.org/mapper/insert/ignoredups
 
 Help: Inserts an individual mapping
-GET:  /<project>/insert/<hg_changeset>/<git_commit> (switch to POST !!!!!)
+POST:  /<project>/insert/<hg_changeset>/<git_commit>
 https://api-pub-build.allizom.org/mapper/insert/69d64a8a18e6e001eb015646a82bcdaba0e78a24/68f1b2b9996c4e33aa57771b3478932c9fb7e161
 
 Help: Inserts a new project
-GET:  /<project> (switch to POST !!!!!)
+POST:  /<project>
 https://api-pub-build.allizom.org/mapper/build-puppet
 
 
@@ -82,7 +84,6 @@ Show return code in log if not 200
 Find out why some POST requests are not reaching staging mapper (and increase timeout if necessary?)
 Fix email subjects not to say "successful" if they aren't
 Move publish of mapper file into separate action(?)
-Change GETS to POSTS where necessary
 Introduce DELETEs, PUTs (?)
 Rename directory from vcs-sync to vcs_sync in Mozharness(?)
 New API method to read the full list of projects
