@@ -23,7 +23,7 @@ Routes
 Help: Returns a mapping pair
 GET:  /<project>/rev/<vcs_type>/<commit>
 https://api-pub-build.allizom.org/mapper/build-puppet/rev/hg/69d64a8a18e6e001eb015646a82bcdaba0e78a24
-https://api-pub-build.allizom.org/mappeYr/build-puppet/rev/git/68f1b2b9996c4e33aa57771b3478932c9fb7e161
+https://api-pub-build.allizom.org/mapper/build-puppet/rev/git/68f1b2b9996c4e33aa57771b3478932c9fb7e161
 
 Help: Returns full mapfile for a given project
 GET:  /<project>/mapfile/full
@@ -103,6 +103,7 @@ Create a repo will all mapfiles, and push to that
 Send failure email if mappings don't get published
 Retry if mappings don't get published (although will retry one min later anyway)
 Truncate email content if too many error messages in log so that email is still sent
+Email isn't sent if previous was successful but failed to either push mappings or add git notes
 
 
 Other fixes

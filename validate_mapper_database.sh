@@ -1,7 +1,7 @@
 #!/bin/bash
 cd "$(dirname "${0}")"
 
-ssh github-sync4.dmz.scl3.mozilla.com ls -1 /home/pmoore/vcs_sync/build/conversion/build-*/.hg/previous-git-mapfile </dev/null | while read file
+ssh github-sync4.dmz.scl3.mozilla.com ls -1 /home/pmoore/vcs_sync/build/conversion/build-*/.hg/published-to-mapper </dev/null | while read file
 do
     project="$(echo "${file}" | cut -d/ -f7)"
     scp "github-sync4.dmz.scl3.mozilla.com:${file}" "${project}.source.mapfile"
