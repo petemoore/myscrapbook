@@ -1,4 +1,4 @@
-#!/bin/bash -exvu
+#!/bin/bash -exv
 
 cd ~/fabric
 source bin/activate
