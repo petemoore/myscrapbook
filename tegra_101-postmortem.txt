@@ -1,0 +1,42 @@
+29/05/2014 20:27:28 - 29/05/2014 21:18:01 PDT
+   ran: http://buildbot-master88.srv.releng.scl3.mozilla.com:8201/builders/Android%202.2%20Armv6%20Tegra%20try%20opt%20test%20robocop-2/builds/3541
+   nasty syslog: http://buildbot-master88.srv.releng.scl3.mozilla.com:8201/builders/Android%202.2%20Armv6%20Tegra%20try%20opt%20test%20robocop-2/builds/3541/steps/reboot%20device/logs/stdio/text
+   green
+
+05/29/2014 21:20:01: DEBUG: Warning: bad syntax, perhaps a bogus '-'? See /usr/share/doc/procps-3.2.8/FAQ
+2014-05-29 21:30:14-0700 [Broker,client] I have a leftover directory 'talos-data' that is not being used by the buildmaster: you can delete it now
+
+29/05/2014 21:30:15	- 29/05/2014 21:51:35 PDT
+   ran: http://buildbot-master88.srv.releng.scl3.mozilla.com:8201/builders/Android%202.2%20Armv6%20Tegra%20try%20opt%20test%20crashtest/builds/2875
+
+   3821 2014-05-29 21:35:01 -- ###############################################################
+   3822 2014-05-29 21:35:01 -- # Starting cycle for our device (tegra-101 = 10.26.85.77) now #
+   3823 2014-05-29 21:35:01 -- ###############################################################
+   3824 2014-05-29 21:35:01 -- contacting slavealloc
+   3825 2014-05-29 21:35:01 -- buildbot pid is 18217
+   3826 2014-05-29 21:35:01 -- (heartbeat) buildbot is running
+   3827 2014-05-29 21:35:01 -- Cycle for our device (tegra-101) complete
+
+
+   3849 2014-05-29 21:55:01 -- ###############################################################
+   3850 2014-05-29 21:55:01 -- # Starting cycle for our device (tegra-101 = 10.26.85.77) now #
+   3851 2014-05-29 21:55:01 -- ###############################################################
+   3852 2014-05-29 21:55:01 -- contacting slavealloc
+   3853 2014-05-29 21:55:01 -- Buildbot is not running
+
+
+
+ 401 05/29/2014 21:55:08: INFO: Uninstalling org.mozilla.fennec...
+ 402 05/29/2014 21:55:08: INFO: Waiting for device to come back...
+ 403 05/29/2014 21:57:08: INFO: Try 1
+ 404 05/29/2014 21:57:58: INFO: devroot None
+ 405 05/29/2014 21:59:58: INFO: Try 2
+ 406 2014-05-29 22:00:01 -- *** ERROR *** failed to aquire lockfile
+ 407 05/29/2014 22:00:49: INFO: devroot None
+ 408 05/29/2014 22:02:49: INFO: Try 3
+ 409 05/29/2014 22:03:39: INFO: devroot None
+ 410 2014-05-29 22:05:01 -- *** ERROR *** failed to aquire lockfile
+ 411 05/29/2014 22:05:39: ERROR: Remote Device Error: waiting for device timed out.
+ 412 05/29/2014 22:05:39: ERROR: Remote Device Error: waiting for device timed out.
+ 413 05/29/2014 22:06:29: INFO: /builds/tegra-101/error.flg
+ 414 05/29/2014 22:06:59: INFO: verifyDevice: failing to cleanup device

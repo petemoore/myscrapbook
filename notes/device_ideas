@@ -1,0 +1,26 @@
+1) build devices.json from ssh'ing to machines, and diff results to actual devices.json
+2) check for duplicate pandas/tegras
+3) check for wrong passwords
+4) split envs up to list their devices
+5) work out which foopies are staging vs prod
+6) investigate slavealloc db and propose changes to e.g. add foopy
+7) fix python scripts to query for staging foopies instead of explicitly listing them
+8) build status web page with overview of status of all devices, which are connected where, which have problems, what error message is, etc
+9) check data in slave alloc is correct
+10) check data in inventory database is correct
+11) speed up grab_foopy_data.sh to do in parallel and not one scp session per file but per foopy
+12) test new sut agent with my fix
+
+stuff to check on foopy:
+ps -ef
+buildbot.tac
+error.flg
+disabled.flg
+twistd.log
+/builds/panda*
+/builds/tegra-*
+watcher version
+
+masters:
+twistd.log
+devices connected to it

@@ -80,7 +80,7 @@ Relengapi to have links to mapper RST docs
 Test "since" functionality
 Update wiki / readthedocs about e.g. API
 Finish blog post (and maybe convert to wiki/readthedocs) about development setup
-Fix email subjects not to say "successful" if they aren't
+Fix email subjects not to say "successful" if they aren't, and improve wording in general
 Introduce DELETEs, PUTs (?)
 Rename directory from vcs-sync to vcs_sync in Mozharness(?)
 New API method to read the full list of projects
@@ -96,9 +96,15 @@ Push mappings to a branch called git_hg_mappings in each repo
 Create a repo will all mapfiles, and push to that
 Retry if mappings don't get published (although will retry one min later anyway)
 Email isn't sent if previous was successful but failed to either push mappings or add git notes
+Sync up with johns regarding: https://github.com/Nephyrin/mozilla-git-mapfile
+See if we can sync the git-mapfile on hg side, or have hg plugin to show git commit id
+gecko-dev
+gecko-projects
+gecko-git
+l10n
+Investigate previous corruption issue
 
-
-Other fixes
+Other ToDos
 ===========
 Fix Adium alerts not to switch windows!
 Get Travis sending messages to irc #releng for mozilla failures and checkins (same as hudson)
