@@ -1,3 +1,14 @@
+Pulse Queues
+============
+cd /Users/pmoore/git/tools/buildfarm/maintenance
+./manage_masters.py -f production-masters.json -j16 -H bm83-try1 retry_dead_queue
+
+git commit for review tool: 745ae46087388ec225bd84e93aceb7503192478f
+
+
+
+
+
 Pulse troubleshooting
 =====================
 
@@ -108,3 +119,6 @@ Other ToDos
 ===========
 Fix Adium alerts not to switch windows!
 Get Travis sending messages to irc #releng for mozilla failures and checkins (same as hudson)
+Things
+Remember the milk
+Omnifocus
