@@ -37,6 +37,7 @@ function deploy {
     local WEB_HEADS=("${@}")
     cat "${REQUIREMENTS_FILE}" | ssh "${USER}@relengwebadm.private.scl3.mozilla.com" "sudo tee '/data/${CLUSTER}/src/relengapi/requirements.txt'; cd '/data/${CLUSTER}/src/relengapi/'; sudo ./update"
     for web_head in "${WEB_HEADS[@]}"; do
+        echo "Restarting apache on ${web_head}..."
         ssh relengwebadm.private.scl3.mozilla.com sudo ssh "${web_head}" apachectl graceful < /dev/null
     done
 }
@@ -66,4 +67,4 @@ if ! "${prod_deploy}" && ! "${stage_deploy}"; then
 fi
 
 "${prod_deploy}"  && deploy releng       requirements_prod.txt web{1,2}.releng.webapp.scl3.mozilla.com
-"${stage_deploy}" && deploy releng-stage requirements_staging.txt    web{1}.stage.releng.webapp.scl3.mozilla.com
+"${stage_deploy}" && deploy releng-stage requirements_staging.txt    web1.stage.releng.webapp.scl3.mozilla.com
