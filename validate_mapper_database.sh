@@ -1,11 +1,11 @@
 #!/bin/bash
 cd "$(dirname "${0}")"
 
-ssh github-sync4.dmz.scl3.mozilla.com ls -1 /home/pmoore/vcs_sync/build/conversion/build-*/.hg/published-to-mapper </dev/null | while read file
+ssh github-sync2.dmz.scl3.mozilla.com sudo find /opt/vcs2vcs/vcs_sync/build/conversion/ -mindepth 3 -maxdepth 3 -name published-to-mapper | while read file
 do
     project="$(echo "${file}" | cut -d/ -f7)"
-    scp "github-sync4.dmz.scl3.mozilla.com:${file}" "${project}.source.mapfile"
-    curl -s "https://api-pub-build.allizom.org/mapper/${project}/mapfile/full" > "${project}.mapper.mapfile"
+    ssh "github-sync2.dmz.scl3.mozilla.com" sudo cat "${file}" > "${project}.source.mapfile" < /dev/null
+    curl -s "https://api.pub.build.mozilla.org/mapper/${project}/mapfile/full" > "${project}.mapper.mapfile"
     md5 "${project}.source.mapfile" "${project}.mapper.mapfile"
     diff "${project}.source.mapfile" "${project}.mapper.mapfile"
 done

@@ -1,5 +1,7 @@
 *.log
 requirements_prod.txt
 requirements_staging.txt
+settings_prod.py
+settings_staging.py
 *.source.mapfile
 *.mapper.mapfile

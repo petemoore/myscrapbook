@@ -5,11 +5,13 @@ function usage {
     echo
     echo "This script can be used to deploy relengapi into staging and production. First retrieve"
     echo "the current deployment configuration using:"
-    echo "    '$(pwd)/relengapi_get_requirements.sh'"
+    echo "    '$(pwd)/relengapi_get_config.sh'"
     echo
     echo "This will download the following files, which you are then free to modify/edit:"
     echo "    * $(pwd)/requirements_staging.txt"
+    echo "    * $(pwd)/settings_staging.py"
     echo "    * $(pwd)/requirements_prod.txt"
+    echo "    * $(pwd)/settings_prod.py"
     echo
     echo "After you have finished modifying them, you can deploy your changes, by running this"
     echo "script."
@@ -33,9 +35,16 @@ function usage {
 function deploy {
     local CLUSTER="${1}"
     local REQUIREMENTS_FILE="${2}"
-    shift 2
+    local SETTINGS_FILE="${3}"
+    shift 3
     local WEB_HEADS=("${@}")
-    cat "${REQUIREMENTS_FILE}" | ssh "${USER}@relengwebadm.private.scl3.mozilla.com" "sudo tee '/data/${CLUSTER}/src/relengapi/requirements.txt'; cd '/data/${CLUSTER}/src/relengapi/'; sudo ./update"
+    for file in "${REQUIREMENTS_FILE}" "${SETTINGS_FILE}"
+    do
+        echo "Uploading ${file}"
+        echo "==========${file//?/=}"
+        cat "${file}" | ssh "${USER}@relengwebadm.private.scl3.mozilla.com" "sudo tee '/data/${CLUSTER}/src/relengapi/${file}'"
+    done
+    ssh "${USER}@relengwebadm.private.scl3.mozilla.com" "cd '/data/${CLUSTER}/src/relengapi/'; sudo ./update"
     for web_head in "${WEB_HEADS[@]}"; do
         echo "Restarting apache on ${web_head}..."
         ssh relengwebadm.private.scl3.mozilla.com sudo ssh "${web_head}" apachectl graceful < /dev/null
@@ -66,5 +75,5 @@ if ! "${prod_deploy}" && ! "${stage_deploy}"; then
     exit 64
 fi
 
-"${prod_deploy}"  && deploy releng       requirements_prod.txt web{1,2}.releng.webapp.scl3.mozilla.com
-"${stage_deploy}" && deploy releng-stage requirements_staging.txt    web1.stage.releng.webapp.scl3.mozilla.com
+"${prod_deploy}"  && deploy releng       requirements_prod.txt    settings_prod.py    web{1,2}.releng.webapp.scl3.mozilla.com
+"${stage_deploy}" && deploy releng-stage requirements_staging.txt settings_staging.py web1.stage.releng.webapp.scl3.mozilla.com
