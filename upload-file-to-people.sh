@@ -6,7 +6,7 @@ else
     image="${1}"
 fi
 
-if [ ! -s "${image}" ]; then
+if ([ ! -f "${image}" ] && [ ! -h "${image}" ]) || [ ! -s "${image}" ] || [ ! -r "${image}" ]; then
     echo "ERROR: File '${image}' is not a file with more than 0 bytes of data, (working dir is '$(pwd)')." >&2
     exit 64
 fi
