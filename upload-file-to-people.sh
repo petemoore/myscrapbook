@@ -15,6 +15,7 @@ image_name="$(basename "${image}")"
 escaped_image_name="$(python -c "import urllib; print urllib.quote('${image_name}');")"
 
 ssh people.mozilla.org "rm -f 'public_html/${image_name}'"
-scp "${image}" "people.mozilla.org:'public_html/${image_name}'"
+scp -q "${image}" "people.mozilla.org:'public_html/${image_name}'"
 ssh people.mozilla.org "chmod a+r 'public_html/${image_name}'"
 echo "http://people.mozilla.org/~pmoore/${escaped_image_name}" | pbcopy
+echo "http://people.mozilla.org/~pmoore/${escaped_image_name}  # this has already been copied to your OS X clipboard"
