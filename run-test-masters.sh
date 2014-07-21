@@ -16,6 +16,7 @@ export PYTHONPATH="${buildbot_test_dir}:${buildbot_test_dir}/tools/lib/python"
 cd buildbot-configs
 curl 'https://bug1030753.bugzilla.mozilla.org/attachment.cgi?id=8458253' | patch -p1 -i -
 ln -f -s "${buildbot_test_dir}/buildbot-configs/mozilla-tests/production_config.py" "${buildbot_test_dir}/localconfig.py"
+source "${buildbot_test_dir}/bin/activate"
 ./test-masters.sh
 cd ..
 python buildbot-configs/mozilla-tests/mobile_config.py > after
