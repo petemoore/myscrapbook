@@ -13,7 +13,5 @@ export PATH='/builds/buildbot/pmoore/test1/bin:/usr/local/bin:/bin:/usr/bin:/usr
 export PYTHONPATH='/builds/buildbot/pmoore/test1:/builds/buildbot/pmoore/test1/tools/lib/python'
 
 cd buildbot-configs
-curl 'https://bug1030753.bugzilla.mozilla.org/attachment.cgi?id=8458253' > patch
-hg import patch
-rm patch
+curl 'https://bug1030753.bugzilla.mozilla.org/attachment.cgi?id=8458253' | patch -p1 -i -
 ./test-masters.sh
