@@ -14,4 +14,15 @@ export PYTHONPATH="/builds/buildbot/$(whoami)/test1:/builds/buildbot/$(whoami)/t
 
 cd buildbot-configs
 curl 'https://bug1030753.bugzilla.mozilla.org/attachment.cgi?id=8458253' | patch -p1 -i -
-./test-masters.sh
+# ./test-masters.sh
+cd ..
+ln -f -s buildbot-configs/mozilla-tests/production_config.py localconfig.py
+python buildbot-configs/mozilla-tests/mobile_config.py > after
+cd buildbot-configs
+curl 'https://bug1030753.bugzilla.mozilla.org/attachment.cgi?id=8458253' | patch -p1 -R -i -
+find . -name '*.pyc' | xargs rm
+cd ..
+python buildbot-configs/mozilla-tests/mobile_config.py > before
+echo
+echo "Results"
+diff before after
