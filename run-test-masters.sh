@@ -10,7 +10,7 @@ rm -rf buildbotcustom
 hg clone 'https://hg.mozilla.org/build/buildbotcustom'
 
 export PATH="/builds/buildbot/$(whoami)/test1/bin:/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin"
-export PYTHONPATH="/builds/buildbot/$(whoami)/test1:/builds/buildbot/$(whoami)/test1/tools/lib/python:/builds/buildbot/$(whoami)/test1/master"
+export PYTHONPATH="/builds/buildbot/$(whoami)/test1:/builds/buildbot/$(whoami)/test1/tools/lib/python"
 
 ln -f -s buildbot-configs/mozilla-tests/production_config.py localconfig.py
 cd buildbot-configs
