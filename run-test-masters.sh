@@ -10,13 +10,13 @@ rm -rf buildbotcustom
 hg clone 'https://hg.mozilla.org/build/buildbotcustom'
 
 export PATH="/builds/buildbot/$(whoami)/test1/bin:/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin"
-export PYTHONPATH="/builds/buildbot/$(whoami)/test1:/builds/buildbot/$(whoami)/test1/tools/lib/python"
+export PYTHONPATH="/builds/buildbot/$(whoami)/test1:/builds/buildbot/$(whoami)/test1/tools/lib/python:/builds/buildbot/$(whoami)/test1/master"
 
+ln -f -s buildbot-configs/mozilla-tests/production_config.py localconfig.py
 cd buildbot-configs
 curl 'https://bug1030753.bugzilla.mozilla.org/attachment.cgi?id=8458253' | patch -p1 -i -
 ./test-masters.sh
 cd ..
-ln -f -s buildbot-configs/mozilla-tests/production_config.py localconfig.py
 python buildbot-configs/mozilla-tests/mobile_config.py > after
 cd buildbot-configs
 curl 'https://bug1030753.bugzilla.mozilla.org/attachment.cgi?id=8458253' | patch -p1 -R -i -
