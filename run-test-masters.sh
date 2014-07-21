@@ -23,6 +23,5 @@ curl 'https://bug1030753.bugzilla.mozilla.org/attachment.cgi?id=8458253' | patch
 find . -name '*.pyc' | xargs rm
 cd ..
 python buildbot-configs/mozilla-tests/mobile_config.py > before
-echo
-echo "Results"
-diff before after
+diff -y -d -W 236 before after > ~/diff-results
+view ~/diff-results
