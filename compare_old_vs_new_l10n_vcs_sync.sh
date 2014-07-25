@@ -9,9 +9,9 @@ do
     prod_url="ssh://gitolite3@git.mozilla.org/releases/l10n/${locale}/${project}.git"
     echo "Comparing ${locale} ${project}"
     echo "==========${locale}=${project}" | sed 's/./=/g'
-    git ls-remote "${staging_url}" 2>/dev/null | grep -v 'refs/notes/commits' > staging
+    git ls-remote "${staging_url}" 2>/dev/null | grep -v 'refs/notes/commits' | sort > staging
     [ ! -s staging ] && echo "ERROR: Staging repo could not be queried: https://github.com/petermoore/l10n-${locale}-${project}"
-    git ls-remote "${prod_url}" > prod
-    diff staging prod
+    git ls-remote "${prod_url}" | sort > prod
+    diff -y -W 200 staging prod
     echo
 done < all_l10n_git_repos
