@@ -1,0 +1,764 @@
+Comparing af gaia
+=================
+7a2d8f78afdfc4344e3069f5ef3f11bc21e8bfcb        HEAD                                                  7a2d8f78afdfc4344e3069f5ef3f11bc21e8bfcb        HEAD
+7a2d8f78afdfc4344e3069f5ef3f11bc21e8bfcb        refs/heads/master                                     7a2d8f78afdfc4344e3069f5ef3f11bc21e8bfcb        refs/heads/master
+7a2d8f78afdfc4344e3069f5ef3f11bc21e8bfcb        refs/heads/v2.0                                       7a2d8f78afdfc4344e3069f5ef3f11bc21e8bfcb        refs/heads/v2.0
+
+Comparing ar gaia
+=================
+a607b89c1cfd78756dd2f40b853b2633b89cfe06        HEAD                                                  a607b89c1cfd78756dd2f40b853b2633b89cfe06        HEAD
+                                                                                                   >  a607b89c1cfd78756dd2f40b853b2633b89cfe06        refs/heads/default
+a607b89c1cfd78756dd2f40b853b2633b89cfe06        refs/heads/master                                     a607b89c1cfd78756dd2f40b853b2633b89cfe06        refs/heads/master
+                                                                                                   >  0aa11018b321749dc8f7d5853bcd44992db65778        refs/heads/v1.0.1
+                                                                                                   >  4b5aea54b307ac05f9c7583a01d01b07df781e75        refs/heads/v1.1
+623541ac7190a04bface274ab5926dfbe2e3815c        refs/heads/v1.2                                       623541ac7190a04bface274ab5926dfbe2e3815c        refs/heads/v1.2
+f98879be7f1252f575a7bffd29b76ece18433659        refs/heads/v1.3                                       f98879be7f1252f575a7bffd29b76ece18433659        refs/heads/v1.3
+4d62cd8d928505d18fbfb0678f209f8cb3f3411b        refs/heads/v1.4                                       4d62cd8d928505d18fbfb0678f209f8cb3f3411b        refs/heads/v1.4
+a607b89c1cfd78756dd2f40b853b2633b89cfe06        refs/heads/v2.0                                       a607b89c1cfd78756dd2f40b853b2633b89cfe06        refs/heads/v2.0
+a18fba2b780813a3692e57feeabf9bd1924444a8        refs/tags/B2G_1_0_0_20130125190500                    a18fba2b780813a3692e57feeabf9bd1924444a8        refs/tags/B2G_1_0_0_20130125190500
+
+Comparing as gaia
+=================
+f1a41d6f8dec4f8b584cb2d06e7018d93b5565a6        HEAD                                                  f1a41d6f8dec4f8b584cb2d06e7018d93b5565a6        HEAD
+                                                                                                   >  f1a41d6f8dec4f8b584cb2d06e7018d93b5565a6        refs/heads/default
+f1a41d6f8dec4f8b584cb2d06e7018d93b5565a6        refs/heads/master                                     f1a41d6f8dec4f8b584cb2d06e7018d93b5565a6        refs/heads/master
+030405061f347a294288ff42dfac3ce24c49b2a9        refs/heads/v1.4                                       030405061f347a294288ff42dfac3ce24c49b2a9        refs/heads/v1.4
+f1a41d6f8dec4f8b584cb2d06e7018d93b5565a6        refs/heads/v2.0                                       f1a41d6f8dec4f8b584cb2d06e7018d93b5565a6        refs/heads/v2.0
+
+Comparing ast gaia
+==================
+513cf16d9a9eb7fe0810cc05285a1d1fb3771cb2        HEAD                                                  513cf16d9a9eb7fe0810cc05285a1d1fb3771cb2        HEAD
+                                                                                                   >  513cf16d9a9eb7fe0810cc05285a1d1fb3771cb2        refs/heads/default
+513cf16d9a9eb7fe0810cc05285a1d1fb3771cb2        refs/heads/master                                     513cf16d9a9eb7fe0810cc05285a1d1fb3771cb2        refs/heads/master
+513cf16d9a9eb7fe0810cc05285a1d1fb3771cb2        refs/heads/v1.4                                       513cf16d9a9eb7fe0810cc05285a1d1fb3771cb2        refs/heads/v1.4
+513cf16d9a9eb7fe0810cc05285a1d1fb3771cb2        refs/heads/v2.0                                       513cf16d9a9eb7fe0810cc05285a1d1fb3771cb2        refs/heads/v2.0
+
+Comparing be gaia
+=================
+0edd62d4c681184953a26f61cc340124bab28c06        HEAD                                                  0edd62d4c681184953a26f61cc340124bab28c06        HEAD
+                                                                                                   >  0edd62d4c681184953a26f61cc340124bab28c06        refs/heads/default
+0edd62d4c681184953a26f61cc340124bab28c06        refs/heads/master                                     0edd62d4c681184953a26f61cc340124bab28c06        refs/heads/master
+0edd62d4c681184953a26f61cc340124bab28c06        refs/heads/v1.4                                    <
+0edd62d4c681184953a26f61cc340124bab28c06        refs/heads/v2.0                                       0edd62d4c681184953a26f61cc340124bab28c06        refs/heads/v2.0
+
+Comparing bg gaia
+=================
+0e2c9a2ba3b8fc020a7fd2da896ed14531f5ca56        HEAD                                                  0e2c9a2ba3b8fc020a7fd2da896ed14531f5ca56        HEAD
+                                                                                                   >  0cde641c61c288dcea9aa5286cd710f7ffcec658        refs/heads/default
+0e2c9a2ba3b8fc020a7fd2da896ed14531f5ca56        refs/heads/master                                     0e2c9a2ba3b8fc020a7fd2da896ed14531f5ca56        refs/heads/master
+d1a347b26a113b34592fb98c03c05bd0fd4898a6        refs/heads/v1.2                                       d1a347b26a113b34592fb98c03c05bd0fd4898a6        refs/heads/v1.2
+0cde641c61c288dcea9aa5286cd710f7ffcec658        refs/heads/v1.3                                       0cde641c61c288dcea9aa5286cd710f7ffcec658        refs/heads/v1.3
+0e2c9a2ba3b8fc020a7fd2da896ed14531f5ca56        refs/heads/v1.4                                       0e2c9a2ba3b8fc020a7fd2da896ed14531f5ca56        refs/heads/v1.4
+0e2c9a2ba3b8fc020a7fd2da896ed14531f5ca56        refs/heads/v2.0                                       0e2c9a2ba3b8fc020a7fd2da896ed14531f5ca56        refs/heads/v2.0
+
+Comparing bn-BD gaia
+====================
+d2006deab73dc8040a9ed88696e1d3d33f5cde4d        HEAD                                                  d2006deab73dc8040a9ed88696e1d3d33f5cde4d        HEAD
+                                                                                                   >  d2006deab73dc8040a9ed88696e1d3d33f5cde4d        refs/heads/default
+d2006deab73dc8040a9ed88696e1d3d33f5cde4d        refs/heads/master                                     d2006deab73dc8040a9ed88696e1d3d33f5cde4d        refs/heads/master
+cde00080026ee93f4b216c38e1ce4953f273b0b8        refs/heads/v1.2                                       cde00080026ee93f4b216c38e1ce4953f273b0b8        refs/heads/v1.2
+3e02d704eec2cc26d7756cd96105d10b1e300420        refs/heads/v1.3                                       3e02d704eec2cc26d7756cd96105d10b1e300420        refs/heads/v1.3
+af5cf51d1e8a7893963852ee22bdbd0ab95df677        refs/heads/v1.4                                       af5cf51d1e8a7893963852ee22bdbd0ab95df677        refs/heads/v1.4
+d2006deab73dc8040a9ed88696e1d3d33f5cde4d        refs/heads/v2.0                                       d2006deab73dc8040a9ed88696e1d3d33f5cde4d        refs/heads/v2.0
+
+Comparing bn-IN gaia
+====================
+b254739fff0d242e98601634312470bc9e0008ad        HEAD                                                  b254739fff0d242e98601634312470bc9e0008ad        HEAD
+                                                                                                   >  7d087dc5b2bb556726536b49af87110ba5f4f05e        refs/heads/default
+b254739fff0d242e98601634312470bc9e0008ad        refs/heads/master                                     b254739fff0d242e98601634312470bc9e0008ad        refs/heads/master
+3798d7cd1953d26a2b56884b8d7c11783319761e        refs/heads/v1.4                                       3798d7cd1953d26a2b56884b8d7c11783319761e        refs/heads/v1.4
+b254739fff0d242e98601634312470bc9e0008ad        refs/heads/v2.0                                       b254739fff0d242e98601634312470bc9e0008ad        refs/heads/v2.0
+
+Comparing bs gaia
+=================
+121d4ebeb5afedcc20d10d1e23e877467e82c4ee        HEAD                                                  121d4ebeb5afedcc20d10d1e23e877467e82c4ee        HEAD
+                                                                                                   >  121d4ebeb5afedcc20d10d1e23e877467e82c4ee        refs/heads/default
+121d4ebeb5afedcc20d10d1e23e877467e82c4ee        refs/heads/master                                     121d4ebeb5afedcc20d10d1e23e877467e82c4ee        refs/heads/master
+121d4ebeb5afedcc20d10d1e23e877467e82c4ee        refs/heads/v1.4                                       121d4ebeb5afedcc20d10d1e23e877467e82c4ee        refs/heads/v1.4
+121d4ebeb5afedcc20d10d1e23e877467e82c4ee        refs/heads/v2.0                                       121d4ebeb5afedcc20d10d1e23e877467e82c4ee        refs/heads/v2.0
+
+Comparing ca gaia
+=================
+2e3fc44ab0fce1606998ae0a2a803853ec0a1603        HEAD                                                  2e3fc44ab0fce1606998ae0a2a803853ec0a1603        HEAD
+                                                                                                   >  2e3fc44ab0fce1606998ae0a2a803853ec0a1603        refs/heads/default
+2e3fc44ab0fce1606998ae0a2a803853ec0a1603        refs/heads/master                                     2e3fc44ab0fce1606998ae0a2a803853ec0a1603        refs/heads/master
+                                                                                                   >  34cf63e1492687d46448efeb83d7051ae05bdb6f        refs/heads/v1.1
+620ce39241d7ecb66640f2583b9d8490b7056b59        refs/heads/v1.2                                       620ce39241d7ecb66640f2583b9d8490b7056b59        refs/heads/v1.2
+3e04ef4c5943fda07ece83966b24a1e871ab3973        refs/heads/v1.3                                       3e04ef4c5943fda07ece83966b24a1e871ab3973        refs/heads/v1.3
+963876723bd411ee6a3fd92eb819127dc6ef769e        refs/heads/v1.4                                       963876723bd411ee6a3fd92eb819127dc6ef769e        refs/heads/v1.4
+2e3fc44ab0fce1606998ae0a2a803853ec0a1603        refs/heads/v2.0                                       2e3fc44ab0fce1606998ae0a2a803853ec0a1603        refs/heads/v2.0
+
+Comparing ca gecko
+==================
+ERROR: Staging repo could not be queried: https://github.com/petermoore/l10n-ca-gecko
+                                                                                                   >  3d2c08b6dba1569a1f3aee3112a964cc9d80383c        refs/heads/mozilla-beta
+
+Comparing cs gaia
+=================
+c95cf1f60ffe52e5f32034582ecbfbc16f98be62        HEAD                                                  c95cf1f60ffe52e5f32034582ecbfbc16f98be62        HEAD
+                                                                                                   >  253913f22339b9b4bf54d0b2fe50d2a6ac86e9e0        refs/heads/default
+c95cf1f60ffe52e5f32034582ecbfbc16f98be62        refs/heads/master                                     c95cf1f60ffe52e5f32034582ecbfbc16f98be62        refs/heads/master
+                                                                                                   >  203528bddacd5bcae2881f6803142cfd49754c95        refs/heads/v1.0.1
+                                                                                                   >  818b45891935244d81402c5446e982232ea16e42        refs/heads/v1.1
+eb0aea029b9b84db972bc3127d3c8180cb83deca        refs/heads/v1.2                                       eb0aea029b9b84db972bc3127d3c8180cb83deca        refs/heads/v1.2
+a9a4f236e06fad531e416de233a93fd2867a3191        refs/heads/v1.3                                       a9a4f236e06fad531e416de233a93fd2867a3191        refs/heads/v1.3
+070a9d5f3d6b2e55eaee621492029e07d34d1f7c        refs/heads/v1.4                                       070a9d5f3d6b2e55eaee621492029e07d34d1f7c        refs/heads/v1.4
+c95cf1f60ffe52e5f32034582ecbfbc16f98be62        refs/heads/v2.0                                       c95cf1f60ffe52e5f32034582ecbfbc16f98be62        refs/heads/v2.0
+
+Comparing cs gecko
+==================
+ERROR: Staging repo could not be queried: https://github.com/petermoore/l10n-cs-gecko
+                                                                                                   >  47c1255b7d2840e339b4ef3e0eef903f60206827        refs/heads/mozilla-beta
+
+Comparing cy gaia
+=================
+fb7a1cf89d0f4cf17e261d13c08890ed0655ac2e        HEAD                                                  fb7a1cf89d0f4cf17e261d13c08890ed0655ac2e        HEAD
+                                                                                                   >  7c18578e53dcef22cbda4913b0c6aafec89cd914        refs/heads/default
+fb7a1cf89d0f4cf17e261d13c08890ed0655ac2e        refs/heads/master                                     fb7a1cf89d0f4cf17e261d13c08890ed0655ac2e        refs/heads/master
+437a00b7ea7d57423be73589ed241a6e40cfe0bb        refs/heads/v1.4                                       437a00b7ea7d57423be73589ed241a6e40cfe0bb        refs/heads/v1.4
+fb7a1cf89d0f4cf17e261d13c08890ed0655ac2e        refs/heads/v2.0                                       fb7a1cf89d0f4cf17e261d13c08890ed0655ac2e        refs/heads/v2.0
+
+Comparing da gaia
+=================
+ec00e29244bf6a39b1f76faa68564e0a520615ec        HEAD                                                  ec00e29244bf6a39b1f76faa68564e0a520615ec        HEAD
+                                                                                                   >  61eba56e4b01a3645727dfb899471767ac56bf0a        refs/heads/default
+ec00e29244bf6a39b1f76faa68564e0a520615ec        refs/heads/master                                     ec00e29244bf6a39b1f76faa68564e0a520615ec        refs/heads/master
+                                                                                                   >  167e19fee77f0af7f1522c2f14846642c211fd24        refs/heads/scootergrisen/browserproperties-edited-
+                                                                                                   >  f6518412f4b902ef3aa073461ff7ba523db94588        refs/heads/scootergrisen/costcontrolproperties-edi
+                                                                                                   >  41983435c5d238fc76f3624c8e31ac81854629f4        refs/heads/scootergrisen/costcontrolproperties-edi
+                                                                                                   >  4395afcdb53cf2526ce87c4446467911dbc9126a        refs/heads/scootergrisen/settingsproperties-edited
+1c1c0c4793a35dbbf2b51f353c4b250b204d807e        refs/heads/v1.4                                       1c1c0c4793a35dbbf2b51f353c4b250b204d807e        refs/heads/v1.4
+ec00e29244bf6a39b1f76faa68564e0a520615ec        refs/heads/v2.0                                       ec00e29244bf6a39b1f76faa68564e0a520615ec        refs/heads/v2.0
+
+Comparing de gaia
+=================
+bdbb673ce8e8073ec496182dd426efdfb2a7b3f5        HEAD                                                  bdbb673ce8e8073ec496182dd426efdfb2a7b3f5        HEAD
+                                                                                                   >  0d280e63de0dd3a51baf29a6ea4d4b5602b3c7f6        refs/heads/default
+bdbb673ce8e8073ec496182dd426efdfb2a7b3f5        refs/heads/master                                     bdbb673ce8e8073ec496182dd426efdfb2a7b3f5        refs/heads/master
+                                                                                                   >  88f0fc3e116646533f1fe243182e2bcec94331f5        refs/heads/v1.0.1
+                                                                                                   >  738633c2a5b1fa2541bb0294b7fd1d5203110698        refs/heads/v1.1
+4bd199e1fe3e3c4561614daa5fb681ceedec678d        refs/heads/v1.2                                       4bd199e1fe3e3c4561614daa5fb681ceedec678d        refs/heads/v1.2
+a9c106492b7679768379dadec2838c7a63de7bdb        refs/heads/v1.3                                       a9c106492b7679768379dadec2838c7a63de7bdb        refs/heads/v1.3
+e9535f29263d14e6820bf319643a5a1ba9af8e7b        refs/heads/v1.4                                       e9535f29263d14e6820bf319643a5a1ba9af8e7b        refs/heads/v1.4
+bdbb673ce8e8073ec496182dd426efdfb2a7b3f5        refs/heads/v2.0                                    |  19e33e546dc108373284290d4d3943f605876fe1        refs/heads/v2.0
+
+Comparing de gecko
+==================
+ERROR: Staging repo could not be queried: https://github.com/petermoore/l10n-de-gecko
+                                                                                                   >  9da77f2a9bb103cbb68c8f68405081faa73fc786        refs/heads/mozilla-beta
+
+Comparing el gaia
+=================
+bdfa4171312f9724bb3e51e7cfc1558ad4ad47eb        HEAD                                                  bdfa4171312f9724bb3e51e7cfc1558ad4ad47eb        HEAD
+                                                                                                   >  bdfa4171312f9724bb3e51e7cfc1558ad4ad47eb        refs/heads/default
+bdfa4171312f9724bb3e51e7cfc1558ad4ad47eb        refs/heads/master                                     bdfa4171312f9724bb3e51e7cfc1558ad4ad47eb        refs/heads/master
+                                                                                                   >  7d5d025bc22e17de651d84f16d015254bb6ce2ef        refs/heads/v1.0.1
+                                                                                                   >  f48007b80c88dd3d01e13ade2054a544bce55869        refs/heads/v1.1
+e82f72effd11ac3133b2077bcccadb11bc64c8de        refs/heads/v1.2                                       e82f72effd11ac3133b2077bcccadb11bc64c8de        refs/heads/v1.2
+8d2578c751c9ed0bf00d3b0ca1e4d9f76c4cf131        refs/heads/v1.3                                       8d2578c751c9ed0bf00d3b0ca1e4d9f76c4cf131        refs/heads/v1.3
+8d6b2114b0b0a04e43921b8c26088c9ac7869826        refs/heads/v1.4                                       8d6b2114b0b0a04e43921b8c26088c9ac7869826        refs/heads/v1.4
+bdfa4171312f9724bb3e51e7cfc1558ad4ad47eb        refs/heads/v2.0                                       bdfa4171312f9724bb3e51e7cfc1558ad4ad47eb        refs/heads/v2.0
+                                                                                                   >  eadceea64682e136914769a7423f2154608602ef        refs/tags/v1.1
+
+Comparing el gecko
+==================
+ERROR: Staging repo could not be queried: https://github.com/petermoore/l10n-el-gecko
+                                                                                                   >  32e94c3848d3061069a4422cc46f4970fe1a7979        refs/heads/mozilla-beta
+
+Comparing en-GB gaia
+====================
+f671146a52a87cd24a17457feaba01e90a0daf43        HEAD                                                  f671146a52a87cd24a17457feaba01e90a0daf43        HEAD
+                                                                                                   >  f671146a52a87cd24a17457feaba01e90a0daf43        refs/heads/default
+f671146a52a87cd24a17457feaba01e90a0daf43        refs/heads/master                                     f671146a52a87cd24a17457feaba01e90a0daf43        refs/heads/master
+                                                                                                   >  f671146a52a87cd24a17457feaba01e90a0daf43        refs/heads/v1.4
+f671146a52a87cd24a17457feaba01e90a0daf43        refs/heads/v2.0                                       f671146a52a87cd24a17457feaba01e90a0daf43        refs/heads/v2.0
+
+Comparing en-US gaia
+====================
+c25d13b3db4848aeae41f8da4e0671f56bfc1350        HEAD                                                  c25d13b3db4848aeae41f8da4e0671f56bfc1350        HEAD
+                                                                                                   >  68a19688b58f2771268b4204a984135cf41731eb        refs/heads/default
+c25d13b3db4848aeae41f8da4e0671f56bfc1350        refs/heads/master                                     c25d13b3db4848aeae41f8da4e0671f56bfc1350        refs/heads/master
+                                                                                                   >  e8b0ae7f5ee6836698ffb73163c9dd7d03b7179d        refs/heads/v1.0.1
+                                                                                                   >  88093713e205aa06dfa473bbe0c85cf526b4c43e        refs/heads/v1.1
+667acee064572896fd5a7c65909b7f095f0f4379        refs/heads/v1.2                                       667acee064572896fd5a7c65909b7f095f0f4379        refs/heads/v1.2
+62aa3118762e7f7ad501961dcce52d119f84d1f3        refs/heads/v1.3                                       62aa3118762e7f7ad501961dcce52d119f84d1f3        refs/heads/v1.3
+4d3024161b75b3b709836e0d356cf001367d8020        refs/heads/v1.4                                       4d3024161b75b3b709836e0d356cf001367d8020        refs/heads/v1.4
+c25d13b3db4848aeae41f8da4e0671f56bfc1350        refs/heads/v2.0                                       c25d13b3db4848aeae41f8da4e0671f56bfc1350        refs/heads/v2.0
+                                                                                                   >  e2c171979c736469f3559dfac14fb6a96d531896        refs/tags/B2G_1_0_0_20130125190500
+
+Comparing eo gaia
+=================
+c8386b93b75f2bbf097ba72bb610cd6388ad2706        HEAD                                                  c8386b93b75f2bbf097ba72bb610cd6388ad2706        HEAD
+                                                                                                   >  4647fd83ad3aeb08a4098ab4a83cb71d1fb456ca        refs/heads/default
+c8386b93b75f2bbf097ba72bb610cd6388ad2706        refs/heads/master                                     c8386b93b75f2bbf097ba72bb610cd6388ad2706        refs/heads/master
+fade203bdf0465122fef6186e2d1d318f875db7d        refs/heads/v1.4                                       fade203bdf0465122fef6186e2d1d318f875db7d        refs/heads/v1.4
+                                                                                                   >  c4fafd8a302c44034ca11865a6a74dd28e21a6d3        refs/heads/v1_2
+                                                                                                   >  8cedf7a0ac33e0bfec2c2d46634cf0a69d003141        refs/heads/v1_3
+c8386b93b75f2bbf097ba72bb610cd6388ad2706        refs/heads/v2.0                                       c8386b93b75f2bbf097ba72bb610cd6388ad2706        refs/heads/v2.0
+
+Comparing es gaia
+=================
+2d4feca354b7ead7f583633fca16fdc73cb85ed0        HEAD                                                  2d4feca354b7ead7f583633fca16fdc73cb85ed0        HEAD
+                                                                                                   >  2d4feca354b7ead7f583633fca16fdc73cb85ed0        refs/heads/default
+2d4feca354b7ead7f583633fca16fdc73cb85ed0        refs/heads/master                                     2d4feca354b7ead7f583633fca16fdc73cb85ed0        refs/heads/master
+                                                                                                   >  ed37125adaaeea0dc6731689fd708e1789984acd        refs/heads/v1.0.1
+                                                                                                   >  e6f0277c87336de7e741b7c92d69aa67479f49c6        refs/heads/v1.1
+5211b0e9035456fb881ff771cfecaa8951b7d721        refs/heads/v1.2                                       5211b0e9035456fb881ff771cfecaa8951b7d721        refs/heads/v1.2
+de7844edbaf8e1b28a2b7f7b19f29376a176b7ae        refs/heads/v1.3                                       de7844edbaf8e1b28a2b7f7b19f29376a176b7ae        refs/heads/v1.3
+35a52cc85a48db0a56bbcd339789bbc594b06bc6        refs/heads/v1.4                                       35a52cc85a48db0a56bbcd339789bbc594b06bc6        refs/heads/v1.4
+2d4feca354b7ead7f583633fca16fdc73cb85ed0        refs/heads/v2.0                                    |  e5c362a755931a4103b2166b596b55d336bbeb9e        refs/heads/v2.0
+                                                                                                   >  9f9dfb79a3d180b9ccbda705b6177bcac79415eb        refs/tags/B2G_1_0_0_20130125190500
+
+Comparing es-ES gecko
+=====================
+2826c01c57a7f2351a0ca9e2f3c469e45aaf442f        HEAD                                               |  0576b4d538225896288f88cf2585159fc48c6d35        refs/heads/mozilla-beta
+2826c01c57a7f2351a0ca9e2f3c469e45aaf442f        refs/heads/v1.4                                    |  e3135ecde2d31e9159dfe3a8c014e5a556b90dd6        refs/heads/v1.2
+2826c01c57a7f2351a0ca9e2f3c469e45aaf442f        refs/heads/v2.0                                    |  97e8c95c25f7fd9c43b907d354fec189bf84b68d        refs/heads/v1.3
+97e8c95c25f7fd9c43b907d354fec189bf84b68d        refs/heads/v2.1                                    <
+
+Comparing et gaia
+=================
+a393058e761b1d963be1b2acaf619ce1ec438175        HEAD                                                  a393058e761b1d963be1b2acaf619ce1ec438175        HEAD
+                                                                                                   >  a393058e761b1d963be1b2acaf619ce1ec438175        refs/heads/default
+a393058e761b1d963be1b2acaf619ce1ec438175        refs/heads/master                                     a393058e761b1d963be1b2acaf619ce1ec438175        refs/heads/master
+a393058e761b1d963be1b2acaf619ce1ec438175        refs/heads/v1.4                                       a393058e761b1d963be1b2acaf619ce1ec438175        refs/heads/v1.4
+a393058e761b1d963be1b2acaf619ce1ec438175        refs/heads/v2.0                                       a393058e761b1d963be1b2acaf619ce1ec438175        refs/heads/v2.0
+
+Comparing eu gaia
+=================
+3ab2c260b5b101e6cb5b24526f4feb04bd163eca        HEAD                                                  3ab2c260b5b101e6cb5b24526f4feb04bd163eca        HEAD
+                                                                                                   >  9e53220a5e64d743b12c75efacb7b0380067de88        refs/heads/default
+3ab2c260b5b101e6cb5b24526f4feb04bd163eca        refs/heads/master                                     3ab2c260b5b101e6cb5b24526f4feb04bd163eca        refs/heads/master
+686486fc5ea074b7a13acadd83263c8e4b4236ba        refs/heads/v1.4                                       686486fc5ea074b7a13acadd83263c8e4b4236ba        refs/heads/v1.4
+3ab2c260b5b101e6cb5b24526f4feb04bd163eca        refs/heads/v2.0                                       3ab2c260b5b101e6cb5b24526f4feb04bd163eca        refs/heads/v2.0
+
+Comparing fa gaia
+=================
+ERROR: Staging repo could not be queried: https://github.com/petermoore/l10n-fa-gaia
+
+Comparing ff gaia
+=================
+0397932519f44d3f8cbeb61be0b25e8f9aa6581e        HEAD                                                  0397932519f44d3f8cbeb61be0b25e8f9aa6581e        HEAD
+                                                                                                   >  0397932519f44d3f8cbeb61be0b25e8f9aa6581e        refs/heads/default
+0397932519f44d3f8cbeb61be0b25e8f9aa6581e        refs/heads/master                                     0397932519f44d3f8cbeb61be0b25e8f9aa6581e        refs/heads/master
+c4c31ad4e343f96f7527c5746142a2c0b7969e06        refs/heads/v1.4                                       c4c31ad4e343f96f7527c5746142a2c0b7969e06        refs/heads/v1.4
+0397932519f44d3f8cbeb61be0b25e8f9aa6581e        refs/heads/v2.0                                       0397932519f44d3f8cbeb61be0b25e8f9aa6581e        refs/heads/v2.0
+
+Comparing fr gaia
+=================
+257c9bade117cc78f626b35b0a08f9ff8ca84d61        HEAD                                                  257c9bade117cc78f626b35b0a08f9ff8ca84d61        HEAD
+                                                                                                   >  4e22dd231c83c8b35fdc88448330c3f395a4e745        refs/heads/default
+257c9bade117cc78f626b35b0a08f9ff8ca84d61        refs/heads/master                                     257c9bade117cc78f626b35b0a08f9ff8ca84d61        refs/heads/master
+                                                                                                   >  0bc2dc5b8f286ac110731f228cd1940ca9af287f        refs/heads/v1.0.1
+                                                                                                   >  54ee8501b592b4abd50ac2503f55ac62c23e2769        refs/heads/v1.1
+194e1e36a0b3ae9b877ec8635f5b5e75ac88de1f        refs/heads/v1.2                                       194e1e36a0b3ae9b877ec8635f5b5e75ac88de1f        refs/heads/v1.2
+2eb6c27aadfd68c32bea450344d37f24e21e555c        refs/heads/v1.3                                       2eb6c27aadfd68c32bea450344d37f24e21e555c        refs/heads/v1.3
+25bc67ddde19fc4ec445936aa2a6f57611cb924f        refs/heads/v1.4                                       25bc67ddde19fc4ec445936aa2a6f57611cb924f        refs/heads/v1.4
+257c9bade117cc78f626b35b0a08f9ff8ca84d61        refs/heads/v2.0                                    |  13e06ea18506231b7c8fe567573741dcb18925d5        refs/heads/v2.0
+e55256f47d80d43f9bf3f1b9a6fcf0b0dc4918b0        refs/tags/B2G_1_0_0_20130125190500                    e55256f47d80d43f9bf3f1b9a6fcf0b0dc4918b0        refs/tags/B2G_1_0_0_20130125190500
+
+Comparing fy-NL gaia
+====================
+18ed586007a0b686631f4f0798951dec0c992d99        HEAD                                                  18ed586007a0b686631f4f0798951dec0c992d99        HEAD
+                                                                                                   >  62fe6ce38fb7c34cab5d6f8eac7e912a28757cd9        refs/heads/default
+18ed586007a0b686631f4f0798951dec0c992d99        refs/heads/master                                     18ed586007a0b686631f4f0798951dec0c992d99        refs/heads/master
+2f7a72126ade6b4fbec55216b8fbc451139bf040        refs/heads/v1.4                                       2f7a72126ade6b4fbec55216b8fbc451139bf040        refs/heads/v1.4
+18ed586007a0b686631f4f0798951dec0c992d99        refs/heads/v2.0                                       18ed586007a0b686631f4f0798951dec0c992d99        refs/heads/v2.0
+
+Comparing ga-IE gaia
+====================
+d8faefe0f79e92f7d12575d05cb6c2f35735ef96        HEAD                                                  d8faefe0f79e92f7d12575d05cb6c2f35735ef96        HEAD
+                                                                                                   >  d8faefe0f79e92f7d12575d05cb6c2f35735ef96        refs/heads/default
+d8faefe0f79e92f7d12575d05cb6c2f35735ef96        refs/heads/master                                     d8faefe0f79e92f7d12575d05cb6c2f35735ef96        refs/heads/master
+553b13fed75aa89bd4305bd22d4b970c8261772e        refs/heads/v1.4                                       553b13fed75aa89bd4305bd22d4b970c8261772e        refs/heads/v1.4
+d8faefe0f79e92f7d12575d05cb6c2f35735ef96        refs/heads/v2.0                                       d8faefe0f79e92f7d12575d05cb6c2f35735ef96        refs/heads/v2.0
+
+Comparing gd gaia
+=================
+480add5a013e74957ce662409fd3457c20a17e66        HEAD                                                  480add5a013e74957ce662409fd3457c20a17e66        HEAD
+                                                                                                   >  9801fddf08f7a4495bb1992a30cd9e7172875846        refs/heads/default
+480add5a013e74957ce662409fd3457c20a17e66        refs/heads/master                                     480add5a013e74957ce662409fd3457c20a17e66        refs/heads/master
+f795e84c79e0c850c88aa43ba9285360a3cf333c        refs/heads/v1.4                                       f795e84c79e0c850c88aa43ba9285360a3cf333c        refs/heads/v1.4
+480add5a013e74957ce662409fd3457c20a17e66        refs/heads/v2.0                                       480add5a013e74957ce662409fd3457c20a17e66        refs/heads/v2.0
+
+Comparing gl gaia
+=================
+ba79a64a5e62163d2452a44011c4e6e88914fca8        HEAD                                                  ba79a64a5e62163d2452a44011c4e6e88914fca8        HEAD
+                                                                                                   >  707681c599f4dccaefa4c5e3206d3e25a73e5991        refs/heads/default
+ba79a64a5e62163d2452a44011c4e6e88914fca8        refs/heads/master                                     ba79a64a5e62163d2452a44011c4e6e88914fca8        refs/heads/master
+707681c599f4dccaefa4c5e3206d3e25a73e5991        refs/heads/v1.4                                       707681c599f4dccaefa4c5e3206d3e25a73e5991        refs/heads/v1.4
+ba79a64a5e62163d2452a44011c4e6e88914fca8        refs/heads/v2.0                                       ba79a64a5e62163d2452a44011c4e6e88914fca8        refs/heads/v2.0
+
+Comparing gu gaia
+=================
+bb2415a43ff5f7f291753a0645670c2b901495bd        HEAD                                                  bb2415a43ff5f7f291753a0645670c2b901495bd        HEAD
+                                                                                                   >  bb2415a43ff5f7f291753a0645670c2b901495bd        refs/heads/default
+bb2415a43ff5f7f291753a0645670c2b901495bd        refs/heads/master                                     bb2415a43ff5f7f291753a0645670c2b901495bd        refs/heads/master
+8c162357af40684472f5fc1e84b0288667fe4f04        refs/heads/v1.4                                       8c162357af40684472f5fc1e84b0288667fe4f04        refs/heads/v1.4
+bb2415a43ff5f7f291753a0645670c2b901495bd        refs/heads/v2.0                                       bb2415a43ff5f7f291753a0645670c2b901495bd        refs/heads/v2.0
+
+Comparing he gaia
+=================
+b4696b5b0644c04fa2f136c23e95f3aed78c9013        HEAD                                                  b4696b5b0644c04fa2f136c23e95f3aed78c9013        HEAD
+                                                                                                   >  b4696b5b0644c04fa2f136c23e95f3aed78c9013        refs/heads/default
+b4696b5b0644c04fa2f136c23e95f3aed78c9013        refs/heads/master                                     b4696b5b0644c04fa2f136c23e95f3aed78c9013        refs/heads/master
+f42796ecf2bf6f68d7bf7bb468868a28dc4698e8        refs/heads/v1.4                                       f42796ecf2bf6f68d7bf7bb468868a28dc4698e8        refs/heads/v1.4
+b4696b5b0644c04fa2f136c23e95f3aed78c9013        refs/heads/v2.0                                       b4696b5b0644c04fa2f136c23e95f3aed78c9013        refs/heads/v2.0
+
+Comparing hi-IN gaia
+====================
+3c29b4eae0f7b1201651f115f86ed108511f6af0        HEAD                                                  3c29b4eae0f7b1201651f115f86ed108511f6af0        HEAD
+                                                                                                   >  3c29b4eae0f7b1201651f115f86ed108511f6af0        refs/heads/default
+3c29b4eae0f7b1201651f115f86ed108511f6af0        refs/heads/master                                     3c29b4eae0f7b1201651f115f86ed108511f6af0        refs/heads/master
+084213f6149cb720d49fc5ffab51f5583f15891e        refs/heads/v1.4                                       084213f6149cb720d49fc5ffab51f5583f15891e        refs/heads/v1.4
+3c29b4eae0f7b1201651f115f86ed108511f6af0        refs/heads/v2.0                                       3c29b4eae0f7b1201651f115f86ed108511f6af0        refs/heads/v2.0
+
+Comparing hr gaia
+=================
+adc214a44271927c144b709325d30ae21e9c1bc2        HEAD                                                  adc214a44271927c144b709325d30ae21e9c1bc2        HEAD
+                                                                                                   >  b47308f011fc38b36f57b54bf868b4a405596cc1        refs/heads/default
+adc214a44271927c144b709325d30ae21e9c1bc2        refs/heads/master                                     adc214a44271927c144b709325d30ae21e9c1bc2        refs/heads/master
+                                                                                                   >  13b2ba592fdd3622426294b389ef6548cf3ec82b        refs/heads/v1.0.1
+                                                                                                   >  f5d9ad8a1693567245b68ba88b787da3b2039507        refs/heads/v1.1
+7e36326a0f666b78fca216d927a9eb18c39a5e98        refs/heads/v1.2                                       7e36326a0f666b78fca216d927a9eb18c39a5e98        refs/heads/v1.2
+1e705b1e65528bd1f02af369235e39227e73a732        refs/heads/v1.3                                       1e705b1e65528bd1f02af369235e39227e73a732        refs/heads/v1.3
+b47308f011fc38b36f57b54bf868b4a405596cc1        refs/heads/v1.4                                       b47308f011fc38b36f57b54bf868b4a405596cc1        refs/heads/v1.4
+adc214a44271927c144b709325d30ae21e9c1bc2        refs/heads/v2.0                                       adc214a44271927c144b709325d30ae21e9c1bc2        refs/heads/v2.0
+
+Comparing hr gecko
+==================
+ERROR: Staging repo could not be queried: https://github.com/petermoore/l10n-hr-gecko
+                                                                                                   >  4159feb3b590ed823ff0e198f1733d6f0ff81093        refs/heads/mozilla-beta
+
+Comparing ht gaia
+=================
+337b0c34f168e869228c8f73464b44102168edb8        HEAD                                                  337b0c34f168e869228c8f73464b44102168edb8        HEAD
+                                                                                                   >  337b0c34f168e869228c8f73464b44102168edb8        refs/heads/default
+337b0c34f168e869228c8f73464b44102168edb8        refs/heads/master                                     337b0c34f168e869228c8f73464b44102168edb8        refs/heads/master
+337b0c34f168e869228c8f73464b44102168edb8        refs/heads/v1.4                                    <
+337b0c34f168e869228c8f73464b44102168edb8        refs/heads/v2.0                                    <
+
+Comparing hu gaia
+=================
+40bb2cd0da3dbfaca38175b106d73cdbe7986939        HEAD                                                  40bb2cd0da3dbfaca38175b106d73cdbe7986939        HEAD
+                                                                                                   >  40bb2cd0da3dbfaca38175b106d73cdbe7986939        refs/heads/default
+40bb2cd0da3dbfaca38175b106d73cdbe7986939        refs/heads/master                                     40bb2cd0da3dbfaca38175b106d73cdbe7986939        refs/heads/master
+                                                                                                   >  9fd479e627d44757a30742fe5a9b4baba45e62d7        refs/heads/v1.0.1
+                                                                                                   >  8ee1f236ff7e30f2a8d85759360b93d5eebb1836        refs/heads/v1.1
+4f0be52bb19d4df10b77fe2c92b2800cb618aa92        refs/heads/v1.2                                       4f0be52bb19d4df10b77fe2c92b2800cb618aa92        refs/heads/v1.2
+03a6e76129a1523a17435b1c79039799545f3a45        refs/heads/v1.3                                       03a6e76129a1523a17435b1c79039799545f3a45        refs/heads/v1.3
+3cf78e15db2aea9987606abd73bcfa4e4e711443        refs/heads/v1.4                                       3cf78e15db2aea9987606abd73bcfa4e4e711443        refs/heads/v1.4
+40bb2cd0da3dbfaca38175b106d73cdbe7986939        refs/heads/v2.0                                       40bb2cd0da3dbfaca38175b106d73cdbe7986939        refs/heads/v2.0
+
+Comparing hu gecko
+==================
+ERROR: Staging repo could not be queried: https://github.com/petermoore/l10n-hu-gecko
+                                                                                                   >  43ab5d35a4eabf4175086bc1b5c27aa2e8cddeae        refs/heads/mozilla-beta
+
+Comparing id gaia
+=================
+a75417b387199a73fb3d0adccbd68d42cff6be82        HEAD                                                  a75417b387199a73fb3d0adccbd68d42cff6be82        HEAD
+                                                                                                   >  407e7809d328b350504a0b36f1a4f39586845d56        refs/heads/default
+a75417b387199a73fb3d0adccbd68d42cff6be82        refs/heads/master                                     a75417b387199a73fb3d0adccbd68d42cff6be82        refs/heads/master
+b78af54935f0f17564d4d6fc5be0cb86d0d3348d        refs/heads/v1.4                                       b78af54935f0f17564d4d6fc5be0cb86d0d3348d        refs/heads/v1.4
+a75417b387199a73fb3d0adccbd68d42cff6be82        refs/heads/v2.0                                       a75417b387199a73fb3d0adccbd68d42cff6be82        refs/heads/v2.0
+
+Comparing it gaia
+=================
+45afc9934ef03fbad49d18d7f13f32dae63f0365        HEAD                                                  45afc9934ef03fbad49d18d7f13f32dae63f0365        HEAD
+                                                                                                   >  d7f1d0497d13d6dac9d5460e648ce7a43047d023        refs/heads/default
+45afc9934ef03fbad49d18d7f13f32dae63f0365        refs/heads/master                                     45afc9934ef03fbad49d18d7f13f32dae63f0365        refs/heads/master
+                                                                                                   >  fa6eea985f500fc28946dc842c5f4b30fb8107ce        refs/heads/v1.1
+d588005b8a592746278322b8ce2155d2824ceaac        refs/heads/v1.2                                       d588005b8a592746278322b8ce2155d2824ceaac        refs/heads/v1.2
+f2908ac74e1ecfb52ff8c13fec611ff34266cb00        refs/heads/v1.3                                       f2908ac74e1ecfb52ff8c13fec611ff34266cb00        refs/heads/v1.3
+2d67d94ddfbd51d8f2bc0e4a5e1433bd57c1dfad        refs/heads/v1.4                                       2d67d94ddfbd51d8f2bc0e4a5e1433bd57c1dfad        refs/heads/v1.4
+45afc9934ef03fbad49d18d7f13f32dae63f0365        refs/heads/v2.0                                    |  5c3e6bb9d57eb2530a814a3aa18286e9dc483b57        refs/heads/v2.0
+
+Comparing ja gaia
+=================
+db2df5040f7046f6508555493ebefea9ff1b3074        HEAD                                                  db2df5040f7046f6508555493ebefea9ff1b3074        HEAD
+                                                                                                   >  db2df5040f7046f6508555493ebefea9ff1b3074        refs/heads/default
+db2df5040f7046f6508555493ebefea9ff1b3074        refs/heads/master                                     db2df5040f7046f6508555493ebefea9ff1b3074        refs/heads/master
+29e23b8e4c51f742ec450d165767462f32984b90        refs/heads/v1.4                                       29e23b8e4c51f742ec450d165767462f32984b90        refs/heads/v1.4
+db2df5040f7046f6508555493ebefea9ff1b3074        refs/heads/v2.0                                       db2df5040f7046f6508555493ebefea9ff1b3074        refs/heads/v2.0
+
+Comparing km gaia
+=================
+f90f45fbc439d87e8fc24c45b073419b46e9c54b        HEAD                                                  f90f45fbc439d87e8fc24c45b073419b46e9c54b        HEAD
+                                                                                                   >  f90f45fbc439d87e8fc24c45b073419b46e9c54b        refs/heads/default
+f90f45fbc439d87e8fc24c45b073419b46e9c54b        refs/heads/master                                     f90f45fbc439d87e8fc24c45b073419b46e9c54b        refs/heads/master
+638693fb81b73da162b472c57e51703f9405adce        refs/heads/v1.4                                       638693fb81b73da162b472c57e51703f9405adce        refs/heads/v1.4
+f90f45fbc439d87e8fc24c45b073419b46e9c54b        refs/heads/v2.0                                       f90f45fbc439d87e8fc24c45b073419b46e9c54b        refs/heads/v2.0
+
+Comparing kn gaia
+=================
+5e01cc862f15268aa951573fbe8b6636d5704d26        HEAD                                                  5e01cc862f15268aa951573fbe8b6636d5704d26        HEAD
+                                                                                                   >  f3fb3dc8ca1f0957d47cf2b1abceb4b76fc8112f        refs/heads/default
+5e01cc862f15268aa951573fbe8b6636d5704d26        refs/heads/master                                     5e01cc862f15268aa951573fbe8b6636d5704d26        refs/heads/master
+f3fb3dc8ca1f0957d47cf2b1abceb4b76fc8112f        refs/heads/v1.4                                       f3fb3dc8ca1f0957d47cf2b1abceb4b76fc8112f        refs/heads/v1.4
+5e01cc862f15268aa951573fbe8b6636d5704d26        refs/heads/v2.0                                       5e01cc862f15268aa951573fbe8b6636d5704d26        refs/heads/v2.0
+
+Comparing ko gaia
+=================
+75a923fd9c1c49f64cec044f90c5cf9dd77e57b0        HEAD                                                  75a923fd9c1c49f64cec044f90c5cf9dd77e57b0        HEAD
+                                                                                                   >  75a923fd9c1c49f64cec044f90c5cf9dd77e57b0        refs/heads/default
+75a923fd9c1c49f64cec044f90c5cf9dd77e57b0        refs/heads/master                                     75a923fd9c1c49f64cec044f90c5cf9dd77e57b0        refs/heads/master
+1bdcaf4d248abcd454e5b1db955dc2b21a237331        refs/heads/v1.4                                       1bdcaf4d248abcd454e5b1db955dc2b21a237331        refs/heads/v1.4
+75a923fd9c1c49f64cec044f90c5cf9dd77e57b0        refs/heads/v2.0                                       75a923fd9c1c49f64cec044f90c5cf9dd77e57b0        refs/heads/v2.0
+
+Comparing lij gaia
+==================
+6a0cee5f91377622dac9466fe785b786771001b8        HEAD                                                  6a0cee5f91377622dac9466fe785b786771001b8        HEAD
+                                                                                                   >  6a0cee5f91377622dac9466fe785b786771001b8        refs/heads/default
+6a0cee5f91377622dac9466fe785b786771001b8        refs/heads/master                                     6a0cee5f91377622dac9466fe785b786771001b8        refs/heads/master
+4ea44e463d899c8cf8b978345a03c4a81e09da44        refs/heads/v1.4                                       4ea44e463d899c8cf8b978345a03c4a81e09da44        refs/heads/v1.4
+6a0cee5f91377622dac9466fe785b786771001b8        refs/heads/v2.0                                       6a0cee5f91377622dac9466fe785b786771001b8        refs/heads/v2.0
+
+Comparing lt gaia
+=================
+dbb3ba935e0d7b94366870539a86f2fbc67aee3c        HEAD                                                  dbb3ba935e0d7b94366870539a86f2fbc67aee3c        HEAD
+                                                                                                   >  18ecf98ee0d5d9ee842e77fa62a765a462822214        refs/heads/default
+dbb3ba935e0d7b94366870539a86f2fbc67aee3c        refs/heads/master                                     dbb3ba935e0d7b94366870539a86f2fbc67aee3c        refs/heads/master
+2081777a60c73e60da4d116f8f595e061f9ffa19        refs/heads/v1.4                                       2081777a60c73e60da4d116f8f595e061f9ffa19        refs/heads/v1.4
+dbb3ba935e0d7b94366870539a86f2fbc67aee3c        refs/heads/v2.0                                       dbb3ba935e0d7b94366870539a86f2fbc67aee3c        refs/heads/v2.0
+
+Comparing mai gaia
+==================
+3d4750f9dd06ee8e97e3b1d58cbc54288784e0f6        HEAD                                               <
+3d4750f9dd06ee8e97e3b1d58cbc54288784e0f6        refs/heads/master                                  <
+3d4750f9dd06ee8e97e3b1d58cbc54288784e0f6        refs/heads/v2.0                                    <
+
+Comparing mk gaia
+=================
+ERROR: Staging repo could not be queried: https://github.com/petermoore/l10n-mk-gaia
+                                                                                                   >  990d8b273b547a694fac6c9dbe9d0c76c8877e28        HEAD
+                                                                                                   >  990d8b273b547a694fac6c9dbe9d0c76c8877e28        refs/heads/default
+                                                                                                   >  990d8b273b547a694fac6c9dbe9d0c76c8877e28        refs/heads/master
+                                                                                                   >  89cfe0562b5b7b3d01802c00736f3cbbcc921312        refs/heads/v1.2
+                                                                                                   >  89cfe0562b5b7b3d01802c00736f3cbbcc921312        refs/heads/v1.3
+                                                                                                   >  990d8b273b547a694fac6c9dbe9d0c76c8877e28        refs/heads/v1.4
+                                                                                                   >  990d8b273b547a694fac6c9dbe9d0c76c8877e28        refs/heads/v2.0
+
+Comparing ml gaia
+=================
+477e781fcd9c0c6d38820ee621a476d0d87c8f30        HEAD                                                  477e781fcd9c0c6d38820ee621a476d0d87c8f30        HEAD
+                                                                                                   >  1997fb202ac64a321cc9089a0472a00949dedfe2        refs/heads/default
+477e781fcd9c0c6d38820ee621a476d0d87c8f30        refs/heads/master                                     477e781fcd9c0c6d38820ee621a476d0d87c8f30        refs/heads/master
+a876e43de720021b244bfe798ef8a69291c549df        refs/heads/v1.4                                       a876e43de720021b244bfe798ef8a69291c549df        refs/heads/v1.4
+477e781fcd9c0c6d38820ee621a476d0d87c8f30        refs/heads/v2.0                                       477e781fcd9c0c6d38820ee621a476d0d87c8f30        refs/heads/v2.0
+
+Comparing mr gaia
+=================
+a45ff23a4213572a297e9a6c44f98d17b9d93e8b        HEAD                                                  a45ff23a4213572a297e9a6c44f98d17b9d93e8b        HEAD
+                                                                                                   >  a45ff23a4213572a297e9a6c44f98d17b9d93e8b        refs/heads/default
+a45ff23a4213572a297e9a6c44f98d17b9d93e8b        refs/heads/master                                     a45ff23a4213572a297e9a6c44f98d17b9d93e8b        refs/heads/master
+                                                                                                   >  6a3fccd329437eaf01ad02417134c37630448a78        refs/heads/v1.4
+a45ff23a4213572a297e9a6c44f98d17b9d93e8b        refs/heads/v2.0                                       a45ff23a4213572a297e9a6c44f98d17b9d93e8b        refs/heads/v2.0
+
+Comparing ms gaia
+=================
+45497d05f0799196936abdd18ccb93d62fb94e5e        HEAD                                                  45497d05f0799196936abdd18ccb93d62fb94e5e        HEAD
+                                                                                                   >  0182c1721882e467cc27be3ac75688e4e3a21a61        refs/heads/default
+45497d05f0799196936abdd18ccb93d62fb94e5e        refs/heads/master                                     45497d05f0799196936abdd18ccb93d62fb94e5e        refs/heads/master
+0182c1721882e467cc27be3ac75688e4e3a21a61        refs/heads/v1.4                                       0182c1721882e467cc27be3ac75688e4e3a21a61        refs/heads/v1.4
+45497d05f0799196936abdd18ccb93d62fb94e5e        refs/heads/v2.0                                       45497d05f0799196936abdd18ccb93d62fb94e5e        refs/heads/v2.0
+
+Comparing nb-NO gaia
+====================
+1817e708688e98897122d5f128415ec256f0b89a        HEAD                                                  1817e708688e98897122d5f128415ec256f0b89a        HEAD
+                                                                                                   >  1817e708688e98897122d5f128415ec256f0b89a        refs/heads/default
+1817e708688e98897122d5f128415ec256f0b89a        refs/heads/master                                     1817e708688e98897122d5f128415ec256f0b89a        refs/heads/master
+                                                                                                   >  2b2478443c10a6c3da8c75b8473ea0965b92af36        refs/heads/v1.4
+1817e708688e98897122d5f128415ec256f0b89a        refs/heads/v2.0                                       1817e708688e98897122d5f128415ec256f0b89a        refs/heads/v2.0
+
+Comparing ne-NP gaia
+====================
+e12293dcac53e7cc31b1536197d983e95296d421        HEAD                                                  e12293dcac53e7cc31b1536197d983e95296d421        HEAD
+                                                                                                   >  67c16e221b0734f9257af6f50d6dcdb6120fa79d        refs/heads/default
+e12293dcac53e7cc31b1536197d983e95296d421        refs/heads/master                                     e12293dcac53e7cc31b1536197d983e95296d421        refs/heads/master
+67c16e221b0734f9257af6f50d6dcdb6120fa79d        refs/heads/v1.4                                       67c16e221b0734f9257af6f50d6dcdb6120fa79d        refs/heads/v1.4
+e12293dcac53e7cc31b1536197d983e95296d421        refs/heads/v2.0                                       e12293dcac53e7cc31b1536197d983e95296d421        refs/heads/v2.0
+
+Comparing nl gaia
+=================
+d28d86cfb6082a313bc65d5fa9d390461493ac52        HEAD                                                  d28d86cfb6082a313bc65d5fa9d390461493ac52        HEAD
+                                                                                                   >  d28d86cfb6082a313bc65d5fa9d390461493ac52        refs/heads/default
+d28d86cfb6082a313bc65d5fa9d390461493ac52        refs/heads/master                                     d28d86cfb6082a313bc65d5fa9d390461493ac52        refs/heads/master
+                                                                                                   >  d7801e821ac18b3dc2eea6f6e0a9e898f45be343        refs/heads/v1.0.1
+                                                                                                   >  1fbe211d68270fe8bff9a00e569df2101446c940        refs/heads/v1.1
+a34ab4b155cda03a7dd4d2747fa6e741d946b182        refs/heads/v1.2                                       a34ab4b155cda03a7dd4d2747fa6e741d946b182        refs/heads/v1.2
+6a0ad8f1ba59b66776016899ceb6772d766f0897        refs/heads/v1.3                                       6a0ad8f1ba59b66776016899ceb6772d766f0897        refs/heads/v1.3
+717bb1e63621d926a7279955b34778beadbe9c3f        refs/heads/v1.4                                       717bb1e63621d926a7279955b34778beadbe9c3f        refs/heads/v1.4
+d28d86cfb6082a313bc65d5fa9d390461493ac52        refs/heads/v2.0                                       d28d86cfb6082a313bc65d5fa9d390461493ac52        refs/heads/v2.0
+
+Comparing nl gecko
+==================
+ERROR: Staging repo could not be queried: https://github.com/petermoore/l10n-nl-gecko
+                                                                                                   >  723f83839fa9b25b94cb4c39c229b4bd8ec05526        refs/heads/mozilla-beta
+
+Comparing or gaia
+=================
+98d06c8d1db58868b06f67ee09a987ff59021997        HEAD                                                  98d06c8d1db58868b06f67ee09a987ff59021997        HEAD
+                                                                                                   >  ff666338c198b7cc1968f26a625cb5deccfd20c0        refs/heads/default
+98d06c8d1db58868b06f67ee09a987ff59021997        refs/heads/master                                     98d06c8d1db58868b06f67ee09a987ff59021997        refs/heads/master
+f440d11dc393a3da4e76c094237fe74db527e29f        refs/heads/v1.4                                       f440d11dc393a3da4e76c094237fe74db527e29f        refs/heads/v1.4
+98d06c8d1db58868b06f67ee09a987ff59021997        refs/heads/v2.0                                       98d06c8d1db58868b06f67ee09a987ff59021997        refs/heads/v2.0
+
+Comparing pa gaia
+=================
+f47353611039a7b025b82fc7c5ef28375093580d        HEAD                                                  f47353611039a7b025b82fc7c5ef28375093580d        HEAD
+                                                                                                   >  f47353611039a7b025b82fc7c5ef28375093580d        refs/heads/default
+f47353611039a7b025b82fc7c5ef28375093580d        refs/heads/master                                     f47353611039a7b025b82fc7c5ef28375093580d        refs/heads/master
+c9154b998a131d31f49b0685cb04caac8a86ecbb        refs/heads/v1.4                                       c9154b998a131d31f49b0685cb04caac8a86ecbb        refs/heads/v1.4
+f47353611039a7b025b82fc7c5ef28375093580d        refs/heads/v2.0                                       f47353611039a7b025b82fc7c5ef28375093580d        refs/heads/v2.0
+
+Comparing pl gaia
+=================
+c859634e2a9baac13e9d4169c831447be9320d48        HEAD                                                  c859634e2a9baac13e9d4169c831447be9320d48        HEAD
+                                                                                                   >  04a2e363077bcf7f83848747c0768fe20cf75252        refs/heads/default
+c859634e2a9baac13e9d4169c831447be9320d48        refs/heads/master                                     c859634e2a9baac13e9d4169c831447be9320d48        refs/heads/master
+                                                                                                   >  e418377cbe4432045673026bef1d34046421ce9f        refs/heads/v1.0.1
+                                                                                                   >  a0fb9b15236dbd092ca44e06b0191f88039a4555        refs/heads/v1.1
+86082e15be7d106f03781770cd72a878e1fd98ad        refs/heads/v1.2                                       86082e15be7d106f03781770cd72a878e1fd98ad        refs/heads/v1.2
+8aa468fd65336353d4470d24aed6a9d0fdc70b94        refs/heads/v1.3                                       8aa468fd65336353d4470d24aed6a9d0fdc70b94        refs/heads/v1.3
+3c47d425c766ccf6c6c038f3b6c31d5069390a8d        refs/heads/v1.4                                       3c47d425c766ccf6c6c038f3b6c31d5069390a8d        refs/heads/v1.4
+c859634e2a9baac13e9d4169c831447be9320d48        refs/heads/v2.0                                    |  ad3cc2670830b805d97575be5f2b11b6f7542c8f        refs/heads/v2.0
+
+Comparing pl gecko
+==================
+bb798065ae89b2ae286f5e058974b6073ef1d44f        HEAD                                               |  7b68616dfe4355b8cd7a6125c093f99e25b418b7        refs/heads/mozilla-beta
+bb798065ae89b2ae286f5e058974b6073ef1d44f        refs/heads/v1.4                                    |  b14c5574f3ae4d48008ed1b691c7e64027fc2752        refs/heads/v1.2
+bb798065ae89b2ae286f5e058974b6073ef1d44f        refs/heads/v2.0                                    |  31fe1bbef4d7bc31abb44fbb21d1a9e416194b97        refs/heads/v1.3
+31fe1bbef4d7bc31abb44fbb21d1a9e416194b97        refs/heads/v2.1                                    <
+
+Comparing pt-BR gaia
+====================
+45b6795a642cdf000547d66eb0792338b548efc5        HEAD                                                  45b6795a642cdf000547d66eb0792338b548efc5        HEAD
+                                                                                                   >  45b6795a642cdf000547d66eb0792338b548efc5        refs/heads/default
+45b6795a642cdf000547d66eb0792338b548efc5        refs/heads/master                                     45b6795a642cdf000547d66eb0792338b548efc5        refs/heads/master
+                                                                                                   >  4822286c7e2e481cfb474e663fa725254d0f3490        refs/heads/v1.0.1
+                                                                                                   >  f56c96494046f9ecdb8e48a5c2043db4e0095f0c        refs/heads/v1.1
+69e082ad0467d0f2971610238eb1b6bfefadacac        refs/heads/v1.2                                       69e082ad0467d0f2971610238eb1b6bfefadacac        refs/heads/v1.2
+629497b825669b4f728b845bd401eb5696b0471d        refs/heads/v1.3                                       629497b825669b4f728b845bd401eb5696b0471d        refs/heads/v1.3
+03a395e7bf99ad32e8998ca2674fc78944cb05e7        refs/heads/v1.4                                       03a395e7bf99ad32e8998ca2674fc78944cb05e7        refs/heads/v1.4
+45b6795a642cdf000547d66eb0792338b548efc5        refs/heads/v2.0                                       45b6795a642cdf000547d66eb0792338b548efc5        refs/heads/v2.0
+e117bc0df7d0dd6b264535746dde09921e56c3a7        refs/tags/B2G_1_0_0_20130125190500                    e117bc0df7d0dd6b264535746dde09921e56c3a7        refs/tags/B2G_1_0_0_20130125190500
+
+Comparing pt-BR gecko
+=====================
+b2612422eb46cabc27d60645399978beff8f6772        HEAD                                               |  ea38f2d6d32b1857149ce2c2bd5e4839106b4e37        refs/heads/mozilla-beta
+b2612422eb46cabc27d60645399978beff8f6772        refs/heads/v1.4                                    |  ea38f2d6d32b1857149ce2c2bd5e4839106b4e37        refs/heads/v1.2
+b2612422eb46cabc27d60645399978beff8f6772        refs/heads/v2.0                                    |  2669d3734c6b979083af9fc520fe10ae9cdca6fe        refs/heads/v1.3
+2669d3734c6b979083af9fc520fe10ae9cdca6fe        refs/heads/v2.1                                    <
+
+Comparing ro gaia
+=================
+6672811df831bbfa40574dccadcccc780bcb5f56        HEAD                                                  6672811df831bbfa40574dccadcccc780bcb5f56        HEAD
+                                                                                                   >  afabf82addf0b1b8c5003cb0e70cb15b2e11ac99        refs/heads/default
+6672811df831bbfa40574dccadcccc780bcb5f56        refs/heads/master                                     6672811df831bbfa40574dccadcccc780bcb5f56        refs/heads/master
+                                                                                                   >  a271bcc39f6f89e3523bd6a49cf3c3b5b53e266d        refs/heads/v1.0.1
+                                                                                                   >  59b3ca41d22633f421b6a7dc6948ec9bc0817868        refs/heads/v1.1
+484d24f3e328339985b4437d66b2fb382ee2bdef        refs/heads/v1.2                                       484d24f3e328339985b4437d66b2fb382ee2bdef        refs/heads/v1.2
+eca3cad724d6d27ad5a0ed741105fa72964cd2ee        refs/heads/v1.3                                       eca3cad724d6d27ad5a0ed741105fa72964cd2ee        refs/heads/v1.3
+afabf82addf0b1b8c5003cb0e70cb15b2e11ac99        refs/heads/v1.4                                       afabf82addf0b1b8c5003cb0e70cb15b2e11ac99        refs/heads/v1.4
+6672811df831bbfa40574dccadcccc780bcb5f56        refs/heads/v2.0                                       6672811df831bbfa40574dccadcccc780bcb5f56        refs/heads/v2.0
+
+Comparing ro gecko
+==================
+ERROR: Staging repo could not be queried: https://github.com/petermoore/l10n-ro-gecko
+                                                                                                   >  74d71c658faeb19d341953a3580ad18550c24440        refs/heads/mozilla-beta
+
+Comparing ru gaia
+=================
+57545c6be2da2a4ffb09d50064001473e51a54e2        HEAD                                                  57545c6be2da2a4ffb09d50064001473e51a54e2        HEAD
+                                                                                                   >  e0d23c9f49dce431bf979b8abb74d0cad2f650d2        refs/heads/default
+57545c6be2da2a4ffb09d50064001473e51a54e2        refs/heads/master                                     57545c6be2da2a4ffb09d50064001473e51a54e2        refs/heads/master
+                                                                                                   >  ddf0fe11b28f42f5ddd50753c6de923eac71fa59        refs/heads/v1.0.1
+                                                                                                   >  b3b90e9dc14955193e2648c3d07658de625f5262        refs/heads/v1.1
+a8f6b3c8d79b829daeba4e908f3d43c4c7302cfa        refs/heads/v1.2                                       a8f6b3c8d79b829daeba4e908f3d43c4c7302cfa        refs/heads/v1.2
+de27fa8262cd2857ebb743cc0187c407a1d83f4b        refs/heads/v1.3                                       de27fa8262cd2857ebb743cc0187c407a1d83f4b        refs/heads/v1.3
+2f0641b358fbc0e4a392c3abefafe22c1bc19bc3        refs/heads/v1.4                                       2f0641b358fbc0e4a392c3abefafe22c1bc19bc3        refs/heads/v1.4
+57545c6be2da2a4ffb09d50064001473e51a54e2        refs/heads/v2.0                                       57545c6be2da2a4ffb09d50064001473e51a54e2        refs/heads/v2.0
+
+Comparing ru gecko
+==================
+ERROR: Staging repo could not be queried: https://github.com/petermoore/l10n-ru-gecko
+                                                                                                   >  3ef4510d3ae756b46b175fe8895aa6e0c32c598e        refs/heads/mozilla-beta
+
+Comparing si gaia
+=================
+2c7d58c7a9bc428683bb9a57eb00640dfcf0b5b0        HEAD                                                  2c7d58c7a9bc428683bb9a57eb00640dfcf0b5b0        HEAD
+                                                                                                   >  2c7d58c7a9bc428683bb9a57eb00640dfcf0b5b0        refs/heads/default
+2c7d58c7a9bc428683bb9a57eb00640dfcf0b5b0        refs/heads/master                                     2c7d58c7a9bc428683bb9a57eb00640dfcf0b5b0        refs/heads/master
+4e55e48268a2d049d897e60ad90f254d84a926be        refs/heads/v1.4                                       4e55e48268a2d049d897e60ad90f254d84a926be        refs/heads/v1.4
+2c7d58c7a9bc428683bb9a57eb00640dfcf0b5b0        refs/heads/v2.0                                       2c7d58c7a9bc428683bb9a57eb00640dfcf0b5b0        refs/heads/v2.0
+
+Comparing sk gaia
+=================
+a1ea3e67bb87676f05d024c6df9d9f5419adaebd        HEAD                                                  a1ea3e67bb87676f05d024c6df9d9f5419adaebd        HEAD
+                                                                                                   >  a1ea3e67bb87676f05d024c6df9d9f5419adaebd        refs/heads/default
+a1ea3e67bb87676f05d024c6df9d9f5419adaebd        refs/heads/master                                     a1ea3e67bb87676f05d024c6df9d9f5419adaebd        refs/heads/master
+                                                                                                   >  e14d9e23d94d2fc1c4a551e679692aec543b5055        refs/heads/v1.0.1
+                                                                                                   >  ce5da14f9f306830dfec3dada9214b72351a883c        refs/heads/v1.1
+366a7e29f1fde9519a10ef8d0b2c138d33cfbd1a        refs/heads/v1.2                                       366a7e29f1fde9519a10ef8d0b2c138d33cfbd1a        refs/heads/v1.2
+3282db8f1539604be10902de36bd71a91ebd7a17        refs/heads/v1.3                                       3282db8f1539604be10902de36bd71a91ebd7a17        refs/heads/v1.3
+cc76635d68ec5c7d7f067c9d8732b5f4b829f295        refs/heads/v1.4                                       cc76635d68ec5c7d7f067c9d8732b5f4b829f295        refs/heads/v1.4
+a1ea3e67bb87676f05d024c6df9d9f5419adaebd        refs/heads/v2.0                                       a1ea3e67bb87676f05d024c6df9d9f5419adaebd        refs/heads/v2.0
+
+Comparing sk gecko
+==================
+ERROR: Staging repo could not be queried: https://github.com/petermoore/l10n-sk-gecko
+                                                                                                   >  c9fc454833354e920be30096366fd858dd9229ca        refs/heads/mozilla-beta
+
+Comparing sl gaia
+=================
+eefb247c95022ed122631a4d610ecced8b9958f5        HEAD                                                  eefb247c95022ed122631a4d610ecced8b9958f5        HEAD
+                                                                                                   >  eefb247c95022ed122631a4d610ecced8b9958f5        refs/heads/default
+eefb247c95022ed122631a4d610ecced8b9958f5        refs/heads/master                                     eefb247c95022ed122631a4d610ecced8b9958f5        refs/heads/master
+561bc3300143bd93146f12d00d03f3194598d9e5        refs/heads/v1.4                                       561bc3300143bd93146f12d00d03f3194598d9e5        refs/heads/v1.4
+eefb247c95022ed122631a4d610ecced8b9958f5        refs/heads/v2.0                                       eefb247c95022ed122631a4d610ecced8b9958f5        refs/heads/v2.0
+
+Comparing son gaia
+==================
+fae4231640de6586ba5c78e1ac798ea7c6b9aec4        HEAD                                                  fae4231640de6586ba5c78e1ac798ea7c6b9aec4        HEAD
+                                                                                                   >  4abd711dca218369b1fab12bfcf984c0541dc19b        refs/heads/default
+fae4231640de6586ba5c78e1ac798ea7c6b9aec4        refs/heads/master                                     fae4231640de6586ba5c78e1ac798ea7c6b9aec4        refs/heads/master
+fae4231640de6586ba5c78e1ac798ea7c6b9aec4        refs/heads/v2.0                                       fae4231640de6586ba5c78e1ac798ea7c6b9aec4        refs/heads/v2.0
+
+Comparing sq gaia
+=================
+69c6305fe4a69fcef7e960487f49f8c7b645a015        HEAD                                                  69c6305fe4a69fcef7e960487f49f8c7b645a015        HEAD
+                                                                                                   >  7f4ab3f4f8f2f9293d8d3d76af1982ce671bf9e9        refs/heads/default
+69c6305fe4a69fcef7e960487f49f8c7b645a015        refs/heads/master                                     69c6305fe4a69fcef7e960487f49f8c7b645a015        refs/heads/master
+56456eba8281c561b8554dc64e25a18e476c3450        refs/heads/v1.4                                       56456eba8281c561b8554dc64e25a18e476c3450        refs/heads/v1.4
+69c6305fe4a69fcef7e960487f49f8c7b645a015        refs/heads/v2.0                                    |  083f13e798f11e028082a4238b6f0d222ea0e55d        refs/heads/v2.0
+
+Comparing sr gecko
+==================
+ERROR: Staging repo could not be queried: https://github.com/petermoore/l10n-sr-gecko
+                                                                                                   >  6a70d51dc84b9138e3139211fb9793d04ff7a859        refs/heads/mozilla-beta
+
+Comparing sr-Cyrl gaia
+======================
+8cb3241cb162063b78a073423d22ae9b1542088e        HEAD                                                  8cb3241cb162063b78a073423d22ae9b1542088e        HEAD
+                                                                                                   >  8cb3241cb162063b78a073423d22ae9b1542088e        refs/heads/default
+8cb3241cb162063b78a073423d22ae9b1542088e        refs/heads/master                                     8cb3241cb162063b78a073423d22ae9b1542088e        refs/heads/master
+                                                                                                   >  a3f8269d0addea01a532666623f0cc1eeafa37e1        refs/heads/v1.1
+3e9ad6705b64be6cc888e19f6a7f9db0d5aa6bea        refs/heads/v1.2                                       3e9ad6705b64be6cc888e19f6a7f9db0d5aa6bea        refs/heads/v1.2
+0d23f1759ae0dd2233ea1d3b3a3eff22129e7db4        refs/heads/v1.3                                       0d23f1759ae0dd2233ea1d3b3a3eff22129e7db4        refs/heads/v1.3
+6e1e5b54ea88d94dcb04f7c140778064e66869fe        refs/heads/v1.4                                       6e1e5b54ea88d94dcb04f7c140778064e66869fe        refs/heads/v1.4
+8cb3241cb162063b78a073423d22ae9b1542088e        refs/heads/v2.0                                       8cb3241cb162063b78a073423d22ae9b1542088e        refs/heads/v2.0
+
+Comparing sr-Latn gaia
+======================
+36f503931d53d4358a5f1cf056e248e029a9df68        HEAD                                                  36f503931d53d4358a5f1cf056e248e029a9df68        HEAD
+                                                                                                   >  36f503931d53d4358a5f1cf056e248e029a9df68        refs/heads/default
+36f503931d53d4358a5f1cf056e248e029a9df68        refs/heads/master                                     36f503931d53d4358a5f1cf056e248e029a9df68        refs/heads/master
+                                                                                                   >  df11c54dc7f006f7c301660cb88bfe0b358f013b        refs/heads/v1.1
+296d61746a8eac5d730b1bad31979723ca6b5a9c        refs/heads/v1.2                                       296d61746a8eac5d730b1bad31979723ca6b5a9c        refs/heads/v1.2
+f1dc8c312601437d49e568c5915d714dc79e7255        refs/heads/v1.3                                       f1dc8c312601437d49e568c5915d714dc79e7255        refs/heads/v1.3
+1d6e0fbb61fc1ecfdf6a52685830e34dc089e0df        refs/heads/v1.4                                       1d6e0fbb61fc1ecfdf6a52685830e34dc089e0df        refs/heads/v1.4
+36f503931d53d4358a5f1cf056e248e029a9df68        refs/heads/v2.0                                       36f503931d53d4358a5f1cf056e248e029a9df68        refs/heads/v2.0
+
+Comparing sv-SE gaia
+====================
+23784f252affd003ee8cb6f5452cffec3482cdf5        HEAD                                                  23784f252affd003ee8cb6f5452cffec3482cdf5        HEAD
+                                                                                                   >  f3d391d9cf1513c5b3fe2ee124d1529aa4e8591d        refs/heads/default
+23784f252affd003ee8cb6f5452cffec3482cdf5        refs/heads/master                                     23784f252affd003ee8cb6f5452cffec3482cdf5        refs/heads/master
+5c6f2784e5a8785e9526e2e5f4149911ec9045bb        refs/heads/v1.4                                       5c6f2784e5a8785e9526e2e5f4149911ec9045bb        refs/heads/v1.4
+23784f252affd003ee8cb6f5452cffec3482cdf5        refs/heads/v2.0                                       23784f252affd003ee8cb6f5452cffec3482cdf5        refs/heads/v2.0
+
+Comparing ta gaia
+=================
+f026c54d0c58eed9e98d0adde9f7d88161fa9ad3        HEAD                                                  f026c54d0c58eed9e98d0adde9f7d88161fa9ad3        HEAD
+                                                                                                   >  abc3fd5629b976cbcec8cb3d20e66c30b380843c        refs/heads/default
+f026c54d0c58eed9e98d0adde9f7d88161fa9ad3        refs/heads/master                                     f026c54d0c58eed9e98d0adde9f7d88161fa9ad3        refs/heads/master
+                                                                                                   >  54b73383dca8d72c727f742375961d0a79378ecd        refs/heads/v1.4
+f026c54d0c58eed9e98d0adde9f7d88161fa9ad3        refs/heads/v2.0                                       f026c54d0c58eed9e98d0adde9f7d88161fa9ad3        refs/heads/v2.0
+
+Comparing te gaia
+=================
+97567f5a67bac53fd0df6dbec48684f437e8f1e1        HEAD                                                  97567f5a67bac53fd0df6dbec48684f437e8f1e1        HEAD
+                                                                                                   >  b1e0b2439aa6831c870d31193f835fb968e57e10        refs/heads/default
+97567f5a67bac53fd0df6dbec48684f437e8f1e1        refs/heads/master                                     97567f5a67bac53fd0df6dbec48684f437e8f1e1        refs/heads/master
+dd05f99c10b19edcde93040768415d3c2570a8c2        refs/heads/v1.4                                       dd05f99c10b19edcde93040768415d3c2570a8c2        refs/heads/v1.4
+97567f5a67bac53fd0df6dbec48684f437e8f1e1        refs/heads/v2.0                                       97567f5a67bac53fd0df6dbec48684f437e8f1e1        refs/heads/v2.0
+
+Comparing th gaia
+=================
+c7ef736a7c1dfb755771bd026b79d0485121bcc3        HEAD                                                  c7ef736a7c1dfb755771bd026b79d0485121bcc3        HEAD
+                                                                                                   >  c7ef736a7c1dfb755771bd026b79d0485121bcc3        refs/heads/default
+c7ef736a7c1dfb755771bd026b79d0485121bcc3        refs/heads/master                                     c7ef736a7c1dfb755771bd026b79d0485121bcc3        refs/heads/master
+21ef5ec7cb78251d38ccba76851363d66b2959c6        refs/heads/v1.4                                       21ef5ec7cb78251d38ccba76851363d66b2959c6        refs/heads/v1.4
+c7ef736a7c1dfb755771bd026b79d0485121bcc3        refs/heads/v2.0                                       c7ef736a7c1dfb755771bd026b79d0485121bcc3        refs/heads/v2.0
+
+Comparing tr gaia
+=================
+0447aefd0fd88ebc797d686230a6d56faf4760d9        HEAD                                                  0447aefd0fd88ebc797d686230a6d56faf4760d9        HEAD
+                                                                                                   >  943fedf30feccceec8bb5727aed752563f76fae6        refs/heads/default
+0447aefd0fd88ebc797d686230a6d56faf4760d9        refs/heads/master                                     0447aefd0fd88ebc797d686230a6d56faf4760d9        refs/heads/master
+                                                                                                   >  08d1b8af3e7869fbcb53b4de1bd29dbda6e50038        refs/heads/v1.0.1
+                                                                                                   >  c17f30d235af503420f98a657ed85b4528b2f819        refs/heads/v1.1
+04a1577cec076d304a237d3b94cf2e46062caf92        refs/heads/v1.2                                       04a1577cec076d304a237d3b94cf2e46062caf92        refs/heads/v1.2
+e1ef473e897847929009d6a61d92ed7e2d8d59ff        refs/heads/v1.3                                       e1ef473e897847929009d6a61d92ed7e2d8d59ff        refs/heads/v1.3
+c47a879b44788dc5f1cc347e7df00a84684f1cde        refs/heads/v1.4                                       c47a879b44788dc5f1cc347e7df00a84684f1cde        refs/heads/v1.4
+0447aefd0fd88ebc797d686230a6d56faf4760d9        refs/heads/v2.0                                       0447aefd0fd88ebc797d686230a6d56faf4760d9        refs/heads/v2.0
+
+Comparing tr gecko
+==================
+ERROR: Staging repo could not be queried: https://github.com/petermoore/l10n-tr-gecko
+                                                                                                   >  259ba3e61ae6cae99d3e3dde58d3ed3d676b4ca6        refs/heads/mozilla-beta
+
+Comparing ur gaia
+=================
+03aa0f0824b77c13b85819107e8adb839411c8d2        HEAD                                                  03aa0f0824b77c13b85819107e8adb839411c8d2        HEAD
+                                                                                                   >  03aa0f0824b77c13b85819107e8adb839411c8d2        refs/heads/default
+03aa0f0824b77c13b85819107e8adb839411c8d2        refs/heads/master                                     03aa0f0824b77c13b85819107e8adb839411c8d2        refs/heads/master
+548dab6b8294db992004f5b5a17b478485e8ef42        refs/heads/v1.4                                       548dab6b8294db992004f5b5a17b478485e8ef42        refs/heads/v1.4
+03aa0f0824b77c13b85819107e8adb839411c8d2        refs/heads/v2.0                                       03aa0f0824b77c13b85819107e8adb839411c8d2        refs/heads/v2.0
+
+Comparing vi gaia
+=================
+8a84f4a2b4b0f9b3a806cb94f15984e534e73755        HEAD                                                  8a84f4a2b4b0f9b3a806cb94f15984e534e73755        HEAD
+                                                                                                   >  49584fbf69047c0ddcb55650f42469a4540f760e        refs/heads/default
+8a84f4a2b4b0f9b3a806cb94f15984e534e73755        refs/heads/master                                     8a84f4a2b4b0f9b3a806cb94f15984e534e73755        refs/heads/master
+49584fbf69047c0ddcb55650f42469a4540f760e        refs/heads/v1.4                                       49584fbf69047c0ddcb55650f42469a4540f760e        refs/heads/v1.4
+8a84f4a2b4b0f9b3a806cb94f15984e534e73755        refs/heads/v2.0                                       8a84f4a2b4b0f9b3a806cb94f15984e534e73755        refs/heads/v2.0
+
+Comparing xh gaia
+=================
+ec9831a2917adebff255f11f19fb3a0f67079c2b        HEAD                                                  ec9831a2917adebff255f11f19fb3a0f67079c2b        HEAD
+                                                                                                   >  fd3103932bb0514c01e3d3fa8c041eda22b72a81        refs/heads/default
+ec9831a2917adebff255f11f19fb3a0f67079c2b        refs/heads/master                                     ec9831a2917adebff255f11f19fb3a0f67079c2b        refs/heads/master
+                                                                                                   >  ce553c9970d755192507de468572ee84e116c7c5        refs/heads/v1.4
+ec9831a2917adebff255f11f19fb3a0f67079c2b        refs/heads/v2.0                                       ec9831a2917adebff255f11f19fb3a0f67079c2b        refs/heads/v2.0
+
+Comparing zh-CN gaia
+====================
+f260719103e6fe69fd883dc58c826b24e86ccde1        HEAD                                                  f260719103e6fe69fd883dc58c826b24e86ccde1        HEAD
+                                                                                                   >  b79613c71dd95a80b5737070d986db2449fe0643        refs/heads/default
+f260719103e6fe69fd883dc58c826b24e86ccde1        refs/heads/master                                     f260719103e6fe69fd883dc58c826b24e86ccde1        refs/heads/master
+01f313c3d0cf0f35afbccedb7dc8e4be8038f873        refs/heads/v1.2                                       01f313c3d0cf0f35afbccedb7dc8e4be8038f873        refs/heads/v1.2
+169ec7480f5d8739c422336011aee395ae0a64f8        refs/heads/v1.3                                       169ec7480f5d8739c422336011aee395ae0a64f8        refs/heads/v1.3
+e60371954e7a4dbf30c3f44b392826944bcc316f        refs/heads/v1.4                                       e60371954e7a4dbf30c3f44b392826944bcc316f        refs/heads/v1.4
+f260719103e6fe69fd883dc58c826b24e86ccde1        refs/heads/v2.0                                       f260719103e6fe69fd883dc58c826b24e86ccde1        refs/heads/v2.0
+
+Comparing zh-TW gaia
+====================
+cf3ba3b561e9771737b5e921b1e81e4a839989c8        HEAD                                                  cf3ba3b561e9771737b5e921b1e81e4a839989c8        HEAD
+                                                                                                   >  26684e9d325f5fa89af207527e31cc3fb874f732        refs/heads/default
+cf3ba3b561e9771737b5e921b1e81e4a839989c8        refs/heads/master                                     cf3ba3b561e9771737b5e921b1e81e4a839989c8        refs/heads/master
+                                                                                                   >  e30e75a7ae243bab0cb0ec13bc7cbb7ee76b3a80        refs/heads/v1.0.1
+                                                                                                   >  512a89612e401dd431db1ae8a6c13f34aaf1e950        refs/heads/v1.1
+eeea9587fc50031e12c8b7a0922b2e2bc01e02d5        refs/heads/v1.2                                       eeea9587fc50031e12c8b7a0922b2e2bc01e02d5        refs/heads/v1.2
+4671beff7e052bf0ad30b9cd0446dda86353ccba        refs/heads/v1.3                                       4671beff7e052bf0ad30b9cd0446dda86353ccba        refs/heads/v1.3
+92500867b6b043b5f91390bbd14c061268c8928c        refs/heads/v1.4                                       92500867b6b043b5f91390bbd14c061268c8928c        refs/heads/v1.4
+cf3ba3b561e9771737b5e921b1e81e4a839989c8        refs/heads/v2.0                                    |  bc382e05e0af764b6545f5b861f077460b1fce07        refs/heads/v2.0
+                                                                                                   >  1ec132e4f63f25732db3dd1f5de9532d822b6d3c        refs/tags/B2G_1_0_0_20130125190500
+
+Comparing zu gaia
+=================
+eee0e7bf77b40d868ed07ad3d00d84c29538222b        HEAD                                                  eee0e7bf77b40d868ed07ad3d00d84c29538222b        HEAD
+eee0e7bf77b40d868ed07ad3d00d84c29538222b        refs/heads/master                                     eee0e7bf77b40d868ed07ad3d00d84c29538222b        refs/heads/master
+eee0e7bf77b40d868ed07ad3d00d84c29538222b        refs/heads/v2.0                                       eee0e7bf77b40d868ed07ad3d00d84c29538222b        refs/heads/v2.0
+

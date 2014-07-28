@@ -14,4 +14,4 @@ do
     git ls-remote "${prod_url}" | sort -k2 > prod
     diff -y -W 200 -t staging prod
     echo
-done < all_l10n_git_repos | tee staging_vs_prod_l10n_git.log
+done < all_l10n_git_repos | tee l10n_comparison_staging_vs_prod.txt
