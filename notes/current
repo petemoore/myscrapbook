@@ -1,11 +1,25 @@
+Aki
+===
+
+Upload log files to my people account
+nbp is using the mapfiles (arewefast.com) Nicolas Pierron https://phonebook.mozilla.org/#search/nbp
+
+[asasaki@people1.dmz.scl3 ~]$ crontab -l
+MAILTO=asasaki@mozilla.com
+*/1 * * * * /home/asasaki/ln.sh
+[asasaki@people1.dmz.scl3 ~]$ more ~/ln.sh
+chmod o+x /home/asasaki/public_html
+ln -f /home/asasaki/public_html/vcs2vcs/gecko-projects/project-branches-mapfile /home/asasaki/.
+ln -f /home/asasaki/public_html/vcs2vcs/gecko-dev/gecko-mapfile /home/asasaki/.
+
+Make sure recording does not get deleted when aki leaves
+
 Pulse Queues
 ============
 cd /Users/pmoore/git/tools/buildfarm/maintenance
 ./manage_masters.py -f production-masters.json -j16 -H bm83-try1 retry_dead_queue
 
 git commit for review tool: 745ae46087388ec225bd84e93aceb7503192478f
-
-
 
 
 
@@ -122,3 +136,7 @@ Get Travis sending messages to irc #releng for mozilla failures and checkins (sa
 Things
 Remember the milk
 Omnifocus
+
+
+
+

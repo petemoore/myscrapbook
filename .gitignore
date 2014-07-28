@@ -5,3 +5,5 @@ settings_prod.py
 settings_staging.py
 *.source.mapfile
 *.mapper.mapfile
+bugs.list
+bugs.page

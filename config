@@ -11,7 +11,7 @@ Host itwf
 Host gh
     Hostname     github.com
     User         git
-    IdentityFile ~/.ssh/github_mozilla_rsa
+#   IdentityFile ~/.ssh/github_mozilla_rsa
 
 Host imac
     Hostname  pete-moores-imac-g5.local
