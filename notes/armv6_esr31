@@ -1,0 +1,90 @@
+pmoore
+22:37:15 kmoir: until now i had been editing release-firefox-mozilla-esr31.py.template but i now think that was wrong, and i need to modify release-fennec-mozilla-release.py.template to disable armv6 builds, and i guess I need to create release-fennec-mozilla-esr31.py where i enable only armv6 builds - do you agree? (re: bug 1040319)
+kmoir
+22:38:27 looks
+hwine
+22:38:47 see pmoore working at 2230 local on a friday night and realizes he'll be doing the same. Yay Releases!
+pmoore
+22:38:47 i mean release-fennec-mozilla-esr31.py.template (i.e. with the .template)
+22:39:11 raises his glass to hwine
+22:39:30 kmoir: we can grab a room if you like
+hwine
+22:39:32 ah, glad you know the rules for working that late on a friday!
+kmoir
+22:40:10 pmoore: let me think about that question for a bit
+pmoore
+22:40:32 kmoir: sure! hwine has inspired me to grab a beer - i'll be back in a bit
+kmoir
+22:41:06 I thought I disabled the armv6 builds in the templates when I turned off those builds, let me go look at that bug
+pmoore
+22:41:22 ah if you did it already, that is awesome, i didn't check already
+22:42:31 kmoir: but i think  release-fennec-mozilla-esr31.py.template would be the right file for me to create to enable only armv6 builds, right?
+coop
+22:42:49 hwine: i’ve disabled b-2008-ix-0172 and am timing how long an |hg update| takes
+kmoir
+22:42:54 pmoore: right
+coop
+22:43:04 we may just need to bump the timeout today
+pmoore
+22:43:09 kmoir: cool, i just wanted to check i wasn't going crazy :)
+kmoir
+22:44:00 I disabled armv6 in the releases template in the bug that turned off armv6 https://bug1042835.bugzilla.mozilla.org/attachment.cgi?id=8465635
+hwine
+22:44:20 coop: as I read that, it's simply updating the workspace. There is no hg.m.o interaction I see -- those completed successfully above that
+22:45:03 45 m to populate a local workspace sounds like something is broken, and a shorter timeout would fail faster :)
+22:45:22 coop: and thanks very much!
+pmoore
+22:45:54 kmoir: but does that also disable armv6 builds for esr31 branch?
+coop
+22:46:40 hwine: one thing we might consider…i disabled all the b-2008-sm slaves today, so we may be getting ix slaves of unknown pedigree back into the mix
+kmoir
+22:46:51 pmoore: there weren't any builds enabled for esr31 because we didn't have any android builds on android esr
+kmoir
+22:46:56 no android esr at all
+22:47:06 so we would have to add those builders back
+pmoore
+22:47:21 kmoir: ah right - yes i think we might have to do that :/
+kmoir
+22:47:21 the platform definitions are all there
+hwine
+22:47:24 coop: interesting -- I'll record all the slave names in the bug
+pmoore
+22:47:34 shall we have a quick vidyo?
+22:48:18 (kmoir, i mean)
+22:48:25 or is it a bad time for you now?
+kmoir
+22:49:03 sure let me login to your room
+hwine
+22:51:22 coop: when you're on that box, can you verify the version of hg being used, please?
+coop
+22:53:10 it’s 1.9.1
+22:53:15 hwine: ^^
+hwine
+22:53:38 thanks, and OUCH
+coop
+22:53:56 if we want to ninja-deploy 3.0.2, i could script that up pretty quickly
+22:54:14 i just filed bug 1056981 yesterday
+hwine
+22:54:31 let me check if that version could be an issue
+22:59:14 coop: no known/fixed issues since 1.9.1 since we don't use (afaik) "unshare"
+kmoir
+23:03:03 pmoore: http://hg.mozilla.org/build/buildbot-configs/file/8c5ae0f39459/mozilla/release-fennec-mozilla-release.py
+coop
+23:03:34 hwine: ok
+23:03:58 |hg up -C| took 13m on that slave BTW
+kmoir
+23:04:42 pmoore:
+kmoir
+23:04:43 BRANCHES['mozilla-central']['start_hour'] = [6]
+23:04:45 BRANCHES['mozilla-central']['start_minute'] = [30]
+23:05:08 buildbot-configs/mozilla/config.py
+hwine
+23:05:56 coop: all 4 are ix slaves & different  https://bugzil.la/1057549
+kmoir
+23:11:08 pmoore: http://hg.mozilla.org/build/buildbot-configs/file/8c5ae0f39459/mozilla/config.py#l1525
+23:12:57 pmoore: this line needs to be modified
+kmoir
+23:12:58 http://hg.mozilla.org/build/buildbot-configs/file/8c5ae0f39459/mozilla/config.py#l2578
+kmoir
+23:14:52 pmoore: http://hg.mozilla.org/build/buildbot-configs/file/8c5ae0f39459/mozilla/config.py#l1900
+23:16:08 pmoore: http://hg.mozilla.org/build/buildbot-configs/file/8c5ae0f39459/mozilla/config.py#l2128
