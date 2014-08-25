@@ -1,3 +1,43 @@
+ftp://ftp.mozilla.org/pub/mozilla.org/mobile/candidates/32.0b2-candidates/build1/android/multi/
+
+https://wiki.mozilla.org/Releases/Firefox_32/Test_Plan#Beta_2
+https://l10n.mozilla.org/shipping/milestones
+https://wiki.mozilla.org/Releases/RelEngChecklist
+
+Fennec base build file:
+http://mxr.mozilla.org/mozilla-central/source/mobile/android/base/Makefile.in#17:
+   ANDROID_VERSION_CODE make variable (first 10 chars, +1 for x86, +0 for arm7, -1 for arm6) (e.g. 2014080224)
+   UA_BUILDID = date 20140802 (can be wrong date if it was midnight, then -1 for arm6)
+   MOZ_APP_BUILDID = unadjusted buildid
+
+Example fennec checking aus:
+  https://bug767864.bugzilla.mozilla.org/attachment.cgi?id=636891
+  https://aus2.mozilla.org/update/4/%PRODUCT%/%VERSION%/%BUILD_ID%/%BUILD_TARGET%-@MOZ_PKG_SPECIAL@/%LOCALE%/%CHANNEL%/%OS_VERSION%/%DISTRIBUTION%/%DISTRIBUTION_VERSION%/%PLATFORM_VERSION%/update.xml
+  (my mac) https://aus3.mozilla.org/update/3/%PRODUCT%/%VERSION%/%BUILD_ID%/%BUILD_TARGET%/%LOCALE%/%CHANNEL%/%OS_VERSION%/%DISTRIBUTION%/%DISTRIBUTION_VERSION%/update.xml
+
+
+From Mike:
+ifdef MOZ_BUILD_DATE: http://mxr.mozilla.org/mozilla-central/source/config/Makefile.in#54
+enable-application=mobile/android
+https://tbpl.mozilla.org/php/getParsedLog.php?id=45169715&tree=Mozilla-Central&full=1:
+checking target system type... i386-linux-android
+https://tbpl.mozilla.org/php/getParsedLog.php?id=45170447&tree=Mozilla-Central&full=1:
+vs: checking target system type... arm-linux-android
+
+
+
+IRC logs
+========
+
+nightly and aurora-nightlies are served by aus, and beta/release are served by play store
+the aus updates are explicitly in-app update notifications, which is foreign to most android users aiui (since its its own update prompt, UI, etc) rather than the play store UX. Users also can't select "always update" with our aus updater
+pmoore
+
+http://mxr.mozilla.org/mozilla-central/source/mobile/android/app/mobile.js#549
+http://mxr.mozilla.org/mozilla-central/source/mobile/android/branding/aurora/configure.sh#7
+http://mxr.mozilla.org/mozilla-central/source/mobile/android/branding/nightly/configure.sh#6
+
+re: armv6/armv7 kim will be a good point of contact, specifically we *just* turned off armv6 builds on most trees
 pmoore
 22:37:15 kmoir: until now i had been editing release-firefox-mozilla-esr31.py.template but i now think that was wrong, and i need to modify release-fennec-mozilla-release.py.template to disable armv6 builds, and i guess I need to create release-fennec-mozilla-esr31.py where i enable only armv6 builds - do you agree? (re: bug 1040319)
 kmoir
