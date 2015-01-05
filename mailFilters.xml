@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?><feed xmlns='http://www.w3.org/2005/Atom' xmlns:apps='http://schemas.google.com/apps/2006'>
 	<title>Mail Filters</title>
-	<id>tag:mail.google.com,2008:filters:1418730997991,1418731147690,1418731252729,1418731265760,1418731293806,1418743461392,1418743515941,1418743665041,1418744030599,1418744329297,1418744329312,1418744329313,1418744390231,1418744443484,1418744487303,1418745804664,1418745913452,1418747748119,1418748526905,1418748638756,1418748701361,1418748745606,1418748790092,1418748834629,1418754991598,1418755617480,1418767083143,1418767166561,1418767262246,1418767283020,1418767307830,1418767378926,1418800426812,1418801546299,1418892419518,1418893238829,1418895379720</id>
-	<updated>2014-12-18T09:37:30Z</updated>
+	<id>tag:mail.google.com,2008:filters:1418744030599,1418744329297,1418744329312,1418744329313,1418754991598,1418767083143,1418767166561,1418767262246,1418767283020,1418767307830,1418800426812,1418801546299,1418892419518,1418893238829,1419000144543,1420460742877,1420460755675,1420460774741,1420460787085,1420460803297,1420460816946,1420460828255,1420460844529,1420460858746,1420460890198,1420460904006,1420460931382,1420460946076,1420460958202,1420460969903,1420460987626,1420461003823,1420461019686,1420461049917,1420461080663,1420461128525,1420461164162</id>
+	<updated>2015-01-05T12:33:06Z</updated>
 	<author>
 		<name>Peter Moore</name>
 		<email>pmoore@mozilla.com</email>
@@ -9,105 +9,8 @@
 	<entry>
 		<category term='filter'></category>
 		<title>Mail Filter</title>
-		<id>tag:mail.google.com,2008:filter:1418730997991</id>
-		<updated>2014-12-18T09:37:30Z</updated>
-		<content></content>
-		<apps:property name='from' value='buildduty@'/>
-		<apps:property name='subject' value='[aws cron]'/>
-		<apps:property name='label' value='AWS Cron'/>
-		<apps:property name='shouldArchive' value='true'/>
-		<apps:property name='sizeOperator' value='s_sl'/>
-		<apps:property name='sizeUnit' value='s_smb'/>
-	</entry>
-	<entry>
-		<category term='filter'></category>
-		<title>Mail Filter</title>
-		<id>tag:mail.google.com,2008:filter:1418731147690</id>
-		<updated>2014-12-18T09:37:30Z</updated>
-		<content></content>
-		<apps:property name='from' value='@github.com'/>
-		<apps:property name='label' value='Github'/>
-		<apps:property name='shouldArchive' value='true'/>
-		<apps:property name='sizeOperator' value='s_sl'/>
-		<apps:property name='sizeUnit' value='s_smb'/>
-	</entry>
-	<entry>
-		<category term='filter'></category>
-		<title>Mail Filter</title>
-		<id>tag:mail.google.com,2008:filter:1418731252729</id>
-		<updated>2014-12-18T09:37:30Z</updated>
-		<content></content>
-		<apps:property name='from' value='bugzilla-daemon@mozilla.org'/>
-		<apps:property name='label' value='- Bugzilla'/>
-		<apps:property name='shouldArchive' value='true'/>
-		<apps:property name='sizeOperator' value='s_sl'/>
-		<apps:property name='sizeUnit' value='s_smb'/>
-	</entry>
-	<entry>
-		<category term='filter'></category>
-		<title>Mail Filter</title>
-		<id>tag:mail.google.com,2008:filter:1418731265760</id>
-		<updated>2014-12-18T09:37:30Z</updated>
-		<content></content>
-		<apps:property name='from' value='quarantine@mozilla.com'/>
-		<apps:property name='label' value='Quarantine'/>
-		<apps:property name='shouldArchive' value='true'/>
-		<apps:property name='sizeOperator' value='s_sl'/>
-		<apps:property name='sizeUnit' value='s_smb'/>
-	</entry>
-	<entry>
-		<category term='filter'></category>
-		<title>Mail Filter</title>
-		<id>tag:mail.google.com,2008:filter:1418731293806</id>
-		<updated>2014-12-18T09:37:30Z</updated>
-		<content></content>
-		<apps:property name='from' value='@yammer.com'/>
-		<apps:property name='label' value='Yammer'/>
-		<apps:property name='shouldArchive' value='true'/>
-		<apps:property name='sizeOperator' value='s_sl'/>
-		<apps:property name='sizeUnit' value='s_smb'/>
-	</entry>
-	<entry>
-		<category term='filter'></category>
-		<title>Mail Filter</title>
-		<id>tag:mail.google.com,2008:filter:1418743461392</id>
-		<updated>2014-12-18T09:37:30Z</updated>
-		<content></content>
-		<apps:property name='from' value='release+ril@mozilla.com'/>
-		<apps:property name='label' value='Release RIL'/>
-		<apps:property name='shouldArchive' value='true'/>
-		<apps:property name='sizeOperator' value='s_sl'/>
-		<apps:property name='sizeUnit' value='s_smb'/>
-	</entry>
-	<entry>
-		<category term='filter'></category>
-		<title>Mail Filter</title>
-		<id>tag:mail.google.com,2008:filter:1418743515941</id>
-		<updated>2014-12-18T09:37:30Z</updated>
-		<content></content>
-		<apps:property name='from' value='cltbld@'/>
-		<apps:property name='label' value='cltbld'/>
-		<apps:property name='shouldArchive' value='true'/>
-		<apps:property name='sizeOperator' value='s_sl'/>
-		<apps:property name='sizeUnit' value='s_smb'/>
-	</entry>
-	<entry>
-		<category term='filter'></category>
-		<title>Mail Filter</title>
-		<id>tag:mail.google.com,2008:filter:1418743665041</id>
-		<updated>2014-12-18T09:37:30Z</updated>
-		<content></content>
-		<apps:property name='from' value='cruncher.'/>
-		<apps:property name='label' value='Cruncher'/>
-		<apps:property name='shouldArchive' value='true'/>
-		<apps:property name='sizeOperator' value='s_sl'/>
-		<apps:property name='sizeUnit' value='s_smb'/>
-	</entry>
-	<entry>
-		<category term='filter'></category>
-		<title>Mail Filter</title>
 		<id>tag:mail.google.com,2008:filter:1418744030599</id>
-		<updated>2014-12-18T09:37:30Z</updated>
+		<updated>2015-01-05T12:33:06Z</updated>
 		<content></content>
 		<apps:property name='from' value='vcs2vcs@'/>
 		<apps:property name='label' value='- VCS Sync'/>
@@ -119,7 +22,7 @@
 		<category term='filter'></category>
 		<title>Mail Filter</title>
 		<id>tag:mail.google.com,2008:filter:1418744329297</id>
-		<updated>2014-12-18T09:37:30Z</updated>
+		<updated>2015-01-05T12:33:06Z</updated>
 		<content></content>
 		<apps:property name='subject' value='PTO'/>
 		<apps:property name='label' value='- HR'/>
@@ -131,7 +34,7 @@
 		<category term='filter'></category>
 		<title>Mail Filter</title>
 		<id>tag:mail.google.com,2008:filter:1418744329312</id>
-		<updated>2014-12-18T09:37:30Z</updated>
+		<updated>2015-01-05T12:33:06Z</updated>
 		<content></content>
 		<apps:property name='hasTheWord' value='from:(benefits@ OR wellness@ OR quarterlybonuscommunication@mozilla.com OR dcoleman@mozilla.com OR rberto@mozilla.com OR sylvie@mozilla.com)'/>
 		<apps:property name='label' value='- HR'/>
@@ -143,7 +46,7 @@
 		<category term='filter'></category>
 		<title>Mail Filter</title>
 		<id>tag:mail.google.com,2008:filter:1418744329313</id>
-		<updated>2014-12-18T09:37:30Z</updated>
+		<updated>2015-01-05T12:33:06Z</updated>
 		<content></content>
 		<apps:property name='hasTheWord' value='to:(benefits@ OR wellness@ OR quarterlybonuscommunication@mozilla.com OR dcoleman@mozilla.com OR rberto@mozilla.com OR sylvie@mozilla.com)'/>
 		<apps:property name='label' value='- HR'/>
@@ -154,152 +57,8 @@
 	<entry>
 		<category term='filter'></category>
 		<title>Mail Filter</title>
-		<id>tag:mail.google.com,2008:filter:1418744390231</id>
-		<updated>2014-12-18T09:37:30Z</updated>
-		<content></content>
-		<apps:property name='to' value='release-drivers@mozilla.org'/>
-		<apps:property name='label' value='Rel Drivers'/>
-		<apps:property name='shouldArchive' value='true'/>
-		<apps:property name='sizeOperator' value='s_sl'/>
-		<apps:property name='sizeUnit' value='s_smb'/>
-	</entry>
-	<entry>
-		<category term='filter'></category>
-		<title>Mail Filter</title>
-		<id>tag:mail.google.com,2008:filter:1418744443484</id>
-		<updated>2014-12-18T09:37:30Z</updated>
-		<content></content>
-		<apps:property name='to' value='b2g-release-drivers@mozilla.org'/>
-		<apps:property name='label' value='B2G Drivers'/>
-		<apps:property name='shouldArchive' value='true'/>
-		<apps:property name='sizeOperator' value='s_sl'/>
-		<apps:property name='sizeUnit' value='s_smb'/>
-	</entry>
-	<entry>
-		<category term='filter'></category>
-		<title>Mail Filter</title>
-		<id>tag:mail.google.com,2008:filter:1418744487303</id>
-		<updated>2014-12-18T09:37:30Z</updated>
-		<content></content>
-		<apps:property name='from' value='kaspersky'/>
-		<apps:property name='label' value='Kaspersky'/>
-		<apps:property name='shouldArchive' value='true'/>
-		<apps:property name='sizeOperator' value='s_sl'/>
-		<apps:property name='sizeUnit' value='s_smb'/>
-	</entry>
-	<entry>
-		<category term='filter'></category>
-		<title>Mail Filter</title>
-		<id>tag:mail.google.com,2008:filter:1418745804664</id>
-		<updated>2014-12-18T09:37:30Z</updated>
-		<content></content>
-		<apps:property name='from' value='noreply@cloudmonitor.nimsoft.com'/>
-		<apps:property name='label' value='Nimsoft'/>
-		<apps:property name='shouldArchive' value='true'/>
-		<apps:property name='sizeOperator' value='s_sl'/>
-		<apps:property name='sizeUnit' value='s_smb'/>
-	</entry>
-	<entry>
-		<category term='filter'></category>
-		<title>Mail Filter</title>
-		<id>tag:mail.google.com,2008:filter:1418745913452</id>
-		<updated>2014-12-18T09:37:30Z</updated>
-		<content></content>
-		<apps:property name='from' value='release@mozilla.com'/>
-		<apps:property name='label' value='Release'/>
-		<apps:property name='shouldArchive' value='true'/>
-		<apps:property name='sizeOperator' value='s_sl'/>
-		<apps:property name='sizeUnit' value='s_smb'/>
-	</entry>
-	<entry>
-		<category term='filter'></category>
-		<title>Mail Filter</title>
-		<id>tag:mail.google.com,2008:filter:1418747748119</id>
-		<updated>2014-12-18T09:37:30Z</updated>
-		<content></content>
-		<apps:property name='to' value='firefoxforandroid@mozilla.com'/>
-		<apps:property name='label' value='Android'/>
-		<apps:property name='shouldArchive' value='true'/>
-		<apps:property name='sizeOperator' value='s_sl'/>
-		<apps:property name='sizeUnit' value='s_smb'/>
-	</entry>
-	<entry>
-		<category term='filter'></category>
-		<title>Mail Filter</title>
-		<id>tag:mail.google.com,2008:filter:1418748526905</id>
-		<updated>2014-12-18T09:37:30Z</updated>
-		<content></content>
-		<apps:property name='to' value='metrics-reports@mozilla.org'/>
-		<apps:property name='label' value='Metrics reports'/>
-		<apps:property name='shouldArchive' value='true'/>
-		<apps:property name='sizeOperator' value='s_sl'/>
-		<apps:property name='sizeUnit' value='s_smb'/>
-	</entry>
-	<entry>
-		<category term='filter'></category>
-		<title>Mail Filter</title>
-		<id>tag:mail.google.com,2008:filter:1418748638756</id>
-		<updated>2014-12-18T09:37:30Z</updated>
-		<content></content>
-		<apps:property name='to' value='thunderbird-drivers@mozilla.org'/>
-		<apps:property name='label' value='Thunderbird'/>
-		<apps:property name='shouldArchive' value='true'/>
-		<apps:property name='sizeOperator' value='s_sl'/>
-		<apps:property name='sizeUnit' value='s_smb'/>
-	</entry>
-	<entry>
-		<category term='filter'></category>
-		<title>Mail Filter</title>
-		<id>tag:mail.google.com,2008:filter:1418748701361</id>
-		<updated>2014-12-18T09:37:30Z</updated>
-		<content></content>
-		<apps:property name='to' value='infra-all@mozilla.com OR infra@mozilla.com'/>
-		<apps:property name='label' value='Infrastructure'/>
-		<apps:property name='shouldArchive' value='true'/>
-		<apps:property name='sizeOperator' value='s_sl'/>
-		<apps:property name='sizeUnit' value='s_smb'/>
-	</entry>
-	<entry>
-		<category term='filter'></category>
-		<title>Mail Filter</title>
-		<id>tag:mail.google.com,2008:filter:1418748745606</id>
-		<updated>2014-12-18T09:37:30Z</updated>
-		<content></content>
-		<apps:property name='to' value='releases@mozilla.org'/>
-		<apps:property name='label' value='Releases'/>
-		<apps:property name='shouldArchive' value='true'/>
-		<apps:property name='sizeOperator' value='s_sl'/>
-		<apps:property name='sizeUnit' value='s_smb'/>
-	</entry>
-	<entry>
-		<category term='filter'></category>
-		<title>Mail Filter</title>
-		<id>tag:mail.google.com,2008:filter:1418748790092</id>
-		<updated>2014-12-18T09:37:30Z</updated>
-		<content></content>
-		<apps:property name='to' value='b2g-internal@mozilla.org'/>
-		<apps:property name='label' value='B2G Internal'/>
-		<apps:property name='shouldArchive' value='true'/>
-		<apps:property name='sizeOperator' value='s_sl'/>
-		<apps:property name='sizeUnit' value='s_smb'/>
-	</entry>
-	<entry>
-		<category term='filter'></category>
-		<title>Mail Filter</title>
-		<id>tag:mail.google.com,2008:filter:1418748834629</id>
-		<updated>2014-12-18T09:37:30Z</updated>
-		<content></content>
-		<apps:property name='to' value='release@mozilla.org'/>
-		<apps:property name='label' value='Release (m.o)'/>
-		<apps:property name='shouldArchive' value='true'/>
-		<apps:property name='sizeOperator' value='s_sl'/>
-		<apps:property name='sizeUnit' value='s_smb'/>
-	</entry>
-	<entry>
-		<category term='filter'></category>
-		<title>Mail Filter</title>
 		<id>tag:mail.google.com,2008:filter:1418754991598</id>
-		<updated>2014-12-18T09:37:30Z</updated>
+		<updated>2015-01-05T12:33:06Z</updated>
 		<content></content>
 		<apps:property name='from' value='nagios'/>
 		<apps:property name='shouldTrash' value='true'/>
@@ -309,21 +68,8 @@
 	<entry>
 		<category term='filter'></category>
 		<title>Mail Filter</title>
-		<id>tag:mail.google.com,2008:filter:1418755617480</id>
-		<updated>2014-12-18T09:37:30Z</updated>
-		<content></content>
-		<apps:property name='to' value='pmoore@mozilla.com OR pete@mozilla.com'/>
-		<apps:property name='hasTheWord' value='has:nouserlabels'/>
-		<apps:property name='label' value='- Pete'/>
-		<apps:property name='shouldArchive' value='true'/>
-		<apps:property name='sizeOperator' value='s_sl'/>
-		<apps:property name='sizeUnit' value='s_smb'/>
-	</entry>
-	<entry>
-		<category term='filter'></category>
-		<title>Mail Filter</title>
 		<id>tag:mail.google.com,2008:filter:1418767083143</id>
-		<updated>2014-12-18T09:37:30Z</updated>
+		<updated>2015-01-05T12:33:06Z</updated>
 		<content></content>
 		<apps:property name='from' value='bugzilla-daemon@mozilla.org'/>
 		<apps:property name='hasTheWord' value='&quot;X-Bugzilla-Assigned-To: pmoore@mozilla.com&quot;'/>
@@ -336,7 +82,7 @@
 		<category term='filter'></category>
 		<title>Mail Filter</title>
 		<id>tag:mail.google.com,2008:filter:1418767166561</id>
-		<updated>2014-12-18T09:37:30Z</updated>
+		<updated>2015-01-05T12:33:06Z</updated>
 		<content></content>
 		<apps:property name='from' value='bugzilla-daemon@mozilla.org'/>
 		<apps:property name='hasTheWord' value='&quot;X-Bugzilla-Reason: CC&quot;'/>
@@ -349,7 +95,7 @@
 		<category term='filter'></category>
 		<title>Mail Filter</title>
 		<id>tag:mail.google.com,2008:filter:1418767262246</id>
-		<updated>2014-12-18T09:37:30Z</updated>
+		<updated>2015-01-05T12:33:06Z</updated>
 		<content></content>
 		<apps:property name='from' value='bugzilla-daemon@mozilla.org'/>
 		<apps:property name='hasTheWord' value='&quot;X-Bugzilla-Who: pmoore@mozilla.com&quot;'/>
@@ -363,7 +109,7 @@
 		<category term='filter'></category>
 		<title>Mail Filter</title>
 		<id>tag:mail.google.com,2008:filter:1418767283020</id>
-		<updated>2014-12-18T09:37:30Z</updated>
+		<updated>2015-01-05T12:33:06Z</updated>
 		<content></content>
 		<apps:property name='from' value='bugzilla-daemon@mozilla.org'/>
 		<apps:property name='hasTheWord' value='&quot;X-Bugzilla-Type: request&quot;'/>
@@ -376,7 +122,7 @@
 		<category term='filter'></category>
 		<title>Mail Filter</title>
 		<id>tag:mail.google.com,2008:filter:1418767307830</id>
-		<updated>2014-12-18T09:37:30Z</updated>
+		<updated>2015-01-05T12:33:06Z</updated>
 		<content></content>
 		<apps:property name='from' value='bugzilla-daemon@mozilla.org'/>
 		<apps:property name='hasTheWord' value='&quot;X-Bugzilla-Reason: Reporter&quot;'/>
@@ -388,20 +134,8 @@
 	<entry>
 		<category term='filter'></category>
 		<title>Mail Filter</title>
-		<id>tag:mail.google.com,2008:filter:1418767378926</id>
-		<updated>2014-12-18T09:37:30Z</updated>
-		<content></content>
-		<apps:property name='subject' value='&quot;Cron&quot;'/>
-		<apps:property name='label' value='Cron'/>
-		<apps:property name='shouldArchive' value='true'/>
-		<apps:property name='sizeOperator' value='s_sl'/>
-		<apps:property name='sizeUnit' value='s_smb'/>
-	</entry>
-	<entry>
-		<category term='filter'></category>
-		<title>Mail Filter</title>
 		<id>tag:mail.google.com,2008:filter:1418800426812</id>
-		<updated>2014-12-18T09:37:30Z</updated>
+		<updated>2015-01-05T12:33:06Z</updated>
 		<content></content>
 		<apps:property name='from' value='release@mozilla.com'/>
 		<apps:property name='subject' value='failed'/>
@@ -414,7 +148,7 @@
 		<category term='filter'></category>
 		<title>Mail Filter</title>
 		<id>tag:mail.google.com,2008:filter:1418801546299</id>
-		<updated>2014-12-18T09:37:30Z</updated>
+		<updated>2015-01-05T12:33:06Z</updated>
 		<content></content>
 		<apps:property name='from' value='mozilla.dev.planning'/>
 		<apps:property name='label' value='Dev Planning'/>
@@ -426,7 +160,7 @@
 		<category term='filter'></category>
 		<title>Mail Filter</title>
 		<id>tag:mail.google.com,2008:filter:1418892419518</id>
-		<updated>2014-12-18T09:37:30Z</updated>
+		<updated>2015-01-05T12:33:06Z</updated>
 		<content></content>
 		<apps:property name='hasTheWord' value='from:(jozeller@mozilla.com OR jlund@mozilla.com OR pmoore@mozilla.com OR mshal@mozilla.com OR catlee@mozilla.com OR rail@mozilla.com OR mgervasini@mozilla.com OR bhearsum@mozilla.com OR nthomas@mozilla.com OR coop@mozilla.com OR kmoir@mozilla.com OR callek@mozilla.com OR hwine@mozilla.com OR jwood@mozilla.com OR lthomson@mozilla.com OR raliiev@mozilla.com OR dustin@mozilla.com OR dmitchell@mozilla.com OR ccooper@deadsquid.com OR arich@mozilla.com OR mphillips@mozilla.com)'/>
 		<apps:property name='label' value='- Team'/>
@@ -438,7 +172,7 @@
 		<category term='filter'></category>
 		<title>Mail Filter</title>
 		<id>tag:mail.google.com,2008:filter:1418893238829</id>
-		<updated>2014-12-18T09:37:30Z</updated>
+		<updated>2015-01-05T12:33:06Z</updated>
 		<content></content>
 		<apps:property name='to' value='halwine+sms@gmail.com'/>
 		<apps:property name='shouldStar' value='true'/>
@@ -449,11 +183,300 @@
 	<entry>
 		<category term='filter'></category>
 		<title>Mail Filter</title>
-		<id>tag:mail.google.com,2008:filter:1418895379720</id>
-		<updated>2014-12-18T09:37:30Z</updated>
+		<id>tag:mail.google.com,2008:filter:1419000144543</id>
+		<updated>2015-01-05T12:33:06Z</updated>
+		<content></content>
+		<apps:property name='to' value='pete@mozilla.com OR pmoore@mozilla.com'/>
+		<apps:property name='hasTheWord' value='has:nouserlabels'/>
+		<apps:property name='label' value='- Pete'/>
+		<apps:property name='shouldArchive' value='true'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:1420460742877</id>
+		<updated>2015-01-05T12:33:06Z</updated>
+		<content></content>
+		<apps:property name='from' value='buildduty@'/>
+		<apps:property name='subject' value='[aws cron]'/>
+		<apps:property name='label' value='AWS Cron'/>
+		<apps:property name='shouldMarkAsRead' value='true'/>
+		<apps:property name='shouldArchive' value='true'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:1420460755675</id>
+		<updated>2015-01-05T12:33:06Z</updated>
+		<content></content>
+		<apps:property name='from' value='quarantine@mozilla.com'/>
+		<apps:property name='label' value='Quarantine'/>
+		<apps:property name='shouldMarkAsRead' value='true'/>
+		<apps:property name='shouldArchive' value='true'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:1420460774741</id>
+		<updated>2015-01-05T12:33:06Z</updated>
+		<content></content>
+		<apps:property name='from' value='@github.com'/>
+		<apps:property name='label' value='Github'/>
+		<apps:property name='shouldMarkAsRead' value='true'/>
+		<apps:property name='shouldArchive' value='true'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:1420460787085</id>
+		<updated>2015-01-05T12:33:06Z</updated>
+		<content></content>
+		<apps:property name='from' value='@yammer.com'/>
+		<apps:property name='label' value='Yammer'/>
+		<apps:property name='shouldMarkAsRead' value='true'/>
+		<apps:property name='shouldArchive' value='true'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:1420460803297</id>
+		<updated>2015-01-05T12:33:06Z</updated>
+		<content></content>
+		<apps:property name='from' value='release+ril@mozilla.com'/>
+		<apps:property name='label' value='Release RIL'/>
+		<apps:property name='shouldMarkAsRead' value='true'/>
+		<apps:property name='shouldArchive' value='true'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:1420460816946</id>
+		<updated>2015-01-05T12:33:06Z</updated>
+		<content></content>
+		<apps:property name='from' value='cltbld@'/>
+		<apps:property name='label' value='cltbld'/>
+		<apps:property name='shouldMarkAsRead' value='true'/>
+		<apps:property name='shouldArchive' value='true'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:1420460828255</id>
+		<updated>2015-01-05T12:33:06Z</updated>
+		<content></content>
+		<apps:property name='from' value='cruncher.'/>
+		<apps:property name='label' value='Cruncher'/>
+		<apps:property name='shouldMarkAsRead' value='true'/>
+		<apps:property name='shouldArchive' value='true'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:1420460844529</id>
+		<updated>2015-01-05T12:33:06Z</updated>
+		<content></content>
+		<apps:property name='to' value='release-drivers@mozilla.org'/>
+		<apps:property name='label' value='Rel Drivers'/>
+		<apps:property name='shouldMarkAsRead' value='true'/>
+		<apps:property name='shouldArchive' value='true'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:1420460858746</id>
+		<updated>2015-01-05T12:33:06Z</updated>
+		<content></content>
+		<apps:property name='to' value='b2g-release-drivers@mozilla.org'/>
+		<apps:property name='label' value='B2G Drivers'/>
+		<apps:property name='shouldMarkAsRead' value='true'/>
+		<apps:property name='shouldArchive' value='true'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:1420460890198</id>
+		<updated>2015-01-05T12:33:06Z</updated>
+		<content></content>
+		<apps:property name='from' value='kaspersky'/>
+		<apps:property name='label' value='Kaspersky'/>
+		<apps:property name='shouldMarkAsRead' value='true'/>
+		<apps:property name='shouldArchive' value='true'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:1420460904006</id>
+		<updated>2015-01-05T12:33:06Z</updated>
+		<content></content>
+		<apps:property name='from' value='noreply@cloudmonitor.nimsoft.com'/>
+		<apps:property name='label' value='Nimsoft'/>
+		<apps:property name='shouldMarkAsRead' value='true'/>
+		<apps:property name='shouldArchive' value='true'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:1420460931382</id>
+		<updated>2015-01-05T12:33:06Z</updated>
+		<content></content>
+		<apps:property name='to' value='firefoxforandroid@mozilla.com'/>
+		<apps:property name='label' value='Android'/>
+		<apps:property name='shouldMarkAsRead' value='true'/>
+		<apps:property name='shouldArchive' value='true'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:1420460946076</id>
+		<updated>2015-01-05T12:33:06Z</updated>
+		<content></content>
+		<apps:property name='to' value='metrics-reports@mozilla.org'/>
+		<apps:property name='label' value='Metrics reports'/>
+		<apps:property name='shouldMarkAsRead' value='true'/>
+		<apps:property name='shouldArchive' value='true'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:1420460958202</id>
+		<updated>2015-01-05T12:33:06Z</updated>
+		<content></content>
+		<apps:property name='to' value='thunderbird-drivers@mozilla.org'/>
+		<apps:property name='label' value='Thunderbird'/>
+		<apps:property name='shouldMarkAsRead' value='true'/>
+		<apps:property name='shouldArchive' value='true'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:1420460969903</id>
+		<updated>2015-01-05T12:33:06Z</updated>
+		<content></content>
+		<apps:property name='to' value='infra-all@mozilla.com OR infra@mozilla.com'/>
+		<apps:property name='label' value='Infrastructure'/>
+		<apps:property name='shouldMarkAsRead' value='true'/>
+		<apps:property name='shouldArchive' value='true'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:1420460987626</id>
+		<updated>2015-01-05T12:33:06Z</updated>
+		<content></content>
+		<apps:property name='to' value='releases@mozilla.org'/>
+		<apps:property name='label' value='Releases'/>
+		<apps:property name='shouldMarkAsRead' value='true'/>
+		<apps:property name='shouldArchive' value='true'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:1420461003823</id>
+		<updated>2015-01-05T12:33:06Z</updated>
+		<content></content>
+		<apps:property name='to' value='b2g-internal@mozilla.org'/>
+		<apps:property name='label' value='B2G Internal'/>
+		<apps:property name='shouldMarkAsRead' value='true'/>
+		<apps:property name='shouldArchive' value='true'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:1420461019686</id>
+		<updated>2015-01-05T12:33:06Z</updated>
+		<content></content>
+		<apps:property name='to' value='release@mozilla.org'/>
+		<apps:property name='label' value='Release (m.o)'/>
+		<apps:property name='shouldMarkAsRead' value='true'/>
+		<apps:property name='shouldArchive' value='true'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:1420461049917</id>
+		<updated>2015-01-05T12:33:06Z</updated>
+		<content></content>
+		<apps:property name='subject' value='&quot;Cron&quot;'/>
+		<apps:property name='label' value='Cron'/>
+		<apps:property name='shouldMarkAsRead' value='true'/>
+		<apps:property name='shouldArchive' value='true'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:1420461080663</id>
+		<updated>2015-01-05T12:33:06Z</updated>
+		<content></content>
+		<apps:property name='from' value='release@mozilla.com'/>
+		<apps:property name='subject' value='-failed'/>
+		<apps:property name='label' value='Release'/>
+		<apps:property name='shouldMarkAsRead' value='true'/>
+		<apps:property name='shouldArchive' value='true'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:1420461128525</id>
+		<updated>2015-01-05T12:33:06Z</updated>
 		<content></content>
 		<apps:property name='from' value='mozilla.dev.tree-management'/>
 		<apps:property name='label' value='Tree Mngment'/>
+		<apps:property name='shouldMarkAsRead' value='true'/>
+		<apps:property name='shouldArchive' value='true'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:1420461164162</id>
+		<updated>2015-01-05T12:33:06Z</updated>
+		<content></content>
+		<apps:property name='from' value='bugzilla-daemon@mozilla.org'/>
+		<apps:property name='label' value='- Bugzilla'/>
+		<apps:property name='shouldMarkAsRead' value='true'/>
 		<apps:property name='shouldArchive' value='true'/>
 		<apps:property name='sizeOperator' value='s_sl'/>
 		<apps:property name='sizeUnit' value='s_smb'/>
