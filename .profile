@@ -43,6 +43,7 @@ alias c='pastebin | pbcopy'
 function watch { while true; clear; date; do "${@}"; sleep 2; done; }
 export GOPATH=/Users/pmoore/go
 alias cdgo='cd /Users/pmoore/go/src/github.com/petemoore'
+alias vigo='vi $(find . -name "*.go")'
 function venv {
     rm -rf ~/"venvs/${1}"
     virtualenv ~/"venvs/${1}"
