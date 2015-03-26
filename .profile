@@ -25,14 +25,14 @@ export PS1='\[\033[01;35m\]\u\[\033[34m\]@\[\033[36m\]\h\[\033[00m\]:\[\033[01;3
 PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
 export PATH
 
-export PATH="/Users/pmoore/git/tools/buildfarm/maintenance:/Users/pmoore/git/mozilla:${PATH}:/Users/pmoore/AWS-ElasticBeanstalk-CLI-2.6.0/eb/macosx/python2.7:/Users/pmoore/hg/braindump/utils"
+export PATH="/Users/pmoore/git/tools/buildfarm/maintenance:/Users/pmoore/git/mozilla:${PATH}:/Users/pmoore/AWS-ElasticBeanstalk-CLI-2.6.0/eb/macosx/python2.7:/Users/pmoore/hg/braindump/utils:/Users/pmoore/rabbitmq_server-3.4.3/sbin"
 
 function ag { grep -r "${1}" .; }
 export -f ag
 
 # Setting PATH for Python 2.7
 # The orginal version is saved in .profile.pysave
-PATH="/usr/local/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}:/usr/local/mysql/bin:/Users/pmoore/go/bin"
+PATH="~/npm-global/bin:/usr/local/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}:/usr/local/mysql/bin:/Users/pmoore/go/bin"
 export PATH
 
 ssh-add ~/.ssh/id_rsa
@@ -42,10 +42,17 @@ alias c='pastebin | pbcopy'
 
 function watch { while true; clear; date; do "${@}"; sleep 2; done; }
 export GOPATH=/Users/pmoore/go
-alias cdgo='cd /Users/pmoore/go/src/github.com/petemoore'
-alias vigo='vi $(find . -name "*.go")'
 function venv {
     rm -rf ~/"venvs/${1}"
     virtualenv ~/"venvs/${1}"
     source ~/"venvs/${1}/bin/activate"
 }
+
+# Load rbenv automatically by adding
+# the following to ~/.bash_profile:
+
+eval "$(rbenv init -)"
+
+
+export DYLD_LIBRARY_PATH="${DYLD_LIBRARY_PATH}:/usr/local/lib"
+source ~/env.sh

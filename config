@@ -73,3 +73,6 @@ Host vcs2
 
 Host vcsstage
     Hostname vcssync-dev
+
+Host api
+    Hostname 78.47.51.189

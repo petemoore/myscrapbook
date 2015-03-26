@@ -1,5 +1,5 @@
 syntax on
-colorscheme torte
+colorscheme desert
 set number
 set tabstop=4
 set hidden
