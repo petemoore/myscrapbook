@@ -17,8 +17,12 @@ if [ -e "$GIT_COMPLETION_BASH" ]; then
     source "$GIT_COMPLETION_BASH"
 fi
 
+export GOPATH=~/go
+alias cdgo='cd "${GOPATH}/src/github.com/petemoore"'
+alias vigo='vi $(find . -name Godeps -prune -o -name "*.go" -print)'
+
 export PS1='\[\033[01;35m\]\u\[\033[34m\]@\[\033[36m\]\h\[\033[00m\]:\[\033[01;33m\]\w\[\033[31m\]$(git branch -l 2>/dev/null | sed -n s/^*//p) \$\[\033[00m\] '
-export PATH="/usr/local/bin:/Users/pmoore/git/tools/buildfarm/maintenance:/Users/pmoore/git/mozilla:${PATH}:/usr/local/mysql/bin:/Users/pmoore/AWS-ElasticBeanstalk-CLI-2.6.0/eb/macosx/python2.7:/Users/pmoore/hg/braindump/utils:/Users/pmoore/go/bin:/Users/pmoore/rabbitmq_server-3.4.3/sbin"
+export PATH="/usr/local/bin:/Users/pmoore/git/tools/buildfarm/maintenance:/Users/pmoore/git/mozilla:${PATH}:/usr/local/mysql/bin:/Users/pmoore/AWS-ElasticBeanstalk-CLI-2.6.0/eb/macosx/python2.7:/Users/pmoore/hg/braindump/utils:${GOPATH}/bin:/Users/pmoore/rabbitmq_server-3.4.3/sbin"
 
 # share history between bash shells
 export PROMPT_COMMAND='history -a; history -r'
@@ -34,9 +38,6 @@ export PS1='\[\033[01;35m\]\u\[\033[34m\]@\[\033[36m\]\h\[\033[00m\]:\[\033[01;3
 source ~/env.sh
 
 function watch { while true; clear; date; do "${@}"; sleep 2; done; }
-export GOPATH=/Users/pmoore/go
-alias cdgo='cd /Users/pmoore/go/src/github.com/petemoore'
-alias vigo='vi $(find . -name Godeps -prune -o -name "*.go" -print)'
 function venv {
     rm -rf ~/"venvs/${1}"
     virtualenv ~/"venvs/${1}"
