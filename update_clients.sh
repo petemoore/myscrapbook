@@ -5,15 +5,8 @@ do
     export GOPATH="$(mktemp -d -t update_clients.XXXXXXXXXX)"
     export PATH="${GOPATH}/bin:${PATH}"
     rm -rf "${GOPATH}"
-    go get github.com/axw/gocov/gocov
-    go get golang.org/x/tools/cmd/cover
-    go get golang.org/x/tools/cmd/vet
-    go get github.com/pierrre/gotestcover
     go get -t "github.com/taskcluster/${repo}"
-
     cd "${GOPATH}/src/github.com/taskcluster/${repo}"
-    # go get -t ./...
-    # go install ./...
     # this will fail if there are changes
     if ! ./build.sh; then
         # but is not the only reason it might fail, so let's see
