@@ -30,7 +30,7 @@ echo
 echo "  * Setting PS1 environment variable in .bashrc"
 add_if_missing 'export PS1='"'"'\[\033[01;35m\]\u\[\033[34m\]@\[\033[36m\]\h\[\033[00m\]:\[\033[01;33m\]\w\[\033[31m\] \$\[\033[00m\] '"'" ~/.bashrc
 echo "  * Making sure ~/env.sh gets sourced in .bashrc"
-add_if_missing 'source ~/env.sh' ~/.bashrc
+# add_if_missing 'source ~/env.sh' ~/.bashrc
 echo "  * Making sure there is a pair of public/private keys"
 [ ! -e ~/.ssh/id_rsa ] || [ ! -e ~/.ssh/id_rsa.pub ] && ssh-keygen -b 1024 -t rsa -N '' -f ~/.ssh/id_rsa
 echo "  * Setting syntax highlighting in vi"
@@ -41,6 +41,7 @@ echo "  * Enabling line numbers in vi"
 add_if_missing 'set number' ~/.vimrc
 echo "  * Setting tab to four spaces in vi"
 add_if_missing 'set tabstop=4' ~/.vimrc
+[ ! -e /c ] && ln -s /cygdrive/c /c
 
 # Example: set up new drive mappings:
 # echo "  * Setting up J:\ drive to map to \\\\server1234\\d$"
