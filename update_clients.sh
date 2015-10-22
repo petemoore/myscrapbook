@@ -31,6 +31,7 @@ do
                     else
                         say "Could not publish updated javadocs"
                     fi
+                    # TODO: now we should probably bump version number, possibly build again, tag it, and publish to maven central repository...
                     git checkout master
                 fi
             else
