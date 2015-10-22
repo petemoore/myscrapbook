@@ -18,6 +18,20 @@ do
         if ./build.sh; then
             if git push; then
                 say "New changes pushed, yahoo"
+                if [ "${repo}" == 'taskcluster-client-java' ]; then
+                    mvn javadoc:javadoc
+                    git checkout gh-pages
+                    rm -rf apidocs
+                    mv target/site/apidocs .
+                    git add apidocs
+                    git commit -m "Regenerated javadocs after api update(s)"
+                    if git push; then
+                        say "New javadocs published"
+                    else
+                        say "Could not publish updated javadocs"
+                    fi
+                    git checkout master
+                fi
             else
                 say "New changes, but I can't push them"
             fi
