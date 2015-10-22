@@ -1,5 +1,6 @@
 #!/bin/bash
 
+say -v boing "let's go mr driver"
 for repo in taskcluster-client-go taskcluster-client-java
 do
     export GOPATH="$(mktemp -d -t update_clients.XXXXXXXXXX)"
