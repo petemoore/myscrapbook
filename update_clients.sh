@@ -15,7 +15,17 @@ do
         git commit -m "Regenerated library to pick up latest schema changes"
         # build again to make sure all is ok since git status should report no differences this time, so exit code is reliable
         # note we only push if this second build is successful
-        ./build.sh && git push
+        if ./build.sh; then
+            if git push; then
+                say "New changes pushed, yahoo"
+            else
+                say "New changes, but I can't push them"
+            fi
+        else
+            say "Can't auto rebuild, something is seriously wrong"
+        fi
+    else
+        say "All ok"
     fi
     cd
     rm -rf "${GOPATH}"
