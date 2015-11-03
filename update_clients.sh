@@ -1,7 +1,7 @@
 #!/bin/bash
 
 say -v boing "let's go mr driver"
-source ~/private_env.sh
+source ~/update_clients.env
 export DEBUG=*
 for repo in taskcluster-client-go taskcluster-client-java
 do
