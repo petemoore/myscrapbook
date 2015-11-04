@@ -2,6 +2,10 @@
 
 say -v boing "let's go mr driver"
 source ~/update_clients.env
+if [ -z "${TASKCLUSTER_CLIENT_ID}" ] || [ -z "${TASKCLUSTER_ACCESS_TOKEN}" ]; then
+    say "No credentials for me to use with taskcluster"
+	exit 1
+fi
 export DEBUG=*
 for repo in taskcluster-client-go taskcluster-client-java
 do
