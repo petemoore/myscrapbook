@@ -16,17 +16,17 @@ do
     go get -t "github.com/taskcluster/${repo}"
     cd "${GOPATH}/src/github.com/taskcluster/${repo}"
     # this will fail if there are changes
-    if ! ./build.sh -d; then
+    if ! ./build.sh; then
         # but is not the only reason it might fail, so let's see
         # if adding changes fixes it
         git add .
         git commit -m "Temporary commit that should not get pushed to github"
         # build again to make sure all is ok since git status should report no differences this time, so exit code is reliable
         # note we only push if this second build is successful
-        if ./build.sh -d; then
+        if ./build.sh; then
             # build now passes, so finally let's update timestamps by rebuilding without -d
             say "New successful changes found, building again to pick up new date"
-            if ./build.sh; then
+            if ./build.sh -d; then
                 # remove last temporary commit from lines above
                 git reset 'HEAD~1'
                 git add .
