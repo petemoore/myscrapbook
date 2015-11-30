@@ -96,7 +96,7 @@ do
             say "Can't auto rebuild, something is seriously wrong"
         fi
     else
-        say "All ok"
+        say "${repo} ok"
     fi
     cd
     rm -rf "${GOPATH}"
