@@ -31,7 +31,7 @@ func main() {
 		panic(err)
 	}
 	var out bytes.Buffer
-	json.Indent(&out, b, "", "\t")
+	json.Indent(&out, b, "", "    ")
 	out.WriteTo(os.Stdout)
 	fmt.Println()
 }
