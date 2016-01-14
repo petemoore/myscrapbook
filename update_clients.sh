@@ -31,7 +31,7 @@ do
                 git reset 'HEAD~1'
                 git add .
                 git commit -m "Regenerated library to pick up latest schema changes"
-                if git push origin master; then
+                if git push "git@github.com:taskcluster/${repo}.git" master; then
                     say "New changes pushed, yahoo"
                     if [ "${repo}" == 'taskcluster-client-java' ]; then
                         version="$(cat pom.xml | sed -n '1,/<version>/s/.*<version>\([0-9\.]*\)<\/version>.*/\1/p')"
@@ -41,7 +41,7 @@ do
                         mv target/site/apidocs .
                         git add apidocs
                         git commit -m "Regenerated javadocs after api update(s)"
-                        if git push origin gh-pages:gh-pages; then
+                        if git push "git@github.com:taskcluster/${repo}.git" gh-pages:gh-pages; then
                             say "New javadocs published"
                         else
                             say "Could not publish updated javadocs"
@@ -56,7 +56,7 @@ do
                         fi
                         if git tag -m "Released version ${version}" "v${version}"; then
                             say "Tagged locally"
-                            if git push origin "refs/tags/v${version}:refs/tags/v${version}"; then
+                            if git push "git@github.com:taskcluster/${repo}.git" "refs/tags/v${version}:refs/tags/v${version}"; then
                                 say "Pushed tag v${version}"
                                 oldLastDigit="$(echo "${version}" | sed 's/.*\.//')"
                                 newLastDigit=$((oldLastDigit + 1))
@@ -73,7 +73,7 @@ do
                                     say "git commit seemed to fail for the version bump from ${version} to ${newVersion}"
                                 fi
 
-                                if git push origin master; then
+                                if git push "git@github.com:taskcluster/${repo}.git" master; then
                                     say "Pushed new version number to github"
                                 else
                                     say "Could not push new version number to github"
