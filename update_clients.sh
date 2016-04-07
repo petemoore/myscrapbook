@@ -13,7 +13,7 @@ do
     export PATH="${GOPATH}/bin:${PATH}"
     export TIMESTAMP="$(date +%s)"
     rm -rf "${GOPATH}"
-    go get -t "github.com/taskcluster/${repo}"
+    go get -t "github.com/taskcluster/${repo}" 2>/dev/null
     cd "${GOPATH}/src/github.com/taskcluster/${repo}"
     # this will fail if there are changes
     if ! ./build.sh; then
