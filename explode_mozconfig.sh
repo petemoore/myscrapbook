@@ -15,14 +15,18 @@ cd "$(dirname "${MOZCONFIG}")"
 
 function display {
   c="${1}"
+  local indent="${2}"
+  local LINE
   while read LINE; do
     if [ "${LINE#. }" != "${LINE}" ]; then
       file="$(eval "echo ${LINE#. }")"
-      display "${file}"
+	  echo "${indent}######### START \`${LINE}\` #########"
+      display "${file}" "${indent}  "
+      echo "${indent}######### END \`${LINE}\` ###########"
     else
-      echo "${LINE}"
+      echo "${indent}${LINE}"
     fi
   done < "${c}"
 }
 
-display "$(basename "${MOZCONFIG}")"
+display "$(basename "${MOZCONFIG}")" ''
