@@ -13,7 +13,7 @@ do
   aws ec2 describe-instances --filters "Name=tag-value,Values=${WORKER_TYPE}" "Name=tag-key,Values=Name" --query 'Reservations[*].Instances[*].{PUBLIC_IP:NetworkInterfaces[*].Association.PublicIp,INSTANCE_ID:InstanceId}' --output text | while read INST
   do
     read x IP
-    echo "  Worker ${INSTANCE_ID}:"
+    echo "  Worker ${INST}:"
     echo "    ssh Administrator@${IP} (password: '${PASSWORD}')"
   done
 done
