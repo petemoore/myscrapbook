@@ -9,6 +9,7 @@ do
   echo "${WORKER_TYPE//?/=}"
   echo "  Base ${INSTANCE_ID}:"
   echo "    ssh Administrator@${PUBLIC_IP} (password: '${PASSWORD}')"
+  echo "  ------------------"
   aws ec2 describe-instances --filters "Name=tag-value,Values=${WORKER_TYPE}" "Name=tag-key,Values=Name" --query 'Reservations[*].Instances[*].{PUBLIC_IP:NetworkInterfaces[*].Association.PublicIp,INSTANCE_ID:InstanceId}' --output text | while read INST
   do
     read x IP
