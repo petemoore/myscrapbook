@@ -4,6 +4,9 @@ aws ec2 describe-instances --filters Name=key-name,Values=pmoore-oregan-us-west-
 do
   read x PUBLIC_IP
   read x WORKER_TYPE
+  echo "${WORKER_TYPE} ${PUBLIC_IP} ${INSTANCE_ID}"
+done | sort -u | while read WORKER_TYPE PUBLIC_IP INSTANCE_ID
+do
   PASSWORD="$(aws ec2 get-password-data --instance-id "${INSTANCE_ID}" --priv-launch-key ~/.ssh/pmoore-oregan-us-west-2.pem --output text --query PasswordData)"
   echo "${WORKER_TYPE}"
   echo "${WORKER_TYPE//?/=}"
