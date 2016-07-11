@@ -10,6 +10,8 @@ if [ -z "${MOZCONFIG}" ] || [ -z "${topsrcdir}" ]; then
 fi
 
 cd "${topsrcdir}"
+# make absolute
+topsrcdir="$(pwd)"
 # note this works if MOZCONFIG is absolute, or relative to topsrcdir
 cd "$(dirname "${MOZCONFIG}")"
 
