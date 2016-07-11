@@ -94,6 +94,8 @@ do
             fi
         else
             say "Can't auto rebuild, something is seriously wrong"
+            git status
+            git diff
         fi
     else
         say "${repo} ok"
