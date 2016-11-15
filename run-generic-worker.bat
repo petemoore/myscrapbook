@@ -6,4 +6,4 @@ pushd %~dp0
 go get -u github.com/taskcluster/generic-worker
 copy /y /b %GOPATH%\bin\generic-worker.exe .\generic-worker.exe
 
-.\generic-worker.exe run --config C:\generic-worker\generic-worker.config > .\generic-worker.log 2>&1
+.\generic-worker.exe run --configure-for-aws > .\generic-worker.log 2>&1
