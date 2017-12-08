@@ -1,6 +1,16 @@
-#!/bin/bash
+#!/bin/bash -xv
+GPG_NO_TTY="$(mktemp -t gpg-no-tty.XXXXXXXXXX)"
+{
+  echo '#!/bin/bash'
+  echo 'gpg --no-tty "${@}"'
+} >> "${GPG_NO_TTY}"
+chmod u+x "${GPG_NO_TTY}"
 
-say -v boing "let's go mr driver"
+function git {
+    git -c "gpg.program=${GPG_NO_TTY}" "${@}"
+}
+
+say -v Daniel "let's go mr driver"
 source ~/update_clients.env
 if [ -z "${TASKCLUSTER_CLIENT_ID}" ] || [ -z "${TASKCLUSTER_ACCESS_TOKEN}" ]; then
     say -v Samantha "No credentials for me to use with taskcluster"
@@ -106,3 +116,5 @@ do
     echo =========================================
     echo
 done
+
+rm "${GPG_NO_TTY}"
