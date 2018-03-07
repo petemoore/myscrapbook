@@ -18,7 +18,7 @@ for MANIFEST in *-b.json *-cu.json *-beta.json; do
 done
 DEPLOY="deploy: $(echo *-b.json *-cu.json *-beta.json | sed 's/\.json//g')"
 git add .
-git commit -m "Upgraded generic-worker to version ${NEW_VERSION} on beta and cu worker types" -m "${DEPLOY}"
+git commit -m "Bug 1399401 - Rolled out generic-worker ${NEW_VERSION} to *STAGING* (not production)" -m "${DEPLOY}"
 git push
 open 'https://github.com/mozilla-releng/OpenCloudConfig/commits/master'
 cd ~/git/OpenCloudConfig
