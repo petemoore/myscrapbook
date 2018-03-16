@@ -12,11 +12,20 @@ cd "${CHECKOUT}"
 
 for ARCH in 386 amd64
 do
-  curl -L "https://github.com/taskcluster/generic-worker/releases/download/v${NEW_VERSION}/generic-worker-windows-${ARCH}.exe" > "generic-worker-windows-${ARCH}-v${NEW_VERSION}.exe"
-  tooltool.py add --visibility internal "generic-worker-windows-${ARCH}-v${NEW_VERSION}.exe"
+  echo "Waiting for generic-worker ${NEW_VERSION} ($ARCH) to be available on github..."
+  DOWNLOAD_URL="https://github.com/taskcluster/generic-worker/releases/download/v${NEW_VERSION}/generic-worker-windows-${ARCH}.exe"
+  LOCAL_FILE="generic-worker-windows-${ARCH}-v${NEW_VERSION}.exe"
+  while ! curl -s -I "${DOWNLOAD_URL}" | head -1 | grep -q '302 Found'; do
+    sleep 3
+    echo -n '.'
+  done
+  echo
+  curl -L "${DOWNLOAD_URL}" > "${LOCAL_FILE}"
+  tooltool.py add --visibility internal "${LOCAL_FILE}"
 done
 cat manifest.tt
-tooltool.py upload --authentication-file=~/tooltool-upload --message "Bug 1399401: Upgrade *STAGING* worker types to use generic-worker ${NEW_VERSION}"
+which tooltool.py
+tooltool.py upload -v --authentication-file="$(echo ~/tooltool-upload)" --message "Bug 1399401: Upgrade *STAGING* worker types to use generic-worker ${NEW_VERSION}"
 
 git clone git@github.com:mozilla-releng/OpenCloudConfig.git
 cd OpenCloudConfig/userdata/Manifest
