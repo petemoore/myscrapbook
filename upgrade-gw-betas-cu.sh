@@ -55,8 +55,22 @@ This change does _not_ affect any production workers. Commit made with:
     ./upgrade-gw-betas-cu.sh ${NEW_VERSION}
 
 See https://github.com/petemoore/myscrapbook/blob/master/upgrade-gw-betas-cu.sh" -m "${DEPLOY}"
+OCC_COMMIT="$(git rev-parse HEAD)"
 git push
 open 'https://github.com/mozilla-releng/OpenCloudConfig/commits/master'
+cd "${CHECKOUT}"
+hg clone https://hg.mozilla.org/mozilla-central
+cd mozilla-central
+
+# wait for OCC deployment to complete
+go run "${THIS_SCRIPT_DIR}/waitforOCC.go" "${OCC_COMMIT}"
+
+hg pull -u -r default
+curl -L 'https://bug1399401.bmoattachments.org/attachment.cgi?id=8935897' | hg import -
+curl -L 'https://bug1400012.bmoattachments.org/attachment.cgi?id=8948627' | hg import -
+hg push -f ssh://hg.mozilla.org/try/ -r .
+open 'https://treeherder.mozilla.org/#/jobs?repo=try'
+
 cd ~/git/OpenCloudConfig
 git pull
 echo rm -rf "${CHECKOUT}"
