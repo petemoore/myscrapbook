@@ -58,9 +58,9 @@ See https://github.com/petemoore/myscrapbook/blob/master/upgrade-gw-betas-cu.sh"
 OCC_COMMIT="$(git rev-parse HEAD)"
 git push
 open 'https://github.com/mozilla-releng/OpenCloudConfig/commits/master'
-cd "${CHECKOUT}"
-hg clone https://hg.mozilla.org/mozilla-central
-cd mozilla-central
+cd ~/hg/mozilla-central
+hg up -C
+hg purge
 
 # wait for OCC deployment to complete
 go run "${THIS_SCRIPT_DIR}/waitforOCC.go" "${OCC_COMMIT}"
