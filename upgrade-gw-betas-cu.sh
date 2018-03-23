@@ -7,6 +7,9 @@ if [ -z "${NEW_VERSION}" ]; then
   exit 64
 fi
 
+cd "$(dirname "${0}")"
+THIS_SCRIPT_DIR="$(pwd)"
+
 CHECKOUT="$(mktemp -d -t opencloudconfig.XXXXXXXXXX)"
 cd "${CHECKOUT}"
 
