@@ -51,7 +51,7 @@ for MANIFEST in *-b.json *-cu.json *-beta.json; do
 done
 DEPLOY="deploy: $(echo *-b.json *-cu.json *-beta.json | sed 's/\.json//g')"
 git add .
-git commit -m "Bug 1399401 - Rolled out generic-worker ${NEW_VERSION} to *STAGING*
+git commit -m "Testing generic-worker ${NEW_VERSION} on *STAGING*
 
 This change does _not_ affect any production workers. Commit made with:
 
