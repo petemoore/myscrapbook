@@ -5,15 +5,12 @@ import (
 	"os"
 	"time"
 
-	"github.com/taskcluster/taskcluster-client-go/github"
+	"github.com/taskcluster/taskcluster-client-go/tcgithub"
 )
 
 func main() {
 	startTime := time.Now()
-	myGithub, err := github.New(nil)
-	if err != nil {
-		panic(err)
-	}
+	myGithub := tcgithub.NewFromEnv()
 	ct := ""
 	status := ""
 outer:
