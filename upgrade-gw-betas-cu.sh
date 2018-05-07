@@ -69,7 +69,6 @@ hg purge
 go run "${THIS_SCRIPT_DIR}/waitforOCC.go" "${OCC_COMMIT}"
 
 hg pull -u -r default
-curl -L 'https://bug1399401.bmoattachments.org/attachment.cgi?id=8935897' | hg import -
 curl -L 'https://bug1400012.bmoattachments.org/attachment.cgi?id=8948627' | hg import -
 hg push -f ssh://hg.mozilla.org/try/ -r .
 open 'https://treeherder.mozilla.org/#/jobs?repo=try'
