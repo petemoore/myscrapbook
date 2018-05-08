@@ -11,6 +11,9 @@ function git_no_tty {
     git -c "gpg.program=${GPG_NO_TTY}" "${@}"
 }
 
+# This sets TASKCLUSTER_CLIENT_ID, TASKCLUSTER_ACCESS_TOKEN and PATH.
+# I personally use this client, fwiw:
+# https://auth.taskcluster.net/v1/clients/mozilla-auth0%2Fad%7CMozilla-LDAP%7Cpmoore%2Ffetch-worker-type-definitions
 source ~/sync-worker-type-definitions.env
 
 # say -v Daniel "let's sync those definitions"
