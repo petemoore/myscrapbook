@@ -22,6 +22,7 @@ cd ~/worker_type_definitions
 git_no_tty clean -fdx
 git_no_tty reset --hard
 cd ..
+# See https://github.com/taskcluster/generic-worker/blob/master/worker_types/all-worker-types/main.go
 all-worker-types
 cd worker_type_definitions
 git_no_tty add .
