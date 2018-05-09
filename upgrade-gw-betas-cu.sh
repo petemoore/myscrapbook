@@ -23,9 +23,27 @@ do
     echo -n '.'
   done
   echo
-  curl -L "${DOWNLOAD_URL}" > "${LOCAL_FILE}"
+  while [ "$(curl -L "${DOWNLOAD_URL}" -s -o "${LOCAL_FILE}" -w "%{http_code}")" != "200" ]; do
+    echo "Download attempt failed, trying again..."
+    sleep 3
+  done
   tooltool.py add --visibility internal "${LOCAL_FILE}"
 done
+
+# Bug 1460178 - sanity check binary downloads of generic-worker before publishing to tooltool...
+
+if ! file "generic-worker-windows-386-v${NEW_VERSION}.exe" | grep -F 'Intel 80386' | grep -F 'for MS Windows'; then
+  echo "Downloaded file doesn't appear to be 386 Windows executable:" >&2
+  file "generic-worker-windows-386-v${NEW_VERSION}.exe" >&2
+  exit 69
+fi
+
+if ! file "generic-worker-windows-amd64-v${NEW_VERSION}.exe" | grep -F 'x86-64' | grep -F 'for MS Windows'; then
+  echo "Downloaded file doesn't appear to be amd64 Windows executable:" >&2
+  file "generic-worker-windows-amd64-v${NEW_VERSION}.exe" >&2
+  exit 70
+fi
+
 cat manifest.tt
 which tooltool.py
 tooltool.py upload -v --authentication-file="$(echo ~/tooltool-upload)" --message "Bug 1399401: Upgrade *STAGING* worker types to use generic-worker ${NEW_VERSION}"
@@ -49,7 +67,7 @@ for MANIFEST in *-b.json *-cu.json *-beta.json; do
   jq --arg sha512 "${SHA512}" --arg componentName GenericWorkerDownload '(.Components[] | select(.ComponentName == $componentName) | .sha512) |= $sha512' "${MANIFEST}.bak" > "${MANIFEST}"
   rm "${MANIFEST}.bak"
 done
-DEPLOY="deploy: $(echo *-b.json *-cu.json *-beta.json | sed 's/\.json//g')"
+DEPLOY="deploy: $(git status --porcelain | sed -n 's/^ M userdata\/Manifest\/\(.*\)\.json$/\1/p')"
 git add .
 git commit -m "Testing generic-worker ${NEW_VERSION} on *STAGING*
 
