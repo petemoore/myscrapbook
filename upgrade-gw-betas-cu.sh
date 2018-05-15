@@ -67,7 +67,7 @@ for MANIFEST in *-b.json *-cu.json *-beta.json; do
   jq --arg sha512 "${SHA512}" --arg componentName GenericWorkerDownload '(.Components[] | select(.ComponentName == $componentName) | .sha512) |= $sha512' "${MANIFEST}.bak" > "${MANIFEST}"
   rm "${MANIFEST}.bak"
 done
-DEPLOY="deploy: $(git status --porcelain | sed -n 's/^ M userdata\/Manifest\/\(.*\)\.json$/\1/p')"
+DEPLOY="deploy: $(git status --porcelain | sed -n 's/^ M userdata\/Manifest\/\(.*\)\.json$/\1/p' | tr '\n' ' ')"
 git add .
 git commit -m "Testing generic-worker ${NEW_VERSION} on *STAGING*
 
