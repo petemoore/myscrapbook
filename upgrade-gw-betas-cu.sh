@@ -46,7 +46,7 @@ fi
 
 cat manifest.tt
 which tooltool.py
-tooltool.py upload -v --authentication-file="$(echo ~/tooltool-upload)" --message "Bug 1399401: Upgrade *STAGING* worker types to use generic-worker ${NEW_VERSION}"
+tooltool.py upload -v --authentication-file="$(echo ~/tooltool-upload)" --message "Upgrade *STAGING* worker types to use generic-worker ${NEW_VERSION}"
 
 git clone git@github.com:mozilla-releng/OpenCloudConfig.git
 cd OpenCloudConfig/userdata/Manifest
