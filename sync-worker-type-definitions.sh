@@ -28,7 +28,7 @@ function git_no_tty {
 # https://auth.taskcluster.net/v1/clients/mozilla-auth0%2Fad%7CMozilla-LDAP%7Cpmoore%2Ffetch-worker-type-definitions
 source ~/sync-worker-type-definitions.env
 
-say -v Daniel "syncing"
+# say -v Daniel "syncing"
 
 cd ~/worker_type_definitions
 git_no_tty clean -fdx
