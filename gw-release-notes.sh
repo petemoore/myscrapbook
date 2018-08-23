@@ -8,10 +8,9 @@ function process {
   done
 }
 
-# GW_CHECKOUT="$(mktemp -d -t gw-checkout.XXXXXXXXXX)"
-GW_CHECKOUT=/var/folders/v9/mll6p_rj5h94dt_m5m8j0f9c0000gn/T/gw-checkout.XXXXXXXXXX.qPjQYsRh
+GW_CHECKOUT="$(mktemp -d -t gw-checkout.XXXXXXXXXX)"
 cd "${GW_CHECKOUT}"
-# git clone https://github.com/taskcluster/generic-worker
+git clone https://github.com/taskcluster/generic-worker
 cd generic-worker
 git tag -l | grep '^v' > ../tags
 git tag -l | sed -n 's/^v/v /p' | sed 's/alpha/ alpha /g' | gsed 's/\<[0-9]\>/0&/g' | sed 's/ //g' > ../padded-tags
