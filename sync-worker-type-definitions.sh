@@ -30,18 +30,18 @@ source ~/sync-worker-type-definitions.env
 
 # say -v Daniel "syncing"
 
-cd ~/worker_type_definitions
+cd ~/aws-provisioner-v1-worker-type-definitions
 git_no_tty clean -fdx
 git_no_tty reset --hard
 cd ..
-# See https://github.com/taskcluster/generic-worker/blob/master/worker_types/all-worker-types/main.go
+# See https://github.com/taskcluster/generic-worker/blob/master/aws/cmd/aws-worker-types/main.go
 date
-if ! all-worker-types; then
+if ! aws-worker-types; then
   say -v Daniel "Something went wrong updating worker types"
   exit 64
 fi
 date
-cd worker_type_definitions
+cd aws-provisioner-v1-worker-type-definitions
 if test $(git_no_tty status --porcelain | wc -l) != 0; then
   say -v Daniel "Worker type changes have been found"
   git_no_tty add .

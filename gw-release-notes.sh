@@ -19,8 +19,11 @@ for ((i=1;i<=$tag_count;i++));
 do
   tag=$(sed -n "${i}p" ../tags)
   padded_tag=$(sed -n "${i}p" ../padded-tags)
-  echo ${padded_tag}'}' ${tag}
+  echo "${padded_tag} ${tag}"
 done | sort -u > ../sorted-tags
+
+# pwd
+# exit 0
 
 while read x tag; do
   if [ -n "${previous_tag}" ]; then
@@ -43,3 +46,5 @@ done < ../sorted-tags
 tail -r ../sorted-tags | while read x tag; do
   cat ../${tag}-text 2>/dev/null
 done
+
+rm -rf "${GW_CHECKOUT}"
