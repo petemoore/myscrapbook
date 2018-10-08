@@ -36,7 +36,7 @@ git_no_tty reset --hard
 cd ..
 # See https://github.com/taskcluster/generic-worker/blob/master/aws/cmd/aws-worker-types/main.go
 date
-if ! aws-worker-types; then
+if ! download-aws-worker-type-definitions; then
   say -v Daniel "Something went wrong updating worker types"
   exit 64
 fi
