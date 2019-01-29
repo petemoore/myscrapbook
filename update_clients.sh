@@ -13,7 +13,7 @@ function git_no_tty {
 
 say -v Daniel "let's go mr driver"
 source ~/update_clients.env
-if [ -z "${TASKCLUSTER_CLIENT_ID}" ] || [ -z "${TASKCLUSTER_ACCESS_TOKEN}" ]; then
+if [ -z "${TASKCLUSTER_CLIENT_ID}" ] || [ -z "${TASKCLUSTER_ACCESS_TOKEN}" ] || [ -z "${TASKCLUSTER_ROOT_URL}" ]; then
     say -v Samantha "No credentials for me to use with taskcluster"
     exit 1
 fi
