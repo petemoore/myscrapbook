@@ -30,14 +30,15 @@ source ~/sync-worker-type-definitions.env
 
 # say -v Daniel "syncing"
 
-cd ~/aws-provisioner-v1-worker-type-definitions
-git_no_tty clean -fdx
-git_no_tty reset --hard
-cd ..
+cd ~
+rm aws-provisioner-v1-worker-type-definitions/*
 # See https://github.com/taskcluster/generic-worker/blob/master/aws/cmd/aws-worker-types/main.go
 date
 if ! download-aws-worker-type-definitions; then
   say -v Daniel "Something went wrong updating worker types"
+  cd ~/aws-provisioner-v1-worker-type-definitions
+  git_no_tty clean -fdx
+  git_no_tty reset --hard
   exit 64
 fi
 date
