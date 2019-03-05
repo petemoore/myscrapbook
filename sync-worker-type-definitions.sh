@@ -11,6 +11,7 @@
 #  00,05,10,15,20,25,30,35,40,45,50,55 * * * * /Users/pmoore/git/mozilla/sync-worker-type-definitions.sh > ~/sync-worker-type-definitions.log 2>&1
 
 # This muckery is to prevent gpg asking for a passphrase when making git commits
+export GPG_TTY=`tty`
 GPG_NO_TTY="$(mktemp -t gpg-no-tty.XXXXXXXXXX)"
 {
   echo '#!/bin/bash'
