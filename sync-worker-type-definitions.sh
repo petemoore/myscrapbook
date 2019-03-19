@@ -10,20 +10,6 @@
 # My cron job looks like this:
 #  00,05,10,15,20,25,30,35,40,45,50,55 * * * * /Users/pmoore/git/mozilla/sync-worker-type-definitions.sh > ~/sync-worker-type-definitions.log 2>&1
 
-# This muckery is to prevent gpg asking for a passphrase when making git commits
-export GPG_TTY=`tty`
-GPG_NO_TTY="$(mktemp -t gpg-no-tty.XXXXXXXXXX)"
-{
-  echo '#!/bin/bash'
-  echo 'gpg --no-tty "${@}"'
-  echo 'exit $?'
-} >> "${GPG_NO_TTY}"
-chmod u+x "${GPG_NO_TTY}"
-
-function git_no_tty {
-    git -c "gpg.program=${GPG_NO_TTY}" "${@}"
-}
-
 # The sourced file exports TASKCLUSTER_CLIENT_ID, TASKCLUSTER_ACCESS_TOKEN and PATH.
 # I personally use this client, fwiw:
 # https://auth.taskcluster.net/v1/clients/mozilla-auth0%2Fad%7CMozilla-LDAP%7Cpmoore%2Ffetch-worker-type-definitions
@@ -38,17 +24,16 @@ date
 if ! download-aws-worker-type-definitions; then
   say -v Daniel "Something went wrong updating worker types"
   cd ~/aws-provisioner-v1-worker-type-definitions
-  git_no_tty clean -fdx
-  git_no_tty reset --hard
+  git clean -fdx
+  git reset --hard
   exit 64
 fi
 date
 cd aws-provisioner-v1-worker-type-definitions
-if test $(git_no_tty status --porcelain | wc -l) != 0; then
+if test $(git status --porcelain | wc -l) != 0; then
   say -v Daniel "Worker type changes have been found"
-  git_no_tty add .
-  git_no_tty commit -m "$(git status --porcelain)"
+  git add .
+  git -c "commit.gpgsign=false" commit -m "$(git status --porcelain)"
 fi
-rm "${GPG_NO_TTY}"
 
 say -v Daniel "sunk!"
