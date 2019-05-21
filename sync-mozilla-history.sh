@@ -10,7 +10,7 @@
 
 # This sourced file exports TASKCLUSTER_CLIENT_ID, TASKCLUSTER_ACCESS_TOKEN,
 # TASKCLUSTER_ROOT_URL and PATH. My client has `secrets:get:*` (required).
-source ~/sync-worker-type-definitions.env
+source ~/sync-mozilla-history.env
 
 # say -v Daniel "syncing"
 
