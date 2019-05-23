@@ -27,7 +27,10 @@ fi
 if test $(git status --porcelain | wc -l) != 0; then
   say -v Daniel "Taskcluster entity changes have been found."
   git add .
-  git -c "commit.gpgsign=false" commit -m "$(git status --porcelain | sed 's/\\342\\230\\205/*/g' | sed 's/\\342\\201\\204/\//g')"
+  # Unescape unicode characters from git status output:
+  # \342\201\204 is octal escape sequence for fraction slash  (U+2044)  ⁄  ->  /
+  # \342\230\205 is octal escape sequence for black star      (U+2605)  ★  ->  *
+  git -c "commit.gpgsign=false" commit -m "$(git status --porcelain | sed 's/\\342\\201\\204/\//g' | sed 's/\\342\\230\\205/*/g')"
   git push origin master
 fi
 
