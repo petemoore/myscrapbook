@@ -1,5 +1,12 @@
 #!/bin/bash
 
+old_version="${1}"
+
+if [ -z "${old_version}" ]; then
+  echo "Please specify old version, e.g. ${0} 15.1.0" >&2
+  exit 64
+fi
+
 function process {
   while read line; do
     curl "https://bugzilla.mozilla.org/show_bug.cgi?id=${line}" 2>/dev/null | sed -n 's/.*BUGZILLA.bug_title = '\''//p' | sed 's/'\'';$//' | sed "s/\\\\//g"
@@ -20,10 +27,7 @@ do
   tag=$(sed -n "${i}p" ../tags)
   padded_tag=$(sed -n "${i}p" ../padded-tags)
   echo "${padded_tag} ${tag}"
-done | sort -u > ../sorted-tags
-
-# pwd
-# exit 0
+done | sort -u | sed -n "/ v${old_version//./\\.}\$/,\$p" > ../sorted-tags
 
 while read x tag; do
   if [ -n "${previous_tag}" ]; then
