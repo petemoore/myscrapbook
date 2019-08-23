@@ -17,8 +17,8 @@ source ~/gw-refresh-worker-type-definitions-from-occ.env
 TMP_GW_CHECKOUT="$(mktemp -d -t refresh-gw-worker-types.XXXXXXXXXX)"
 cd "${TMP_GW_CHECKOUT}"
 git clone git@github.com:taskcluster/generic-worker
-generic-worker/mozilla/OpenCloudConfig/generate_occ_userdata.sh
-cd generic-worker/mozilla/worker-type-definitions/aws-provisioner-v1
+generic-worker/worker_types/generate_occ_userdata.sh
+cd generic-worker/worker_types
 git_no_tty add .
 git_no_tty commit -m "Refreshed gecko worker type definitions from latest OCC manifests"
 git_no_tty push origin master
