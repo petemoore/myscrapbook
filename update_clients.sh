@@ -11,7 +11,9 @@ if [ -z "${TASKCLUSTER_CLIENT_ID}" ] || [ -z "${TASKCLUSTER_ACCESS_TOKEN}" ] || 
     exit 1
 fi
 export DEBUG=*
-for repo in taskcluster-client-go taskcluster-client-java
+# taskcluster-client-java code generation broken, not a priority to fix, so commented out
+# for repo in taskcluster-client-go taskcluster-client-java
+for repo in taskcluster-client-go
 do
     export GOPATH="$(mktemp -d -t update_clients.XXXXXXXXXX)"
     export PATH="${GOPATH}/bin:${PATH}"
