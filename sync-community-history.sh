@@ -1,12 +1,12 @@
 #!/bin/bash -xve
 
 # This is a utility script that I run in a cron job, locally. It syncs the live
-# production taskcluster entities with the mozilla-history git repository.
+# community taskcluster entities with the community-history git repository.
 # This allows us to crudely track changes to taskcluster entity definitions
 # (AWS worker type definitions, clients, hooks, roles, hashed secrets).
 
 # My cron job looks like this:
-#  00,05,10,15,20,25,30,35,40,45,50,55 * * * * /Users/pmoore/git/mozilla/sync-mozilla-history.sh > ~/sync-mozilla-history.log 2>&1
+#  00,05,10,15,20,25,30,35,40,45,50,55 * * * * /Users/pmoore/git/mozilla/sync-community-history.sh > ~/sync-community-history.log 2>&1
 
 # Note, the 'say' command is part of macOS. I prefer my computer to audibly say
 # what it is doing, and if there is a problem, so that I do not need to
@@ -14,13 +14,14 @@
 
 # This sourced file exports TASKCLUSTER_CLIENT_ID, TASKCLUSTER_ACCESS_TOKEN,
 # TASKCLUSTER_ROOT_URL and PATH. My client has `secrets:get:*` (required).
-source ~/sync-mozilla-history.env
+source ~/sync-community-history.env
 
-export GOPATH=~/mozilla-history-gopath
+export GOPATH=~/community-history-gopath
 rm -rf "${GOPATH}"
 go get -u github.com/taskcluster/mozilla-history
-cd "${GOPATH}/src/github.com/taskcluster/mozilla-history"
-if ! mozilla-history; then
+git clone git@github.com:taskcluster/community-history.git
+cd community-history
+if ! "${GOPATH}/bin/mozilla-history"; then
   say -v Daniel "Something went wrong running the mozilla-history command."
   exit 64
 fi
