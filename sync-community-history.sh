@@ -19,6 +19,7 @@ source ~/sync-community-history.env
 export GOPATH=~/community-history-gopath
 rm -rf "${GOPATH}"
 go get -u github.com/taskcluster/mozilla-history
+cd "${GOPATH}"
 git clone git@github.com:taskcluster/community-history.git
 cd community-history
 if ! "${GOPATH}/bin/mozilla-history"; then
