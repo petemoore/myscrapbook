@@ -6,7 +6,7 @@
 # (AWS worker type definitions, clients, hooks, roles, hashed secrets).
 
 # My cron job looks like this:
-#  00,05,10,15,20,25,30,35,40,45,50,55 * * * * /Users/pmoore/git/mozilla/sync-community-history.sh > ~/sync-community-history.log 2>&1
+#  02,07,12,17,22,27,32,37,42,47,52,57 * * * * /Users/pmoore/git/mozilla/sync-community-history.sh > ~/sync-community-history.log 2>&1
 
 # Note, the 'say' command is part of macOS. I prefer my computer to audibly say
 # what it is doing, and if there is a problem, so that I do not need to
