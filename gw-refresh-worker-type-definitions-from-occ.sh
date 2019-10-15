@@ -13,7 +13,7 @@ cd generic-worker/worker_types
 ./generate_occ_userdata.sh
 git_no_gpg add .
 if ! git_no_gpg commit -m "Refreshed gecko worker type definitions from latest OCC manifests"; then
-  say -v Daniel "No OCC changes"
+  # say -v Daniel "No OCC changes"
   exit 64
 fi
 if ! git_no_gpg push origin master; then

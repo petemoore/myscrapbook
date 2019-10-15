@@ -12,29 +12,28 @@
 # what it is doing, and if there is a problem, so that I do not need to
 # routinely check logs. I just hear about problems (literally) if they occur.
 
-# This sourced file exports TASKCLUSTER_CLIENT_ID, TASKCLUSTER_ACCESS_TOKEN,
-# TASKCLUSTER_ROOT_URL and PATH. My client has `secrets:get:*` (required).
-source ~/sync-community-history.env
-
+export TASKCLUSTER_ROOT_URL='https://community-tc.services.mozilla.com'
+unset TASKCLUSTER_CLIENT_ID TASKCLUSTER_ACCESS_TOKEN TASKCLUSTER_CERTIFICATE
 export GOPATH=~/community-history-gopath
+export PATH="${GOPATH}/bin:/Users/pmoore/.cargo/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/usr/local/MacGPG2/bin:/opt/X11/bin:/Users/pmoore/bin::/Users/pmoore/git/mozilla:/usr/local/opt/apache-maven-3.3.3/bin:/usr/local/Cellar/gnupg/2.0.30_3/bin:/Users/pmoore/gcc-arm-none-eabi-7-2018-q2-update/bin:/Users/pmoore/git/arcanist/bin"
+
 rm -rf "${GOPATH}"
-go get -u github.com/taskcluster/mozilla-history
+mkdir "${GOPATH}"
 cd "${GOPATH}"
+go get -u github.com/taskcluster/mozilla-history
 git clone git@github.com:taskcluster/community-history.git
 cd community-history
 if ! "${GOPATH}/bin/mozilla-history"; then
-  say -v Daniel "Something went wrong running the mozilla-history command."
+  say -v Daniel "Something went wrong running mozilla-history for the taskcluster community project."
   exit 64
 fi
 if test $(git status --porcelain | wc -l) != 0; then
-  say -v Daniel "Taskcluster entity changes have been found."
+  say -v Daniel "Taskcluster entity changes have been found in community project."
   git add .
   # Unescape unicode characters from git status output:
   # \342\201\204 is octal escape sequence for fraction slash  (U+2044)  ⁄  ->  /
   # \342\230\205 is octal escape sequence for black star      (U+2605)  ★  ->  *
   git -c "commit.gpgsign=false" commit -m "$(git status --porcelain | sed 's/\\342\\201\\204/\//g' | sed 's/\\342\\230\\205/*/g' | sed 's/"//g')"
   git push origin master
-  say -v Daniel "Pushed changes"
+  say -v Daniel "Pushed taskcluster community changes"
 fi
-
-# say -v Daniel "Sunk!"

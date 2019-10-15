@@ -31,4 +31,4 @@ if test $(git status --porcelain | wc -l) != 0; then
   git -c "commit.gpgsign=false" commit -m "$(git status --porcelain)"
 fi
 
-say -v Daniel "secrets sunk!"
+# say -v Daniel "secrets sunk!"

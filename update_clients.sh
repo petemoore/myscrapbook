@@ -4,7 +4,7 @@ function git_no_gpg_signing {
     git -c "commit.gpgsign=false" "${@}"
 }
 
-say -v Daniel "let's go mr driver"
+# say -v Daniel "let's go mr driver"
 source ~/update_clients.env
 if [ -z "${TASKCLUSTER_CLIENT_ID}" ] || [ -z "${TASKCLUSTER_ACCESS_TOKEN}" ] || [ -z "${TASKCLUSTER_ROOT_URL}" ]; then
     say -v Samantha "No credentials for me to use with taskcluster"
@@ -104,7 +104,8 @@ do
             git_no_gpg_signing diff
         fi
     else
-        say -v Samantha "${repo} ok"
+        # say -v Samantha "${repo} ok"
+		true
     fi
     cd
     rm -rf "${GOPATH}"

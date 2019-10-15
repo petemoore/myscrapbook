@@ -4,7 +4,7 @@ cd "$(dirname "${0}")"
 
 one_week_ago="$(date -v -1w +%Y-%m-%d)"
 tomorrow="$(date -v +1d +%Y-%m-%d)"
-curl -s "https://bugzilla.mozilla.org/page.cgi?id=user_activity.html&action=run&who=pmoore%40mozilla.com&from=${one_week_ago}&to=${tomorrow}&sort=bug" > temp
+curl -s "https://bugzilla.mozilla.org/page.cgi?id=user_activity.html&action=run&who=pmoore%40mozilla.com&from=${one_week_ago}&to=${tomorrow}&group=bug" > temp 2>&1
 
 cat temp | grep '\(href="show_bug\.cgi?id=\([0-9]*\)">\|<td>(new bug)\)' | sed 's/.*href="show_bug\.cgi?id=\([0-9]*\)">.*/\1/p' | sed 's/.*(new bug).*/%/' | while read line
 do
