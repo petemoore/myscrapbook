@@ -3,7 +3,7 @@
 # This is a utility script that I run in a cron job, locally. It syncs the live
 # community taskcluster entities with the community-history git repository.
 # This allows us to crudely track changes to taskcluster entity definitions
-# (AWS worker type definitions, clients, hooks, roles, hashed secrets).
+# (clients, hooks, roles, worker pools).
 
 # My cron job looks like this:
 #  02,07,12,17,22,27,32,37,42,47,52,57 * * * * /Users/pmoore/git/mozilla/sync-community-history.sh > ~/sync-community-history.log 2>&1

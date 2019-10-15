@@ -3,7 +3,7 @@
 # This is a utility script that I run in a cron job, locally. It syncs the live
 # production taskcluster entities with the mozilla-history git repository.
 # This allows us to crudely track changes to taskcluster entity definitions
-# (AWS worker type definitions, clients, hooks, roles, hashed secrets).
+# (AWS worker type definitions, clients, hooks, roles, worker pools).
 
 # My cron job looks like this:
 #  00,05,10,15,20,25,30,35,40,45,50,55 * * * * /Users/pmoore/git/mozilla/sync-mozilla-history.sh > ~/sync-mozilla-history.log 2>&1
