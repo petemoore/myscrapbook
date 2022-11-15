@@ -18,8 +18,10 @@ function repo {
   cat aws.regions | while read region; do
     cat *⁄* | jq -r "((.config.launchConfigs[] | select(.launchConfig.InstanceType != null)) | select (.region == \"${region}\")).launchConfig.ImageId" 2>/dev/null | sort -u > aws.${region}.images
   done
-  for wp in *⁄*; do
-    for image in $(cat azure.images gcp.images aws.*.images); do
+  workerpools="$(echo *⁄*)"
+  images="$(cat azure.images gcp.images aws.*.images | sort -u)"
+  for wp in ${workerpools}; do
+    for image in ${images}; do
       grep -q -F "\"${image}\"" "${wp}" && echo "${image}" >> "${wp}.images"
     done
   done
