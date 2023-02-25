@@ -30,9 +30,7 @@ sudo cp arch/arm64/boot/dts/broadcom/*.dtb /boot/
 sudo cp arch/arm64/boot/dts/overlays/*.dtb* /boot/overlays/
 sudo cp arch/arm64/boot/dts/overlays/README /boot/overlays/
 sudo cp arch/arm64/boot/Image.gz /boot/$KERNEL.img
-
-##### TODO: increase kernel ring buffer size in /boot/cmdline.txt with e.g. log_buf_len=4M or log-buf-len=4M
-
+echo "console=serial0,115200 console=tty1 root=PARTUUID=64d5b623-02 rootfstype=ext4 fsck.repair=yes rootwait quiet splash plymouth.ignore-serial-consoles log_buf_len=4M" | sudo tee /boot/cmdline.txt
 echo "Kernel rebuilt"
 sleep 3
 sudo reboot
