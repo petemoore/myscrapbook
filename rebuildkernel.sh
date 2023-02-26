@@ -5,12 +5,13 @@ g -C /Volumes/casesensitive/linux commit -a -m "wip" || true
 
 ssh pmoore@raspberrypi.local '
 set -eu
+sudo apt-get install -y git bc bison flex libssl-dev make
 cd
 rm -rf linux
 git clone git@github.com:raspberrypi/linux.git
 cd linux
 git remote add pete git@github.com:petemoore/linux.git
-git remote add work-laptop Peters-MacBook-Pro.local:/Volumes/casesensitive/linux
+git remote add work-laptop pmoore@Peters-MacBook-Pro.local:/Volumes/casesensitive/linux
 git reset --hard HEAD
 git clean -fdx
 git fetch pete
@@ -30,7 +31,7 @@ sudo cp arch/arm64/boot/dts/broadcom/*.dtb /boot/
 sudo cp arch/arm64/boot/dts/overlays/*.dtb* /boot/overlays/
 sudo cp arch/arm64/boot/dts/overlays/README /boot/overlays/
 sudo cp arch/arm64/boot/Image.gz /boot/$KERNEL.img
-echo "console=serial0,115200 console=tty1 root=PARTUUID=64d5b623-02 rootfstype=ext4 fsck.repair=yes rootwait quiet splash plymouth.ignore-serial-consoles log_buf_len=4M" | sudo tee /boot/cmdline.txt
+cat /boot/cmdline.txt | sed 's/ log_buf_len=[^ ]*//' | sed 's/$/ log_buf_len=4M/' | sudo tee /boot/cmdline.txt
 echo "Kernel rebuilt"
 sleep 3
 sudo reboot
