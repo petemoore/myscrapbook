@@ -8,7 +8,7 @@ set -eu
 sudo apt-get install -y git bc bison flex libssl-dev make
 cd
 rm -rf linux
-git clone git@github.com:raspberrypi/linux.git
+git clone https://github.com/raspberrypi/linux
 cd linux
 git remote add pete git@github.com:petemoore/linux.git
 git remote add work-laptop pmoore@Peters-MacBook-Pro.local:/Volumes/casesensitive/linux
