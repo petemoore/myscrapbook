@@ -31,7 +31,7 @@ sudo cp arch/arm64/boot/dts/broadcom/*.dtb /boot/
 sudo cp arch/arm64/boot/dts/overlays/*.dtb* /boot/overlays/
 sudo cp arch/arm64/boot/dts/overlays/README /boot/overlays/
 sudo cp arch/arm64/boot/Image.gz /boot/$KERNEL.img
-cat /boot/cmdline.txt | sed 's/ log_buf_len=[^ ]*//' | sed 's/$/ log_buf_len=4M/' | sudo tee /boot/cmdline.txt
+cat /boot/cmdline.txt | sed 's/ log_buf_len=[^ ]*//' | sed 's/$/ log_buf_len=64M/' | sudo tee /boot/cmdline.txt
 echo "Kernel rebuilt"
 sleep 3
 sudo reboot
