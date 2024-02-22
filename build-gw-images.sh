@@ -118,23 +118,23 @@ cd ..
 
 
 ########## Ubuntu ##########
-imagesets/imageset.sh google update generic-worker-ubuntu-22-04
+retry imagesets/imageset.sh google update generic-worker-ubuntu-22-04
 retry tc-admin apply --without-secrets
-imagesets/imageset.sh aws update generic-worker-ubuntu-22-04
+retry imagesets/imageset.sh aws update generic-worker-ubuntu-22-04
 retry tc-admin apply --without-secrets
-imagesets/imageset.sh google update generic-worker-ubuntu-22-04-arm64
+retry imagesets/imageset.sh google update generic-worker-ubuntu-22-04-arm64
 retry tc-admin apply --without-secrets
 
 ########## Windows ##########
-imagesets/imageset.sh aws update generic-worker-win2016-amd
+retry imagesets/imageset.sh aws update generic-worker-win2016-amd
 retry tc-admin apply --without-secrets
-imagesets/imageset.sh aws update generic-worker-win2022
+retry imagesets/imageset.sh aws update generic-worker-win2022
 retry tc-admin apply --without-secrets
 
 ########## Staging ##########
-imagesets/imageset.sh google update generic-worker-ubuntu-22-04-staging
+retry imagesets/imageset.sh google update generic-worker-ubuntu-22-04-staging
 retry tc-admin apply --without-secrets
-imagesets/imageset.sh aws update generic-worker-ubuntu-22-04-staging
+retry imagesets/imageset.sh aws update generic-worker-ubuntu-22-04-staging
 retry tc-admin apply --without-secrets
 
 echo
