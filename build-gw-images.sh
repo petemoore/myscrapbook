@@ -61,7 +61,13 @@ cd community-tc-config
 if [ "${BRANCH}" != 'main' ]; then
   git checkout "${BRANCH}"
   cat imagesets/imageset.sh > x
-  cat x | sed 's/exit 70/# exit 70/' | sed 's/exit 69/# exit 69/' | sed 's%+HEAD:refs/heads/main%+HEAD:refs/heads/'"${BRANCH}"'%' | sed 's/git -c pull\.rebase/# &/' > imagesets/imageset.sh
+  cat x \
+    | sed 's/exit 70/# exit 70/' \
+    | sed 's/exit 69/# exit 69/' \
+    | sed 's%+HEAD:refs/heads/main%+HEAD:refs/heads/'"${BRANCH}"'%' \
+    | sed 's/git -c pull\.rebase/# &/' \
+    | sed 's/pass git -c pull\.rebase/# &/' \
+    > imagesets/imageset.sh
   rm x
 fi
 
@@ -83,7 +89,7 @@ if [ "${BRANCH}" == 'main' ]; then
   git commit --no-gpg-sign -m "Ran script misc/update-gce-machine-types.sh" || true
 
   retry git push origin "${BRANCH}"
-  retry tc-admin apply
+  retry tc-admin apply --without-secrets
 fi
 
 cd imagesets
@@ -111,23 +117,23 @@ cd ..
 
 ########## Ubuntu ##########
 imagesets/imageset.sh google update generic-worker-ubuntu-22-04
-retry tc-admin apply
+retry tc-admin apply --without-secrets
 imagesets/imageset.sh aws update generic-worker-ubuntu-22-04
-retry tc-admin apply
+retry tc-admin apply --without-secrets
 imagesets/imageset.sh google update generic-worker-ubuntu-22-04-arm64
-retry tc-admin apply
+retry tc-admin apply --without-secrets
 
 ########## Windows ##########
 imagesets/imageset.sh aws update generic-worker-win2016-amd
-retry tc-admin apply
+retry tc-admin apply --without-secrets
 imagesets/imageset.sh aws update generic-worker-win2022
-retry tc-admin apply
+retry tc-admin apply --without-secrets
 
 ########## Staging ##########
 imagesets/imageset.sh google update generic-worker-ubuntu-22-04-staging
-retry tc-admin apply
+retry tc-admin apply --without-secrets
 imagesets/imageset.sh aws update generic-worker-ubuntu-22-04-staging
-retry tc-admin apply
+retry tc-admin apply --without-secrets
 
 echo
 echo "Deleting preparation directory: ${PREP_DIR}..."
