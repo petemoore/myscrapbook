@@ -80,10 +80,12 @@ export TASKCLUSTER_ACCESS_TOKEN="$(pass ls community-tc/root | head -1)"
 eval $(imagesets/signin-aws.sh)
 
 if [ "${BRANCH}" == 'main' ]; then
+  echo "Updating EC2 instance types..."
   misc/update-ec2-instance-types.sh
   git add 'config/ec2-instance-type-offerings'
   git commit --no-gpg-sign -m "Ran script misc/update-ec2-instance-types.sh" || true
 
+  echo "Updating GCE machine types..."
   misc/update-gce-machine-types.sh
   git add 'config/gce-machine-type-offerings.json'
   git commit --no-gpg-sign -m "Ran script misc/update-gce-machine-types.sh" || true
