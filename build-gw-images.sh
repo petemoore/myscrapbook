@@ -67,6 +67,7 @@ if [ "${BRANCH}" != 'main' ]; then
     | sed 's%+HEAD:refs/heads/main%+HEAD:refs/heads/'"${BRANCH}"'%' \
     | sed 's/git -c pull\.rebase/# &/' \
     | sed 's/pass git -c pull\.rebase/# &/' \
+    | sed 's/ --no-gpg-sign//g' \
     > imagesets/imageset.sh
   rm x
 fi
@@ -83,15 +84,15 @@ if [ "${BRANCH}" == 'main' ]; then
   echo "Updating EC2 instance types..."
   misc/update-ec2-instance-types.sh
   git add 'config/ec2-instance-type-offerings'
-  git commit --no-gpg-sign -m "Ran script misc/update-ec2-instance-types.sh" || true
+  git commit -m "Ran script misc/update-ec2-instance-types.sh" || true
 
   echo "Updating GCE machine types..."
   misc/update-gce-machine-types.sh
   git add 'config/gce-machine-type-offerings.json'
-  git commit --no-gpg-sign -m "Ran script misc/update-gce-machine-types.sh" || true
+  git commit -m "Ran script misc/update-gce-machine-types.sh" || true
 
   retry git push origin "${BRANCH}"
-  retry tc-admin apply --without-secrets
+  retry tc-admin apply
 fi
 
 cd imagesets
@@ -105,7 +106,7 @@ git ls-files | grep -F 'bootstrap.' | while read file; do
   git add "${file}"
 done
 
-git commit --no-gpg-sign -m "chore: bump to TC ${VERSION}" || true
+git commit -m "chore: bump to TC ${VERSION}" || true
 retry git push origin "${BRANCH}"
 
 cd ..
@@ -119,23 +120,23 @@ cd ..
 
 ########## Ubuntu ##########
 retry imagesets/imageset.sh google update generic-worker-ubuntu-22-04
-retry tc-admin apply --without-secrets
+retry tc-admin apply
 retry imagesets/imageset.sh aws update generic-worker-ubuntu-22-04
-retry tc-admin apply --without-secrets
+retry tc-admin apply
 retry imagesets/imageset.sh google update generic-worker-ubuntu-22-04-arm64
-retry tc-admin apply --without-secrets
+retry tc-admin apply
 
 ########## Windows ##########
 retry imagesets/imageset.sh aws update generic-worker-win2016-amd
-retry tc-admin apply --without-secrets
+retry tc-admin apply
 retry imagesets/imageset.sh aws update generic-worker-win2022
-retry tc-admin apply --without-secrets
+retry tc-admin apply
 
 ########## Staging ##########
 retry imagesets/imageset.sh google update generic-worker-ubuntu-22-04-staging
-retry tc-admin apply --without-secrets
+retry tc-admin apply
 retry imagesets/imageset.sh aws update generic-worker-ubuntu-22-04-staging
-retry tc-admin apply --without-secrets
+retry tc-admin apply
 
 echo
 echo "Deleting preparation directory: ${PREP_DIR}..."
