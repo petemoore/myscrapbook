@@ -74,10 +74,15 @@ if [ "${BRANCH}" != 'main' ]; then
     | sed 's%+HEAD:refs/heads/main%+HEAD:refs/heads/'"${BRANCH}"'%' \
     | sed 's/git -c pull\.rebase/# &/' \
     | sed 's/pass git -c pull\.rebase/# &/' \
-    | sed 's/ --no-gpg-sign//g' \
     > imagesets/imageset.sh
   rm x
 fi
+
+cat imagesets/imageset.sh > x
+cat x \
+  | sed 's/ --no-gpg-sign//g' \
+  > imagesets/imageset.sh
+rm x
 
 pip3 install -e .
 which tc-admin
