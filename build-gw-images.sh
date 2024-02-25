@@ -33,6 +33,9 @@ unset TASKCLUSTER_CERTIFICATE
 
 export GCP_PROJECT=community-tc-workers
 
+retry gcloud auth login
+retry pass git pull
+
 PREP_DIR="$(mktemp -t deploy-worker-pools.XXXXXXXXXX -d)"
 cd "${PREP_DIR}"
 
@@ -78,8 +81,6 @@ fi
 
 pip3 install -e .
 which tc-admin
-retry gcloud auth login
-retry pass git pull
 export TASKCLUSTER_ACCESS_TOKEN="$(pass ls community-tc/root | head -1)"
 
 eval $(imagesets/signin-aws.sh)
