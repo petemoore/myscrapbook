@@ -46,6 +46,10 @@ if [ -z "${VERSION}" ]; then
   exit 64
 fi
 
+for IP in 207.254.55.60 207.254.55.167; do
+  pass "macstadium/generic-worker-ci/${IP}" | tail -1 | ssh "administrator@${IP}" sudo -S "bash" -c /var/root/update.sh
+done
+
 mkdir tc-admin
 pip3 install --upgrade pip
 
