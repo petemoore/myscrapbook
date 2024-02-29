@@ -85,12 +85,6 @@ if [ "${BRANCH}" != 'main' ]; then
   rm x
 fi
 
-cat imagesets/imageset.sh > x
-cat x \
-  | sed 's/ --no-gpg-sign//g' \
-  > imagesets/imageset.sh
-rm x
-
 pip3 install -e .
 which tc-admin
 export TASKCLUSTER_ACCESS_TOKEN="$(pass ls community-tc/root | head -1)"
