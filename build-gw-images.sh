@@ -74,6 +74,9 @@ cd community-tc-config
 
 if [ "${BRANCH}" != 'main' ]; then
   git checkout "${BRANCH}"
+  # in case branch was created prior to the latest image builds, pull in all commits from main
+  # to ensure we don't revert to old amis from the time the branch was created!
+  git pull origin main
   cat imagesets/imageset.sh > x
   cat x \
     | sed 's/exit 70/# exit 70/' \
