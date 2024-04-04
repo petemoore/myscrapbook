@@ -64,7 +64,7 @@ done
 mkdir tc-admin
 
 cd tc-admin
-python3 -m venv tc-admin-venv
+python3.11 -m venv tc-admin-venv
 source tc-admin-venv/bin/activate
 pip3 install pytest
 pip3 install --upgrade pip
