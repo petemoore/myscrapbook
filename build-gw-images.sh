@@ -33,6 +33,7 @@ unset TASKCLUSTER_CERTIFICATE
 
 export GCP_PROJECT=community-tc-workers
 
+retry gcloud components update
 retry gcloud auth login
 retry pass git pull
 
@@ -61,7 +62,6 @@ done
 
 
 mkdir tc-admin
-pip3 install --upgrade pip
 
 cd tc-admin
 python3 -m venv tc-admin-venv
