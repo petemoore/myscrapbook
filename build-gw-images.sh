@@ -32,6 +32,9 @@ export TASKCLUSTER_ROOT_URL='https://community-tc.services.mozilla.com'
 unset TASKCLUSTER_CERTIFICATE
 
 export GCP_PROJECT=community-tc-workers
+export AZURE_IMAGE_RESOURCE_GROUP=rg-tc-eng-images
+
+retry az login
 
 retry gcloud components update
 retry gcloud auth login
@@ -100,6 +103,11 @@ if [ "${BRANCH}" == 'main' ]; then
   git add 'config/ec2-instance-type-offerings'
   git commit -m "Ran script misc/update-ec2-instance-types.sh" || true
 
+  echo "Updating Azure machine types..."
+  misc/update-azure-machine-types.sh
+  git add 'config/azure-machine-type-offerings.json'
+  git commit -m "Ran script misc/update-azure-machine-types.sh" || true
+
   echo "Updating GCE machine types..."
   misc/update-gce-machine-types.sh
   git add 'config/gce-machine-type-offerings.json'
@@ -144,6 +152,8 @@ retry tc-admin apply
 retry imagesets/imageset.sh aws update generic-worker-win2016-amd
 retry tc-admin apply
 retry imagesets/imageset.sh aws update generic-worker-win2022
+retry tc-admin apply
+retry imagesets/imageset.sh azure update generic-worker-win2022
 retry tc-admin apply
 
 ########## Staging ##########
