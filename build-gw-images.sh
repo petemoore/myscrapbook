@@ -36,7 +36,7 @@ export AZURE_IMAGE_RESOURCE_GROUP=rg-tc-eng-images
 
 retry az login
 
-retry gcloud components update
+retry gcloud components update -q
 retry gcloud auth login
 retry pass git pull
 
@@ -139,21 +139,26 @@ cd ..
 ######## Comment out worker pools that don't need to be updated! ########
 #########################################################################
 
+########## Azure first!! ##########
+retry imagesets/imageset.sh azure update generic-worker-win2022
+retry tc-admin apply
 
 ########## Ubuntu ##########
 retry imagesets/imageset.sh google update generic-worker-ubuntu-22-04
 retry tc-admin apply
 retry imagesets/imageset.sh aws update generic-worker-ubuntu-22-04
 retry tc-admin apply
+retry imagesets/imageset.sh google update generic-worker-ubuntu-24-04
+retry tc-admin apply
+retry imagesets/imageset.sh aws update generic-worker-ubuntu-24-04
+retry tc-admin apply
 retry imagesets/imageset.sh google update generic-worker-ubuntu-22-04-arm64
 retry tc-admin apply
 
-########## Windows ##########
+########## Non-Azure Windows ##########
 retry imagesets/imageset.sh aws update generic-worker-win2016-amd
 retry tc-admin apply
 retry imagesets/imageset.sh aws update generic-worker-win2022
-retry tc-admin apply
-retry imagesets/imageset.sh azure update generic-worker-win2022
 retry tc-admin apply
 
 ########## Staging ##########
