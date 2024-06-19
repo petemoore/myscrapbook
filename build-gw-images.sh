@@ -142,6 +142,8 @@ cd ..
 ########## Azure first!! ##########
 retry imagesets/imageset.sh azure update generic-worker-win2022
 retry tc-admin apply
+retry imagesets/imageset.sh azure update generic-worker-win2022-staging
+retry tc-admin apply
 
 ########## Ubuntu ##########
 retry imagesets/imageset.sh google update generic-worker-ubuntu-22-04
