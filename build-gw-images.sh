@@ -140,6 +140,8 @@ cd ..
 #########################################################################
 
 ########## Azure first!! ##########
+imagesets/imageset.sh azure update generic-worker-win2022-gpu
+retry tc-admin apply
 imagesets/imageset.sh azure update generic-worker-win2022
 retry tc-admin apply
 imagesets/imageset.sh azure update generic-worker-win2022-staging
