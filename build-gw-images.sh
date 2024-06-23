@@ -105,7 +105,7 @@ if [ "${BRANCH}" == 'main' ]; then
 
   echo "Updating Azure machine types..."
   misc/update-azure-machine-types.sh
-  git add 'config/azure-machine-type-offerings.json'
+  git add 'config/azure-machine-type-offerings'
   git commit -m "Ran script misc/update-azure-machine-types.sh" || true
 
   echo "Updating GCE machine types..."
