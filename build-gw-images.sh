@@ -139,12 +139,18 @@ cd ..
 ######## Comment out worker pools that don't need to be updated! ########
 #########################################################################
 
-########## Azure first!! ##########
-imagesets/imageset.sh azure update generic-worker-win2022-gpu
-retry tc-admin apply
+########## Azure Windows ##########
 imagesets/imageset.sh azure update generic-worker-win2022
 retry tc-admin apply
 imagesets/imageset.sh azure update generic-worker-win2022-staging
+retry tc-admin apply
+imagesets/imageset.sh azure update generic-worker-win2022-gpu
+retry tc-admin apply
+
+########## Non-Azure Windows ##########
+imagesets/imageset.sh aws update generic-worker-win2016-amd
+retry tc-admin apply
+imagesets/imageset.sh aws update generic-worker-win2022
 retry tc-admin apply
 
 ########## Ubuntu ##########
@@ -158,14 +164,6 @@ imagesets/imageset.sh aws update generic-worker-ubuntu-24-04
 retry tc-admin apply
 imagesets/imageset.sh google update generic-worker-ubuntu-22-04-arm64
 retry tc-admin apply
-
-########## Non-Azure Windows ##########
-imagesets/imageset.sh aws update generic-worker-win2016-amd
-retry tc-admin apply
-imagesets/imageset.sh aws update generic-worker-win2022
-retry tc-admin apply
-
-########## Staging ##########
 imagesets/imageset.sh google update generic-worker-ubuntu-22-04-staging
 retry tc-admin apply
 imagesets/imageset.sh aws update generic-worker-ubuntu-22-04-staging
