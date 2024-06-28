@@ -164,11 +164,11 @@ imagesets/imageset.sh google update generic-worker-ubuntu-24-04
 retry tc-admin apply
 imagesets/imageset.sh aws update generic-worker-ubuntu-24-04
 retry tc-admin apply
-imagesets/imageset.sh google update generic-worker-ubuntu-22-04-arm64
+imagesets/imageset.sh google update generic-worker-ubuntu-24-04-arm64
 retry tc-admin apply
-imagesets/imageset.sh google update generic-worker-ubuntu-22-04-staging
+imagesets/imageset.sh google update generic-worker-ubuntu-24-04-staging
 retry tc-admin apply
-imagesets/imageset.sh aws update generic-worker-ubuntu-22-04-staging
+imagesets/imageset.sh aws update generic-worker-ubuntu-24-04-staging
 retry tc-admin apply
 
 echo
