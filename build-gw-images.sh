@@ -54,15 +54,6 @@ if [ -z "${VERSION}" ]; then
 fi
 
 
-##################################
-###### Update macOS workers ######
-##################################
-
-for IP in 207.254.55.60 207.254.55.167; do
-  pass "macstadium/generic-worker-ci/${IP}" | tail -1 | ssh "administrator@${IP}" sudo -S "bash" -c /var/root/update.sh
-done
-
-
 
 mkdir tc-admin
 
@@ -138,6 +129,17 @@ cd ..
 #########################################################################
 ######## Comment out worker pools that don't need to be updated! ########
 #########################################################################
+
+
+##################################
+###### Update macOS workers ######
+##################################
+#
+# Remeber to vnc as administrator onto macs before running this script, to avoid ssh connection problems!
+
+for IP in 207.254.55.60 207.254.55.167; do
+  pass "macstadium/generic-worker-ci/${IP}" | tail -1 | ssh "administrator@${IP}" sudo -S "bash" -c /var/root/update.sh
+done
 
 ########## Azure Windows ##########
 imagesets/imageset.sh azure update generic-worker-win2022
