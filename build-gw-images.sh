@@ -167,6 +167,12 @@ retry tc-admin apply
 imagesets/imageset.sh aws update generic-worker-ubuntu-24-04-staging
 retry tc-admin apply
 
+########## Docker Worker ##########
+imagesets/imageset.sh google update docker-worker
+retry tc-admin apply
+imagesets/imageset.sh aws update docker-worker
+retry tc-admin apply
+
 echo
 echo "Deleting preparation directory: ${PREP_DIR}..."
 echo
