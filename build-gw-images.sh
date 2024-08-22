@@ -150,8 +150,6 @@ imagesets/imageset.sh azure update generic-worker-win2022-gpu
 retry tc-admin apply
 
 ########## Non-Azure Windows ##########
-imagesets/imageset.sh aws update generic-worker-win2016-amd
-retry tc-admin apply
 imagesets/imageset.sh aws update generic-worker-win2022
 retry tc-admin apply
 
