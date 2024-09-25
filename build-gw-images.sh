@@ -36,6 +36,11 @@ export AZURE_IMAGE_RESOURCE_GROUP=rg-tc-eng-images
 
 retry az login
 
+for rg in $(az group list --query "[?starts_with(name, 'imageset-')].name" -o tsv); do
+  echo "Deleting old resource group ${rg}..."
+  az group delete --name $rg --yes --no-wait
+done
+
 retry gcloud components update -q
 retry gcloud auth login
 retry pass git pull
