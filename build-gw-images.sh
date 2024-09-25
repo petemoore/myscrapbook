@@ -94,10 +94,10 @@ if [ "${BRANCH}" == 'main' ]; then
   git add 'config/ec2-instance-type-offerings'
   git commit -m "Ran script misc/update-ec2-instance-types.sh" || true
 
-  echo "Updating Azure machine types..."
-  misc/update-azure-machine-types.sh
-  git add 'config/azure-machine-type-offerings'
-  git commit -m "Ran script misc/update-azure-machine-types.sh" || true
+  echo "Updating Azure VM sizes..."
+  misc/update-azure-vm-sizes.sh
+  git add 'config/azure-vm-size-offerings'
+  git commit -m "Ran script misc/update-azure-vm-sizes.sh" || true
 
   echo "Updating GCE machine types..."
   misc/update-gce-machine-types.sh
