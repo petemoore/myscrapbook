@@ -17,7 +17,7 @@ function retry {
         echo "Attempt $n/$max:" >&2
       else
         echo "Failed after $n attempts." >&2
-        exit 67
+        return 67
       fi
     }
   done
@@ -79,6 +79,8 @@ if [ "${BRANCH}" != 'main' ]; then
   cat x \
     | sed 's/exit 70/# exit 70/' \
     | sed 's/exit 69/# exit 69/' \
+    | sed 's/return 70/# return 70/' \
+    | sed 's/return 69/# return 69/' \
     | sed 's%+HEAD:refs/heads/main%+HEAD:refs/heads/'"${BRANCH}"'%' \
     | sed 's/git -c pull\.rebase/# &/' \
     | sed 's/pass git -c pull\.rebase/# &/' \
