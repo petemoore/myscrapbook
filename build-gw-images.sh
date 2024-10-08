@@ -147,35 +147,27 @@ for IP in 207.254.55.60 207.254.55.167; do
 done
 
 ########## Azure Windows ##########
-imagesets/imageset.sh azure update generic-worker-win2022
-retry tc-admin apply
-imagesets/imageset.sh azure update generic-worker-win2022-staging
-retry tc-admin apply
-imagesets/imageset.sh azure update generic-worker-win2022-gpu
-retry tc-admin apply
-imagesets/imageset.sh azure update generic-worker-win11-24h2-staging
-retry tc-admin apply
+imagesets/imageset.sh azure update generic-worker-win2022 &
+imagesets/imageset.sh azure update generic-worker-win2022-staging &
+imagesets/imageset.sh azure update generic-worker-win2022-gpu &
+imagesets/imageset.sh azure update generic-worker-win11-24h2-staging &
 
 ########## Non-Azure Windows ##########
-imagesets/imageset.sh aws update generic-worker-win2022
-retry tc-admin apply
+imagesets/imageset.sh aws update generic-worker-win2022 &
 
 ########## Ubuntu ##########
-imagesets/imageset.sh google update generic-worker-ubuntu-24-04
-retry tc-admin apply
-imagesets/imageset.sh aws update generic-worker-ubuntu-24-04
-retry tc-admin apply
-imagesets/imageset.sh google update generic-worker-ubuntu-24-04-arm64
-retry tc-admin apply
-imagesets/imageset.sh google update generic-worker-ubuntu-24-04-staging
-retry tc-admin apply
-imagesets/imageset.sh aws update generic-worker-ubuntu-24-04-staging
-retry tc-admin apply
+imagesets/imageset.sh google update generic-worker-ubuntu-24-04 &
+imagesets/imageset.sh aws update generic-worker-ubuntu-24-04 &
+imagesets/imageset.sh google update generic-worker-ubuntu-24-04-arm64 &
+imagesets/imageset.sh google update generic-worker-ubuntu-24-04-staging &
+imagesets/imageset.sh aws update generic-worker-ubuntu-24-04-staging &
 
 ########## Docker Worker ##########
-imagesets/imageset.sh google update docker-worker
-retry tc-admin apply
-imagesets/imageset.sh aws update docker-worker
+imagesets/imageset.sh google update docker-worker &
+imagesets/imageset.sh aws update docker-worker &
+
+wait
+
 retry tc-admin apply
 
 echo
