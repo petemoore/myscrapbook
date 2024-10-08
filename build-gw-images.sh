@@ -43,7 +43,6 @@ done
 
 retry gcloud components update -q
 retry gcloud auth login
-retry pass git pull
 
 PREP_DIR="$(mktemp -t deploy-worker-pools.XXXXXXXXXX -d)"
 cd "${PREP_DIR}"
