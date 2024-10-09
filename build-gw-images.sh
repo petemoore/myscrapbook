@@ -5,7 +5,8 @@ BRANCH='main'
 function retry {
   set +e
   local n=0
-  local max=20
+  # 2^10 seconds (17m 4s) is enough seconds to wait
+  local max=10
   while true; do
     "$@" && break || {
       if [[ $n -lt $max ]]; then
